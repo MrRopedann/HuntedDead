@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82207076cac117b4ca40551080adb130, type: 3}
+  m_Name: AK
+  m_EditorClassIdentifier: 
+  displayName: AK
+  damage: 20
+  rpm: 600
+  range: 200
+  spreadHipDeg: 0.6
+  spreadAimDeg: 0.15
+  magazineSize: 30
+  startReserve: 120
+  pellets: 1
+  hitMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  reloadHoldTime: 0.25
+  magOutTime: 0.35
+  magInTime: 0.45
+  magOutOffset: {x: 0, y: -0.12, z: 0.06}
+  magOutEuler: {x: 10, y: 0, z: 0}
+  magCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  droppedMagPrefab: {fileID: 0}
+  magOutSfx: {fileID: 8300000, guid: 6536c79ed83cd4940aa963c3382a027c, type: 3}
+  magInSfx: {fileID: 8300000, guid: 490015957b3816e4c85d42195680139f, type: 3}
+  muzzleVFXPrefab: {fileID: 1320275964731592, guid: 0624c6f5a57851d48ba74b4f86ec13d7, type: 3}
+  reuseMuzzleVFX: 0
+  trailVFX: {fileID: 1703263380272892, guid: 7af0025c87c32d548bd8331f3955239a, type: 3}
+  impactVFX: {fileID: 0}
+  tracerSpeed: 180
+  tracerLifeAfter: 0.15
+  shotSfx: {fileID: 8300000, guid: 552354128a6743a46919c46acd5d7d37, type: 3}
+  drySfx: {fileID: 8300000, guid: 98e20ecffd5f05f43a46ee7f08bf9b13, type: 3}
+  enabledModes: -1
+  burstCount: 3
+  burstRpm: 900
