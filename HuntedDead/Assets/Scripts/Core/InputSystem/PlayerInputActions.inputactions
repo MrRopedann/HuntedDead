@@ -315,7 +315,7 @@
             ]
         },
         {
-            "name": "HotBar",
+            "name": "UI",
             "id": "145b52e4-cb3d-4379-80fb-e29dc5923217",
             "actions": [
                 {
@@ -349,6 +349,42 @@
                     "name": "selectKeys",
                     "type": "Button",
                     "id": "e20b6a31-0e78-48fb-8159-3441556e1f79",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "ToggleInventory",
+                    "type": "Button",
+                    "id": "40633d6e-4773-46fb-93ee-66a53edaddd7",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Rotate",
+                    "type": "Button",
+                    "id": "f50ae9cd-717f-4f0f-8c29-10c6a206d347",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Vicinity",
+                    "type": "Button",
+                    "id": "974f37f6-09f4-4b2a-b4c0-a6174d22229f",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "OpenLoot",
+                    "type": "Button",
+                    "id": "1197611f-a677-4d70-aa37-ceda66ef121d",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -474,6 +510,50 @@
                     "processors": "",
                     "groups": "",
                     "action": "selectKeys",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9ef82088-39d5-442f-9718-9bb9768a9976",
+                    "path": "<Keyboard>/tab",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ToggleInventory",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "239dc583-88f4-4686-9832-0b71230f8fc9",
+                    "path": "<Keyboard>/r",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "bee5d711-738e-427b-b97f-69c7fd5d938a",
+                    "path": "<Keyboard>/v",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Vicinity",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "19eb9716-5995-4cdb-bb9d-2c71798d63bc",
+                    "path": "<Keyboard>/f",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "OpenLoot",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

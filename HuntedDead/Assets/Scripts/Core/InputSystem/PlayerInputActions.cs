@@ -401,7 +401,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             ]
         },
         {
-            ""name"": ""HotBar"",
+            ""name"": ""UI"",
             ""id"": ""145b52e4-cb3d-4379-80fb-e29dc5923217"",
             ""actions"": [
                 {
@@ -435,6 +435,42 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                     ""name"": ""selectKeys"",
                     ""type"": ""Button"",
                     ""id"": ""e20b6a31-0e78-48fb-8159-3441556e1f79"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""ToggleInventory"",
+                    ""type"": ""Button"",
+                    ""id"": ""40633d6e-4773-46fb-93ee-66a53edaddd7"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Rotate"",
+                    ""type"": ""Button"",
+                    ""id"": ""f50ae9cd-717f-4f0f-8c29-10c6a206d347"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Vicinity"",
+                    ""type"": ""Button"",
+                    ""id"": ""974f37f6-09f4-4b2a-b4c0-a6174d22229f"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""OpenLoot"",
+                    ""type"": ""Button"",
+                    ""id"": ""1197611f-a677-4d70-aa37-ceda66ef121d"",
                     ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
@@ -562,6 +598,50 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                     ""action"": ""selectKeys"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""9ef82088-39d5-442f-9718-9bb9768a9976"",
+                    ""path"": ""<Keyboard>/tab"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ToggleInventory"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""239dc583-88f4-4686-9832-0b71230f8fc9"",
+                    ""path"": ""<Keyboard>/r"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Rotate"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""bee5d711-738e-427b-b97f-69c7fd5d938a"",
+                    ""path"": ""<Keyboard>/v"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Vicinity"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""19eb9716-5995-4cdb-bb9d-2c71798d63bc"",
+                    ""path"": ""<Keyboard>/f"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""OpenLoot"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -583,18 +663,22 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         m_Player_ChangeCamera = m_Player.FindAction("ChangeCamera", throwIfNotFound: true);
         m_Player_ZoomAxis = m_Player.FindAction("ZoomAxis", throwIfNotFound: true);
         m_Player_ToggleMenuAction = m_Player.FindAction("ToggleMenuAction", throwIfNotFound: true);
-        // HotBar
-        m_HotBar = asset.FindActionMap("HotBar", throwIfNotFound: true);
-        m_HotBar_nextSlot = m_HotBar.FindAction("nextSlot", throwIfNotFound: true);
-        m_HotBar_prevSlot = m_HotBar.FindAction("prevSlot", throwIfNotFound: true);
-        m_HotBar_useItem = m_HotBar.FindAction("useItem", throwIfNotFound: true);
-        m_HotBar_selectKeys = m_HotBar.FindAction("selectKeys", throwIfNotFound: true);
+        // UI
+        m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
+        m_UI_nextSlot = m_UI.FindAction("nextSlot", throwIfNotFound: true);
+        m_UI_prevSlot = m_UI.FindAction("prevSlot", throwIfNotFound: true);
+        m_UI_useItem = m_UI.FindAction("useItem", throwIfNotFound: true);
+        m_UI_selectKeys = m_UI.FindAction("selectKeys", throwIfNotFound: true);
+        m_UI_ToggleInventory = m_UI.FindAction("ToggleInventory", throwIfNotFound: true);
+        m_UI_Rotate = m_UI.FindAction("Rotate", throwIfNotFound: true);
+        m_UI_Vicinity = m_UI.FindAction("Vicinity", throwIfNotFound: true);
+        m_UI_OpenLoot = m_UI.FindAction("OpenLoot", throwIfNotFound: true);
     }
 
     ~@PlayerInputActions()
     {
         UnityEngine.Debug.Assert(!m_Player.enabled, "This will cause a leak and performance issues, PlayerInputActions.Player.Disable() has not been called.");
-        UnityEngine.Debug.Assert(!m_HotBar.enabled, "This will cause a leak and performance issues, PlayerInputActions.HotBar.Disable() has not been called.");
+        UnityEngine.Debug.Assert(!m_UI.enabled, "This will cause a leak and performance issues, PlayerInputActions.UI.Disable() has not been called.");
     }
 
     /// <summary>
@@ -895,44 +979,64 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
     /// </summary>
     public PlayerActions @Player => new PlayerActions(this);
 
-    // HotBar
-    private readonly InputActionMap m_HotBar;
-    private List<IHotBarActions> m_HotBarActionsCallbackInterfaces = new List<IHotBarActions>();
-    private readonly InputAction m_HotBar_nextSlot;
-    private readonly InputAction m_HotBar_prevSlot;
-    private readonly InputAction m_HotBar_useItem;
-    private readonly InputAction m_HotBar_selectKeys;
+    // UI
+    private readonly InputActionMap m_UI;
+    private List<IUIActions> m_UIActionsCallbackInterfaces = new List<IUIActions>();
+    private readonly InputAction m_UI_nextSlot;
+    private readonly InputAction m_UI_prevSlot;
+    private readonly InputAction m_UI_useItem;
+    private readonly InputAction m_UI_selectKeys;
+    private readonly InputAction m_UI_ToggleInventory;
+    private readonly InputAction m_UI_Rotate;
+    private readonly InputAction m_UI_Vicinity;
+    private readonly InputAction m_UI_OpenLoot;
     /// <summary>
-    /// Provides access to input actions defined in input action map "HotBar".
+    /// Provides access to input actions defined in input action map "UI".
     /// </summary>
-    public struct HotBarActions
+    public struct UIActions
     {
         private @PlayerInputActions m_Wrapper;
 
         /// <summary>
         /// Construct a new instance of the input action map wrapper class.
         /// </summary>
-        public HotBarActions(@PlayerInputActions wrapper) { m_Wrapper = wrapper; }
+        public UIActions(@PlayerInputActions wrapper) { m_Wrapper = wrapper; }
         /// <summary>
-        /// Provides access to the underlying input action "HotBar/nextSlot".
+        /// Provides access to the underlying input action "UI/nextSlot".
         /// </summary>
-        public InputAction @nextSlot => m_Wrapper.m_HotBar_nextSlot;
+        public InputAction @nextSlot => m_Wrapper.m_UI_nextSlot;
         /// <summary>
-        /// Provides access to the underlying input action "HotBar/prevSlot".
+        /// Provides access to the underlying input action "UI/prevSlot".
         /// </summary>
-        public InputAction @prevSlot => m_Wrapper.m_HotBar_prevSlot;
+        public InputAction @prevSlot => m_Wrapper.m_UI_prevSlot;
         /// <summary>
-        /// Provides access to the underlying input action "HotBar/useItem".
+        /// Provides access to the underlying input action "UI/useItem".
         /// </summary>
-        public InputAction @useItem => m_Wrapper.m_HotBar_useItem;
+        public InputAction @useItem => m_Wrapper.m_UI_useItem;
         /// <summary>
-        /// Provides access to the underlying input action "HotBar/selectKeys".
+        /// Provides access to the underlying input action "UI/selectKeys".
         /// </summary>
-        public InputAction @selectKeys => m_Wrapper.m_HotBar_selectKeys;
+        public InputAction @selectKeys => m_Wrapper.m_UI_selectKeys;
+        /// <summary>
+        /// Provides access to the underlying input action "UI/ToggleInventory".
+        /// </summary>
+        public InputAction @ToggleInventory => m_Wrapper.m_UI_ToggleInventory;
+        /// <summary>
+        /// Provides access to the underlying input action "UI/Rotate".
+        /// </summary>
+        public InputAction @Rotate => m_Wrapper.m_UI_Rotate;
+        /// <summary>
+        /// Provides access to the underlying input action "UI/Vicinity".
+        /// </summary>
+        public InputAction @Vicinity => m_Wrapper.m_UI_Vicinity;
+        /// <summary>
+        /// Provides access to the underlying input action "UI/OpenLoot".
+        /// </summary>
+        public InputAction @OpenLoot => m_Wrapper.m_UI_OpenLoot;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
-        public InputActionMap Get() { return m_Wrapper.m_HotBar; }
+        public InputActionMap Get() { return m_Wrapper.m_UI; }
         /// <inheritdoc cref="UnityEngine.InputSystem.InputActionMap.Enable()" />
         public void Enable() { Get().Enable(); }
         /// <inheritdoc cref="UnityEngine.InputSystem.InputActionMap.Disable()" />
@@ -940,9 +1044,9 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         /// <inheritdoc cref="UnityEngine.InputSystem.InputActionMap.enabled" />
         public bool enabled => Get().enabled;
         /// <summary>
-        /// Implicitly converts an <see ref="HotBarActions" /> to an <see ref="InputActionMap" /> instance.
+        /// Implicitly converts an <see ref="UIActions" /> to an <see ref="InputActionMap" /> instance.
         /// </summary>
-        public static implicit operator InputActionMap(HotBarActions set) { return set.Get(); }
+        public static implicit operator InputActionMap(UIActions set) { return set.Get(); }
         /// <summary>
         /// Adds <see cref="InputAction.started"/>, <see cref="InputAction.performed"/> and <see cref="InputAction.canceled"/> callbacks provided via <param cref="instance" /> on all input actions contained in this map.
         /// </summary>
@@ -950,11 +1054,11 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         /// <remarks>
         /// If <paramref name="instance" /> is <c>null</c> or <paramref name="instance"/> have already been added this method does nothing.
         /// </remarks>
-        /// <seealso cref="HotBarActions" />
-        public void AddCallbacks(IHotBarActions instance)
+        /// <seealso cref="UIActions" />
+        public void AddCallbacks(IUIActions instance)
         {
-            if (instance == null || m_Wrapper.m_HotBarActionsCallbackInterfaces.Contains(instance)) return;
-            m_Wrapper.m_HotBarActionsCallbackInterfaces.Add(instance);
+            if (instance == null || m_Wrapper.m_UIActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_UIActionsCallbackInterfaces.Add(instance);
             @nextSlot.started += instance.OnNextSlot;
             @nextSlot.performed += instance.OnNextSlot;
             @nextSlot.canceled += instance.OnNextSlot;
@@ -967,6 +1071,18 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             @selectKeys.started += instance.OnSelectKeys;
             @selectKeys.performed += instance.OnSelectKeys;
             @selectKeys.canceled += instance.OnSelectKeys;
+            @ToggleInventory.started += instance.OnToggleInventory;
+            @ToggleInventory.performed += instance.OnToggleInventory;
+            @ToggleInventory.canceled += instance.OnToggleInventory;
+            @Rotate.started += instance.OnRotate;
+            @Rotate.performed += instance.OnRotate;
+            @Rotate.canceled += instance.OnRotate;
+            @Vicinity.started += instance.OnVicinity;
+            @Vicinity.performed += instance.OnVicinity;
+            @Vicinity.canceled += instance.OnVicinity;
+            @OpenLoot.started += instance.OnOpenLoot;
+            @OpenLoot.performed += instance.OnOpenLoot;
+            @OpenLoot.canceled += instance.OnOpenLoot;
         }
 
         /// <summary>
@@ -975,8 +1091,8 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         /// <remarks>
         /// Calling this method when <paramref name="instance" /> have not previously been registered has no side-effects.
         /// </remarks>
-        /// <seealso cref="HotBarActions" />
-        private void UnregisterCallbacks(IHotBarActions instance)
+        /// <seealso cref="UIActions" />
+        private void UnregisterCallbacks(IUIActions instance)
         {
             @nextSlot.started -= instance.OnNextSlot;
             @nextSlot.performed -= instance.OnNextSlot;
@@ -990,15 +1106,27 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             @selectKeys.started -= instance.OnSelectKeys;
             @selectKeys.performed -= instance.OnSelectKeys;
             @selectKeys.canceled -= instance.OnSelectKeys;
+            @ToggleInventory.started -= instance.OnToggleInventory;
+            @ToggleInventory.performed -= instance.OnToggleInventory;
+            @ToggleInventory.canceled -= instance.OnToggleInventory;
+            @Rotate.started -= instance.OnRotate;
+            @Rotate.performed -= instance.OnRotate;
+            @Rotate.canceled -= instance.OnRotate;
+            @Vicinity.started -= instance.OnVicinity;
+            @Vicinity.performed -= instance.OnVicinity;
+            @Vicinity.canceled -= instance.OnVicinity;
+            @OpenLoot.started -= instance.OnOpenLoot;
+            @OpenLoot.performed -= instance.OnOpenLoot;
+            @OpenLoot.canceled -= instance.OnOpenLoot;
         }
 
         /// <summary>
-        /// Unregisters <param cref="instance" /> and unregisters all input action callbacks via <see cref="HotBarActions.UnregisterCallbacks(IHotBarActions)" />.
+        /// Unregisters <param cref="instance" /> and unregisters all input action callbacks via <see cref="UIActions.UnregisterCallbacks(IUIActions)" />.
         /// </summary>
-        /// <seealso cref="HotBarActions.UnregisterCallbacks(IHotBarActions)" />
-        public void RemoveCallbacks(IHotBarActions instance)
+        /// <seealso cref="UIActions.UnregisterCallbacks(IUIActions)" />
+        public void RemoveCallbacks(IUIActions instance)
         {
-            if (m_Wrapper.m_HotBarActionsCallbackInterfaces.Remove(instance))
+            if (m_Wrapper.m_UIActionsCallbackInterfaces.Remove(instance))
                 UnregisterCallbacks(instance);
         }
 
@@ -1008,21 +1136,21 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         /// <remarks>
         /// If <paramref name="instance" /> is <c>null</c>, calling this method will only unregister all existing callbacks but not register any new callbacks.
         /// </remarks>
-        /// <seealso cref="HotBarActions.AddCallbacks(IHotBarActions)" />
-        /// <seealso cref="HotBarActions.RemoveCallbacks(IHotBarActions)" />
-        /// <seealso cref="HotBarActions.UnregisterCallbacks(IHotBarActions)" />
-        public void SetCallbacks(IHotBarActions instance)
+        /// <seealso cref="UIActions.AddCallbacks(IUIActions)" />
+        /// <seealso cref="UIActions.RemoveCallbacks(IUIActions)" />
+        /// <seealso cref="UIActions.UnregisterCallbacks(IUIActions)" />
+        public void SetCallbacks(IUIActions instance)
         {
-            foreach (var item in m_Wrapper.m_HotBarActionsCallbackInterfaces)
+            foreach (var item in m_Wrapper.m_UIActionsCallbackInterfaces)
                 UnregisterCallbacks(item);
-            m_Wrapper.m_HotBarActionsCallbackInterfaces.Clear();
+            m_Wrapper.m_UIActionsCallbackInterfaces.Clear();
             AddCallbacks(instance);
         }
     }
     /// <summary>
-    /// Provides a new <see cref="HotBarActions" /> instance referencing this action map.
+    /// Provides a new <see cref="UIActions" /> instance referencing this action map.
     /// </summary>
-    public HotBarActions @HotBar => new HotBarActions(this);
+    public UIActions @UI => new UIActions(this);
     /// <summary>
     /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "Player" which allows adding and removing callbacks.
     /// </summary>
@@ -1123,11 +1251,11 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         void OnToggleMenuAction(InputAction.CallbackContext context);
     }
     /// <summary>
-    /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "HotBar" which allows adding and removing callbacks.
+    /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "UI" which allows adding and removing callbacks.
     /// </summary>
-    /// <seealso cref="HotBarActions.AddCallbacks(IHotBarActions)" />
-    /// <seealso cref="HotBarActions.RemoveCallbacks(IHotBarActions)" />
-    public interface IHotBarActions
+    /// <seealso cref="UIActions.AddCallbacks(IUIActions)" />
+    /// <seealso cref="UIActions.RemoveCallbacks(IUIActions)" />
+    public interface IUIActions
     {
         /// <summary>
         /// Method invoked when associated input action "nextSlot" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
@@ -1157,5 +1285,33 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnSelectKeys(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "ToggleInventory" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnToggleInventory(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Rotate" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnRotate(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Vicinity" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnVicinity(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "OpenLoot" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnOpenLoot(InputAction.CallbackContext context);
     }
 }

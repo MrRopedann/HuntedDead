@@ -1960,7 +1960,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 674987876932423961, guid: 39d504e8c6bd86d45ae46561e9562f3e, type: 3}
       propertyPath: m_Name
-      value: ThirdPersonController
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 6905917332590202031, guid: 39d504e8c6bd86d45ae46561e9562f3e, type: 3}
       propertyPath: m_Mesh
