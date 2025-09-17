@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e24d55baba175943ac7eeea6856defd, type: 3}
+  m_Name: Wood_Def
+  m_EditorClassIdentifier: 
+  id: {fileID: 11400000, guid: 06b594416e4df5048a40b9c6dc630a38, type: 2}
+  kind: 0
+  is3D: 0
+  size2D: {x: 1, y: 1, z: 1}
+  size3D: {x: 1, y: 1, z: 1}
+  stackable: 1
+  canRotate: 0
+  equippable: 0
+  validEquipSlots: []
+  icon: {fileID: 21300000, guid: 42cd17b497daba147802975855b027dd, type: 3}
+  worldPrefab: {fileID: 1350644683509884, guid: 76268956b264f0146950f405edf04c42, type: 3}
+  qualities:
+  - {fileID: 11400000, guid: 09da82b51b18f4548bdc2935b5222a2f, type: 2}

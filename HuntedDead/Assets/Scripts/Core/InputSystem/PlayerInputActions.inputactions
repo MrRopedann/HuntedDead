@@ -319,39 +319,12 @@
             "id": "145b52e4-cb3d-4379-80fb-e29dc5923217",
             "actions": [
                 {
-                    "name": "nextSlot",
-                    "type": "Button",
-                    "id": "9d854b40-7912-4976-9374-141d58bec47a",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "prevSlot",
-                    "type": "Button",
-                    "id": "6c57cc84-d530-4aac-9040-f54d4541ece1",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "useItem",
-                    "type": "Button",
-                    "id": "c6f366c0-0906-4f8c-8ae8-8816622b5276",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
                     "name": "selectKeys",
                     "type": "Button",
                     "id": "e20b6a31-0e78-48fb-8159-3441556e1f79",
                     "expectedControlType": "",
                     "processors": "",
-                    "interactions": "",
+                    "interactions": "Press",
                     "initialStateCheck": false
                 },
                 {
@@ -360,7 +333,7 @@
                     "id": "40633d6e-4773-46fb-93ee-66a53edaddd7",
                     "expectedControlType": "",
                     "processors": "",
-                    "interactions": "",
+                    "interactions": "Press",
                     "initialStateCheck": false
                 },
                 {
@@ -369,7 +342,7 @@
                     "id": "f50ae9cd-717f-4f0f-8c29-10c6a206d347",
                     "expectedControlType": "",
                     "processors": "",
-                    "interactions": "",
+                    "interactions": "Press",
                     "initialStateCheck": false
                 },
                 {
@@ -378,7 +351,7 @@
                     "id": "974f37f6-09f4-4b2a-b4c0-a6174d22229f",
                     "expectedControlType": "",
                     "processors": "",
-                    "interactions": "",
+                    "interactions": "Press",
                     "initialStateCheck": false
                 },
                 {
@@ -387,44 +360,11 @@
                     "id": "1197611f-a677-4d70-aa37-ceda66ef121d",
                     "expectedControlType": "",
                     "processors": "",
-                    "interactions": "",
+                    "interactions": "Press",
                     "initialStateCheck": false
                 }
             ],
             "bindings": [
-                {
-                    "name": "",
-                    "id": "baa87dd7-a753-44c4-b121-8849b37a9fb0",
-                    "path": "",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "nextSlot",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "e19ceaf2-56f2-42aa-a9fd-7a3b3b7a120a",
-                    "path": "",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "prevSlot",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "19159a18-11d2-45a6-bc2d-7a717fb8b472",
-                    "path": "",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "useItem",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
                 {
                     "name": "",
                     "id": "676e1ceb-4387-4890-90b8-c28900214523",
@@ -560,5 +500,22 @@
             ]
         }
     ],
-    "controlSchemes": []
+    "controlSchemes": [
+        {
+            "name": "Keyboard&Mouse",
+            "bindingGroup": "Keyboard&Mouse",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<Mouse>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
 }

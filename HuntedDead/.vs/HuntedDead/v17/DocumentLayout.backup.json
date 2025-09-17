@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\containerinstance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0438\u0433\u0440\u044B\\hunteddead\\hunteddead\\assets\\scripts\\gamesystems\\inventorysystem\\containerinstance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\containerinstance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0438\u0433\u0440\u044B\\hunteddead\\hunteddead\\assets\\scripts\\gamesystems\\inventorysystem\\input\\inputrouter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\input\\inputrouter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\input\\inputrouter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -351,8 +351,7 @@
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\Input\\InputRouter.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAiwCgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-16T17:03:54.483Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-16T17:03:54.483Z"
             },
             {
               "$type": "Document",

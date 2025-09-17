@@ -405,39 +405,12 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             ""id"": ""145b52e4-cb3d-4379-80fb-e29dc5923217"",
             ""actions"": [
                 {
-                    ""name"": ""nextSlot"",
-                    ""type"": ""Button"",
-                    ""id"": ""9d854b40-7912-4976-9374-141d58bec47a"",
-                    ""expectedControlType"": """",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""prevSlot"",
-                    ""type"": ""Button"",
-                    ""id"": ""6c57cc84-d530-4aac-9040-f54d4541ece1"",
-                    ""expectedControlType"": """",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""useItem"",
-                    ""type"": ""Button"",
-                    ""id"": ""c6f366c0-0906-4f8c-8ae8-8816622b5276"",
-                    ""expectedControlType"": """",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
                     ""name"": ""selectKeys"",
                     ""type"": ""Button"",
                     ""id"": ""e20b6a31-0e78-48fb-8159-3441556e1f79"",
                     ""expectedControlType"": """",
                     ""processors"": """",
-                    ""interactions"": """",
+                    ""interactions"": ""Press"",
                     ""initialStateCheck"": false
                 },
                 {
@@ -446,7 +419,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                     ""id"": ""40633d6e-4773-46fb-93ee-66a53edaddd7"",
                     ""expectedControlType"": """",
                     ""processors"": """",
-                    ""interactions"": """",
+                    ""interactions"": ""Press"",
                     ""initialStateCheck"": false
                 },
                 {
@@ -455,7 +428,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                     ""id"": ""f50ae9cd-717f-4f0f-8c29-10c6a206d347"",
                     ""expectedControlType"": """",
                     ""processors"": """",
-                    ""interactions"": """",
+                    ""interactions"": ""Press"",
                     ""initialStateCheck"": false
                 },
                 {
@@ -464,7 +437,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                     ""id"": ""974f37f6-09f4-4b2a-b4c0-a6174d22229f"",
                     ""expectedControlType"": """",
                     ""processors"": """",
-                    ""interactions"": """",
+                    ""interactions"": ""Press"",
                     ""initialStateCheck"": false
                 },
                 {
@@ -473,44 +446,11 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                     ""id"": ""1197611f-a677-4d70-aa37-ceda66ef121d"",
                     ""expectedControlType"": """",
                     ""processors"": """",
-                    ""interactions"": """",
+                    ""interactions"": ""Press"",
                     ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
-                {
-                    ""name"": """",
-                    ""id"": ""baa87dd7-a753-44c4-b121-8849b37a9fb0"",
-                    ""path"": """",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""nextSlot"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""e19ceaf2-56f2-42aa-a9fd-7a3b3b7a120a"",
-                    ""path"": """",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""prevSlot"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""19159a18-11d2-45a6-bc2d-7a717fb8b472"",
-                    ""path"": """",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""useItem"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
                 {
                     ""name"": """",
                     ""id"": ""676e1ceb-4387-4890-90b8-c28900214523"",
@@ -646,7 +586,24 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             ]
         }
     ],
-    ""controlSchemes"": []
+    ""controlSchemes"": [
+        {
+            ""name"": ""Keyboard&Mouse"",
+            ""bindingGroup"": ""Keyboard&Mouse"",
+            ""devices"": [
+                {
+                    ""devicePath"": ""<Keyboard>"",
+                    ""isOptional"": false,
+                    ""isOR"": false
+                },
+                {
+                    ""devicePath"": ""<Mouse>"",
+                    ""isOptional"": false,
+                    ""isOR"": false
+                }
+            ]
+        }
+    ]
 }");
         // Player
         m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
@@ -665,9 +622,6 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         m_Player_ToggleMenuAction = m_Player.FindAction("ToggleMenuAction", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
-        m_UI_nextSlot = m_UI.FindAction("nextSlot", throwIfNotFound: true);
-        m_UI_prevSlot = m_UI.FindAction("prevSlot", throwIfNotFound: true);
-        m_UI_useItem = m_UI.FindAction("useItem", throwIfNotFound: true);
         m_UI_selectKeys = m_UI.FindAction("selectKeys", throwIfNotFound: true);
         m_UI_ToggleInventory = m_UI.FindAction("ToggleInventory", throwIfNotFound: true);
         m_UI_Rotate = m_UI.FindAction("Rotate", throwIfNotFound: true);
@@ -982,9 +936,6 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
     // UI
     private readonly InputActionMap m_UI;
     private List<IUIActions> m_UIActionsCallbackInterfaces = new List<IUIActions>();
-    private readonly InputAction m_UI_nextSlot;
-    private readonly InputAction m_UI_prevSlot;
-    private readonly InputAction m_UI_useItem;
     private readonly InputAction m_UI_selectKeys;
     private readonly InputAction m_UI_ToggleInventory;
     private readonly InputAction m_UI_Rotate;
@@ -1001,18 +952,6 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         /// Construct a new instance of the input action map wrapper class.
         /// </summary>
         public UIActions(@PlayerInputActions wrapper) { m_Wrapper = wrapper; }
-        /// <summary>
-        /// Provides access to the underlying input action "UI/nextSlot".
-        /// </summary>
-        public InputAction @nextSlot => m_Wrapper.m_UI_nextSlot;
-        /// <summary>
-        /// Provides access to the underlying input action "UI/prevSlot".
-        /// </summary>
-        public InputAction @prevSlot => m_Wrapper.m_UI_prevSlot;
-        /// <summary>
-        /// Provides access to the underlying input action "UI/useItem".
-        /// </summary>
-        public InputAction @useItem => m_Wrapper.m_UI_useItem;
         /// <summary>
         /// Provides access to the underlying input action "UI/selectKeys".
         /// </summary>
@@ -1059,15 +998,6 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         {
             if (instance == null || m_Wrapper.m_UIActionsCallbackInterfaces.Contains(instance)) return;
             m_Wrapper.m_UIActionsCallbackInterfaces.Add(instance);
-            @nextSlot.started += instance.OnNextSlot;
-            @nextSlot.performed += instance.OnNextSlot;
-            @nextSlot.canceled += instance.OnNextSlot;
-            @prevSlot.started += instance.OnPrevSlot;
-            @prevSlot.performed += instance.OnPrevSlot;
-            @prevSlot.canceled += instance.OnPrevSlot;
-            @useItem.started += instance.OnUseItem;
-            @useItem.performed += instance.OnUseItem;
-            @useItem.canceled += instance.OnUseItem;
             @selectKeys.started += instance.OnSelectKeys;
             @selectKeys.performed += instance.OnSelectKeys;
             @selectKeys.canceled += instance.OnSelectKeys;
@@ -1094,15 +1024,6 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         /// <seealso cref="UIActions" />
         private void UnregisterCallbacks(IUIActions instance)
         {
-            @nextSlot.started -= instance.OnNextSlot;
-            @nextSlot.performed -= instance.OnNextSlot;
-            @nextSlot.canceled -= instance.OnNextSlot;
-            @prevSlot.started -= instance.OnPrevSlot;
-            @prevSlot.performed -= instance.OnPrevSlot;
-            @prevSlot.canceled -= instance.OnPrevSlot;
-            @useItem.started -= instance.OnUseItem;
-            @useItem.performed -= instance.OnUseItem;
-            @useItem.canceled -= instance.OnUseItem;
             @selectKeys.started -= instance.OnSelectKeys;
             @selectKeys.performed -= instance.OnSelectKeys;
             @selectKeys.canceled -= instance.OnSelectKeys;
@@ -1151,6 +1072,19 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
     /// Provides a new <see cref="UIActions" /> instance referencing this action map.
     /// </summary>
     public UIActions @UI => new UIActions(this);
+    private int m_KeyboardMouseSchemeIndex = -1;
+    /// <summary>
+    /// Provides access to the input control scheme.
+    /// </summary>
+    /// <seealso cref="UnityEngine.InputSystem.InputControlScheme" />
+    public InputControlScheme KeyboardMouseScheme
+    {
+        get
+        {
+            if (m_KeyboardMouseSchemeIndex == -1) m_KeyboardMouseSchemeIndex = asset.FindControlSchemeIndex("Keyboard&Mouse");
+            return asset.controlSchemes[m_KeyboardMouseSchemeIndex];
+        }
+    }
     /// <summary>
     /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "Player" which allows adding and removing callbacks.
     /// </summary>
@@ -1257,27 +1191,6 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
     /// <seealso cref="UIActions.RemoveCallbacks(IUIActions)" />
     public interface IUIActions
     {
-        /// <summary>
-        /// Method invoked when associated input action "nextSlot" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
-        /// </summary>
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnNextSlot(InputAction.CallbackContext context);
-        /// <summary>
-        /// Method invoked when associated input action "prevSlot" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
-        /// </summary>
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnPrevSlot(InputAction.CallbackContext context);
-        /// <summary>
-        /// Method invoked when associated input action "useItem" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
-        /// </summary>
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnUseItem(InputAction.CallbackContext context);
         /// <summary>
         /// Method invoked when associated input action "selectKeys" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
         /// </summary>
