@@ -1,165 +1,173 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\",
+  "WorkspaceRootPath": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\ui\\dragghost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0438\u0433\u0440\u044B\\hunteddead\\hunteddead\\assets\\scripts\\gamesystems\\playermovementsystem\\thirdpersoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\playermovementsystem\\thirdpersoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0438\u0433\u0440\u044B\\hunteddead\\hunteddead\\assets\\scripts\\gamesystems\\playermovementsystem\\cameracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\playermovementsystem\\cameracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0438\u0433\u0440\u044B\\hunteddead\\hunteddead\\assets\\scripts\\gamesystems\\inventorysystem\\ui\\dragghost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\ui\\dragghost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\users\\brt\\desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\huntedsurvival\\hunteddead\\assets\\scripts\\gamesystems\\inventorysystem\\containerinstance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\containerinstance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\containerinstance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\input\\inputrouter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\input\\inputrouter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\input\\inputrouter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\ui\\inventorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\ui\\inventorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\ui\\inventorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\ui\\dragcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\ui\\dragcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\ui\\dragcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\ui\\hotbarinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\ui\\hotbarinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\ui\\hotbarinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\ui\\hotbarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\ui\\hotbarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\ui\\hotbarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\ui\\hotbardef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\ui\\hotbardef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\ui\\hotbardef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\ui\\vicinitypanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\ui\\vicinitypanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\ui\\vicinitypanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\ui\\lootpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\ui\\lootpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\ui\\lootpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\ui\\lootrowview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\ui\\lootrowview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\ui\\lootrowview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\ui\\equipmentpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\ui\\equipmentpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\ui\\equipmentpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\ui\\inventorypanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\ui\\inventorypanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\ui\\inventorypanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\ui\\uipool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\ui\\uipool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\ui\\uipool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\ui\\gridcellview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\ui\\gridcellview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\ui\\gridcellview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\ui\\itemicon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\ui\\itemicon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\ui\\itemicon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\save\\savemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\save\\savemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\save\\savemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\save\\savesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\save\\savesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\save\\savesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\save\\savedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\save\\savedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\save\\savedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\world\\vicinityscanner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\world\\vicinityscanner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\world\\vicinityscanner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\world\\lootsourcechest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\world\\lootsourcechest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\world\\lootsourcechest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\world\\ilootsource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\world\\ilootsource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\world\\ilootsource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\world\\worlditem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\world\\worlditem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\world\\worlditem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\state\\playerstaterelay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\state\\playerstaterelay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\state\\playerstaterelay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\state\\combattimer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\state\\combattimer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\state\\combattimer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\state\\actiongate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\state\\actiongate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\state\\actiongate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\state\\playerstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\state\\playerstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\state\\playerstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\playerinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\playerinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\playerinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\equipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\equipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\equipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\placement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\placement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\placement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\gridalgo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\gridalgo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\gridalgo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\containerdef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\containerdef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\containerdef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\cellref.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\cellref.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\cellref.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\griditem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\griditem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\griditem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\itemstack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\itemstack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\itemstack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\items\\variantkey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\items\\variantkey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\items\\variantkey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\items\\itemdef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\items\\itemdef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\items\\itemdef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\items\\itemquality.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\items\\itemquality.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\items\\itemquality.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\items\\itemid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\items\\itemid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\items\\itemid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\core\\inventorysystem\\dbregistry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\assets\\scripts\\core\\inventorysystem\\dbregistry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\core\\inventorysystem\\dbregistry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -170,15 +178,41 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
+              "Title": "CameraController.cs",
+              "DocumentMoniker": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\PlayerMovementSystem\\CameraController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\PlayerMovementSystem\\CameraController.cs",
+              "ToolTip": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\PlayerMovementSystem\\CameraController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GameSystems\\PlayerMovementSystem\\CameraController.cs",
+              "ViewState": "AgIAAK0AAAAAAAAAAAAYwNAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T17:55:23.181Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ThirdPersonController.cs",
+              "DocumentMoniker": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\PlayerMovementSystem\\ThirdPersonController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\PlayerMovementSystem\\ThirdPersonController.cs",
+              "ToolTip": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\PlayerMovementSystem\\ThirdPersonController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GameSystems\\PlayerMovementSystem\\ThirdPersonController.cs",
+              "ViewState": "AgIAAP8AAAAAAAAAAAAYwBQBAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T17:55:18.773Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "HotbarController.cs",
-              "DocumentMoniker": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\HotbarController.cs",
+              "DocumentMoniker": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\HotbarController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\HotbarController.cs",
-              "ToolTip": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\HotbarController.cs",
+              "ToolTip": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\HotbarController.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\HotbarController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -186,11 +220,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "HotbarDef.cs",
-              "DocumentMoniker": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\HotbarDef.cs",
+              "DocumentMoniker": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\HotbarDef.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\HotbarDef.cs",
-              "ToolTip": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\HotbarDef.cs",
+              "ToolTip": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\HotbarDef.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\HotbarDef.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -198,11 +232,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "VicinityPanel.cs",
-              "DocumentMoniker": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\VicinityPanel.cs",
+              "DocumentMoniker": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\VicinityPanel.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\VicinityPanel.cs",
-              "ToolTip": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\VicinityPanel.cs",
+              "ToolTip": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\VicinityPanel.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\VicinityPanel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -210,11 +244,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "LootPanel.cs",
-              "DocumentMoniker": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\LootPanel.cs",
+              "DocumentMoniker": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\LootPanel.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\LootPanel.cs",
-              "ToolTip": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\LootPanel.cs",
+              "ToolTip": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\LootPanel.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\LootPanel.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAAiwCsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -222,11 +256,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "LootRowView.cs",
-              "DocumentMoniker": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\LootRowView.cs",
+              "DocumentMoniker": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\LootRowView.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\LootRowView.cs",
-              "ToolTip": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\LootRowView.cs",
+              "ToolTip": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\LootRowView.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\LootRowView.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -234,11 +268,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "EquipmentPanel.cs",
-              "DocumentMoniker": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\EquipmentPanel.cs",
+              "DocumentMoniker": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\EquipmentPanel.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\EquipmentPanel.cs",
-              "ToolTip": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\EquipmentPanel.cs",
+              "ToolTip": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\EquipmentPanel.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\EquipmentPanel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -246,11 +280,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "InventoryPanel.cs",
-              "DocumentMoniker": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\InventoryPanel.cs",
+              "DocumentMoniker": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\InventoryPanel.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\InventoryPanel.cs",
-              "ToolTip": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\InventoryPanel.cs",
+              "ToolTip": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\InventoryPanel.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\InventoryPanel.cs",
               "ViewState": "AgIAAG0AAAAAAAAAAAAiwJQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -258,11 +292,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "UiPool.cs",
-              "DocumentMoniker": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\UiPool.cs",
+              "DocumentMoniker": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\UiPool.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\UiPool.cs",
-              "ToolTip": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\UiPool.cs",
+              "ToolTip": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\UiPool.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\UiPool.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -270,11 +304,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "DragGhost.cs",
-              "DocumentMoniker": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\DragGhost.cs",
+              "DocumentMoniker": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\DragGhost.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\DragGhost.cs",
-              "ToolTip": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\DragGhost.cs",
+              "ToolTip": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\DragGhost.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\DragGhost.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -283,11 +317,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "GridCellView.cs",
-              "DocumentMoniker": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\GridCellView.cs",
+              "DocumentMoniker": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\GridCellView.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\GridCellView.cs",
-              "ToolTip": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\GridCellView.cs",
+              "ToolTip": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\GridCellView.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\GridCellView.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -295,24 +329,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "ContainerInstance.cs",
-              "DocumentMoniker": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\ContainerInstance.cs",
+              "DocumentMoniker": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\ContainerInstance.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\InventorySystem\\ContainerInstance.cs",
-              "ToolTip": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\ContainerInstance.cs",
+              "ToolTip": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\ContainerInstance.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\ContainerInstance.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAQwBMAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-16T16:53:15.533Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-16T16:53:15.533Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "HotbarInput.cs",
-              "DocumentMoniker": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\HotbarInput.cs",
+              "DocumentMoniker": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\HotbarInput.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\HotbarInput.cs",
-              "ToolTip": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\HotbarInput.cs",
+              "ToolTip": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\HotbarInput.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\HotbarInput.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -320,11 +353,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "DragController.cs",
-              "DocumentMoniker": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\DragController.cs",
+              "DocumentMoniker": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\DragController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\DragController.cs",
-              "ToolTip": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\DragController.cs",
+              "ToolTip": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\DragController.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\DragController.cs",
               "ViewState": "AgIAACEAAAAAAAAAAAAiwEgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -332,11 +365,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "InventoryController.cs",
-              "DocumentMoniker": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\InventoryController.cs",
+              "DocumentMoniker": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\InventoryController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\InventoryController.cs",
-              "ToolTip": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\InventoryController.cs",
+              "ToolTip": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\InventoryController.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\InventoryController.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAAiwDsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -344,11 +377,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "InputRouter.cs",
-              "DocumentMoniker": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\Input\\InputRouter.cs",
+              "DocumentMoniker": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\Input\\InputRouter.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\InventorySystem\\Input\\InputRouter.cs",
-              "ToolTip": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\Input\\InputRouter.cs",
+              "ToolTip": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\Input\\InputRouter.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\Input\\InputRouter.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAiwCgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -356,11 +389,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "ItemIcon.cs",
-              "DocumentMoniker": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\ItemIcon.cs",
+              "DocumentMoniker": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\ItemIcon.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\ItemIcon.cs",
-              "ToolTip": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\ItemIcon.cs",
+              "ToolTip": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\ItemIcon.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\ItemIcon.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -368,11 +401,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "SaveManager.cs",
-              "DocumentMoniker": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\Save\\SaveManager.cs",
+              "DocumentMoniker": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\Save\\SaveManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\InventorySystem\\Save\\SaveManager.cs",
-              "ToolTip": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\Save\\SaveManager.cs",
+              "ToolTip": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\Save\\SaveManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\Save\\SaveManager.cs",
               "ViewState": "AgIAABgAAAAAAAAAAAAiwEQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -380,11 +413,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "SaveSystem.cs",
-              "DocumentMoniker": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\Save\\SaveSystem.cs",
+              "DocumentMoniker": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\Save\\SaveSystem.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\InventorySystem\\Save\\SaveSystem.cs",
-              "ToolTip": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\Save\\SaveSystem.cs",
+              "ToolTip": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\Save\\SaveSystem.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\Save\\SaveSystem.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -392,11 +425,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "SaveDto.cs",
-              "DocumentMoniker": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\Save\\SaveDto.cs",
+              "DocumentMoniker": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\Save\\SaveDto.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\InventorySystem\\Save\\SaveDto.cs",
-              "ToolTip": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\Save\\SaveDto.cs",
+              "ToolTip": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\Save\\SaveDto.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\Save\\SaveDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -404,11 +437,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "VicinityScanner.cs",
-              "DocumentMoniker": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\World\\VicinityScanner.cs",
+              "DocumentMoniker": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\World\\VicinityScanner.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\InventorySystem\\World\\VicinityScanner.cs",
-              "ToolTip": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\World\\VicinityScanner.cs",
+              "ToolTip": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\World\\VicinityScanner.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\World\\VicinityScanner.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAAiwDgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -416,11 +449,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "LootSourceChest.cs",
-              "DocumentMoniker": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\World\\LootSourceChest.cs",
+              "DocumentMoniker": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\World\\LootSourceChest.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\InventorySystem\\World\\LootSourceChest.cs",
-              "ToolTip": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\World\\LootSourceChest.cs",
+              "ToolTip": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\World\\LootSourceChest.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\World\\LootSourceChest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -428,11 +461,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "ILootSource.cs",
-              "DocumentMoniker": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\World\\ILootSource.cs",
+              "DocumentMoniker": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\World\\ILootSource.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\InventorySystem\\World\\ILootSource.cs",
-              "ToolTip": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\World\\ILootSource.cs",
+              "ToolTip": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\World\\ILootSource.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\World\\ILootSource.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAA6wAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -440,11 +473,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "WorldItem.cs",
-              "DocumentMoniker": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\World\\WorldItem.cs",
+              "DocumentMoniker": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\World\\WorldItem.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\InventorySystem\\World\\WorldItem.cs",
-              "ToolTip": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\World\\WorldItem.cs",
+              "ToolTip": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\World\\WorldItem.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\World\\WorldItem.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -452,11 +485,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "PlayerStateRelay.cs",
-              "DocumentMoniker": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\State\\PlayerStateRelay.cs",
+              "DocumentMoniker": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\State\\PlayerStateRelay.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\InventorySystem\\State\\PlayerStateRelay.cs",
-              "ToolTip": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\State\\PlayerStateRelay.cs",
+              "ToolTip": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\State\\PlayerStateRelay.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\State\\PlayerStateRelay.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -464,11 +497,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "CombatTimer.cs",
-              "DocumentMoniker": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\State\\CombatTimer.cs",
+              "DocumentMoniker": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\State\\CombatTimer.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\InventorySystem\\State\\CombatTimer.cs",
-              "ToolTip": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\State\\CombatTimer.cs",
+              "ToolTip": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\State\\CombatTimer.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\State\\CombatTimer.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAA2wCcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -476,11 +509,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "ActionGate.cs",
-              "DocumentMoniker": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\State\\ActionGate.cs",
+              "DocumentMoniker": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\State\\ActionGate.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\InventorySystem\\State\\ActionGate.cs",
-              "ToolTip": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\State\\ActionGate.cs",
+              "ToolTip": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\State\\ActionGate.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\State\\ActionGate.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAA6wAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -488,11 +521,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "PlayerState.cs",
-              "DocumentMoniker": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\State\\PlayerState.cs",
+              "DocumentMoniker": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\State\\PlayerState.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\InventorySystem\\State\\PlayerState.cs",
-              "ToolTip": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\State\\PlayerState.cs",
+              "ToolTip": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\State\\PlayerState.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\State\\PlayerState.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAA6wAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -500,11 +533,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 29,
               "Title": "PlayerInventory.cs",
-              "DocumentMoniker": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\PlayerInventory.cs",
+              "DocumentMoniker": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\PlayerInventory.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\InventorySystem\\PlayerInventory.cs",
-              "ToolTip": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\PlayerInventory.cs",
+              "ToolTip": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\PlayerInventory.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\PlayerInventory.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -512,11 +545,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 30,
               "Title": "Equipment.cs",
-              "DocumentMoniker": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\Equipment.cs",
+              "DocumentMoniker": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\Equipment.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\InventorySystem\\Equipment.cs",
-              "ToolTip": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\Equipment.cs",
+              "ToolTip": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\Equipment.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\Equipment.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -524,11 +557,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 31,
               "Title": "Placement.cs",
-              "DocumentMoniker": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\Placement.cs",
+              "DocumentMoniker": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\Placement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\InventorySystem\\Placement.cs",
-              "ToolTip": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\Placement.cs",
+              "ToolTip": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\Placement.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\Placement.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAA6wAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -536,11 +569,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 32,
               "Title": "GridAlgo.cs",
-              "DocumentMoniker": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\GridAlgo.cs",
+              "DocumentMoniker": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\GridAlgo.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\InventorySystem\\GridAlgo.cs",
-              "ToolTip": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\GridAlgo.cs",
+              "ToolTip": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\GridAlgo.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\GridAlgo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -548,11 +581,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 33,
               "Title": "ContainerDef.cs",
-              "DocumentMoniker": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\ContainerDef.cs",
+              "DocumentMoniker": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\ContainerDef.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\InventorySystem\\ContainerDef.cs",
-              "ToolTip": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\ContainerDef.cs",
+              "ToolTip": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\ContainerDef.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\ContainerDef.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -560,11 +593,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 34,
               "Title": "CellRef.cs",
-              "DocumentMoniker": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\CellRef.cs",
+              "DocumentMoniker": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\CellRef.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\InventorySystem\\CellRef.cs",
-              "ToolTip": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\CellRef.cs",
+              "ToolTip": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\CellRef.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\CellRef.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -572,11 +605,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 35,
               "Title": "GridItem.cs",
-              "DocumentMoniker": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\GridItem.cs",
+              "DocumentMoniker": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\GridItem.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\InventorySystem\\GridItem.cs",
-              "ToolTip": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\GridItem.cs",
+              "ToolTip": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\GridItem.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\GridItem.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -584,11 +617,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 36,
               "Title": "ItemStack.cs",
-              "DocumentMoniker": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\ItemStack.cs",
+              "DocumentMoniker": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\ItemStack.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\InventorySystem\\ItemStack.cs",
-              "ToolTip": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\ItemStack.cs",
+              "ToolTip": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\ItemStack.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\ItemStack.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -596,11 +629,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 37,
               "Title": "VariantKey.cs",
-              "DocumentMoniker": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\Items\\VariantKey.cs",
+              "DocumentMoniker": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\Items\\VariantKey.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\InventorySystem\\Items\\VariantKey.cs",
-              "ToolTip": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\Items\\VariantKey.cs",
+              "ToolTip": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\Items\\VariantKey.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\Items\\VariantKey.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -608,11 +641,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 38,
               "Title": "ItemDef.cs",
-              "DocumentMoniker": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\Items\\ItemDef.cs",
+              "DocumentMoniker": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\Items\\ItemDef.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\InventorySystem\\Items\\ItemDef.cs",
-              "ToolTip": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\Items\\ItemDef.cs",
+              "ToolTip": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\Items\\ItemDef.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\Items\\ItemDef.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -620,11 +653,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 39,
               "Title": "ItemQuality.cs",
-              "DocumentMoniker": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\Items\\ItemQuality.cs",
+              "DocumentMoniker": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\Items\\ItemQuality.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\InventorySystem\\Items\\ItemQuality.cs",
-              "ToolTip": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\Items\\ItemQuality.cs",
+              "ToolTip": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\Items\\ItemQuality.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\Items\\ItemQuality.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -632,11 +665,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 40,
               "Title": "ItemId.cs",
-              "DocumentMoniker": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\Items\\ItemId.cs",
+              "DocumentMoniker": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\Items\\ItemId.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\InventorySystem\\Items\\ItemId.cs",
-              "ToolTip": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\Items\\ItemId.cs",
+              "ToolTip": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\Items\\ItemId.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\Items\\ItemId.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -644,11 +677,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 41,
               "Title": "DbRegistry.cs",
-              "DocumentMoniker": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\Core\\InventorySystem\\DbRegistry.cs",
+              "DocumentMoniker": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\Core\\InventorySystem\\DbRegistry.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\InventorySystem\\DbRegistry.cs",
-              "ToolTip": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\Core\\InventorySystem\\DbRegistry.cs",
+              "ToolTip": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\HuntedDead\\Assets\\Scripts\\Core\\InventorySystem\\DbRegistry.cs",
               "RelativeToolTip": "Assets\\Scripts\\Core\\InventorySystem\\DbRegistry.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
