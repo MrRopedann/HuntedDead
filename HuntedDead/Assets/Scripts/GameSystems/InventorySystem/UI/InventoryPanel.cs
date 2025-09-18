@@ -1,14 +1,14 @@
-using UnityEngine;
+п»їusing UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
 public class InventoryPanel : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IDragHandler
 {
     [Header("Bind")]
-    public RectTransform cellsRoot;   // контейнер клеток (с GridLayoutGroup)
-    public RectTransform itemsRoot;   // слой иконок (без Layout)
-    public GameObject cellPrefab;     // Cell_Grid
-    public GameObject itemPrefab;     // Cell_Item
+    public RectTransform cellsRoot;
+    public RectTransform itemsRoot;
+    public GameObject cellPrefab;
+    public GameObject itemPrefab;
     public UiPool pool;
     public DbRegistry db;
     public DragController drag;
@@ -16,32 +16,53 @@ public class InventoryPanel : MonoBehaviour, IPointerDownHandler, IPointerUpHand
     [Header("State")]
     public ContainerInstance bound;
     GridCellView[] _cells;
-    RectTransform[] _icons;
     int _cellCount;
     GridLayoutGroup _grid;
-    Vector2 _cellSize; Vector2 _spacing;
+    Vector2 _cellSize, _spacing;
+    bool _isBound; // в†ђ РєР»СЋС‡РµРІРѕР№ С„Р»Р°Рі
 
     void Awake()
     {
-        _grid = cellsRoot.GetComponent<GridLayoutGroup>();
-        _cellSize = _grid.cellSize;
-        _spacing = _grid.spacing;
+        if (cellsRoot) _grid = cellsRoot.GetComponent<GridLayoutGroup>();
+        if (_grid) { _cellSize = _grid.cellSize; _spacing = _grid.spacing; }
+    }
+
+    void OnEnable()
+    {
+        if (!_isBound) return;                          // в†ђ РЅРµ С‚СЂРѕРіР°РµРј Р±РµР· Bind
+        if (_grid == null && cellsRoot) _grid = cellsRoot.GetComponent<GridLayoutGroup>();
+        if (_grid == null || itemsRoot == null || cellPrefab == null || itemPrefab == null) return;
+
+        BuildCellsOnce();
+        RedrawItems();
+    }
+
+    void Update()
+    {
+        if (drag != null && drag.Active && Input.GetKeyDown(KeyCode.R)) drag.Rotate();
     }
 
     public void Bind(ContainerInstance c)
     {
         bound = c;
+        _isBound = (bound.def != null);                // в†ђ РѕС‚РјРµС‡Р°РµРј РїСЂРёРІСЏР·РєСѓ
+        if (!_isBound) return;
+
+        if (_grid == null && cellsRoot) _grid = cellsRoot.GetComponent<GridLayoutGroup>();
         BuildCellsOnce();
         RedrawItems();
     }
 
     void BuildCellsOnce()
     {
-        int mx = bound.occ.GetLength(0), my = bound.occ.GetLength(1), mz = bound.occ.GetLength(2);
-        int need = mx * my; // слой Z показываем выбранный; для 2D z=1
+        if (!_isBound || cellsRoot == null || cellPrefab == null) return;
+
+        int mx = bound.occ.GetLength(0), my = bound.occ.GetLength(1);
+        int need = mx * my;
         if (_cells != null && _cellCount == need) return;
-        // очистка старых
+
         foreach (Transform ch in cellsRoot) Destroy(ch.gameObject);
+
         _cells = new GridCellView[need];
         for (int i = 0; i < need; i++)
         {
@@ -49,100 +70,133 @@ public class InventoryPanel : MonoBehaviour, IPointerDownHandler, IPointerUpHand
             _cells[i] = go.GetComponent<GridCellView>();
         }
         _cellCount = need;
-        itemsRoot.pivot = new Vector2(0, 1);
-        (itemsRoot as RectTransform).anchoredPosition = Vector2.zero;
+
+        if (itemsRoot)
+        {
+            itemsRoot.pivot = new Vector2(0, 1);
+            itemsRoot.anchoredPosition = Vector2.zero;
+        }
     }
 
     public void RedrawItems()
     {
+        if (!_isBound || itemsRoot == null || itemPrefab == null || _grid == null) return;
+
         foreach (Transform ch in itemsRoot) Destroy(ch.gameObject);
+
         for (int i = 0; i < bound.count; i++)
         {
             var gi = bound.items[i];
             var p = bound.positions[i];
+
             var go = Instantiate(itemPrefab, itemsRoot);
             var rt = go.GetComponent<RectTransform>();
             var icon = go.GetComponent<ItemIcon>();
+
             var qcol = FindQualityColor(gi);
-            icon.Bind(gi.def.icon, gi.stack.qty, qcol);
+            if (icon)
+            {
+                icon.Bind(gi.def ? gi.def.icon : null, gi.stack.qty, qcol);
+
+                var baseSz = gi.def.is3D ? gi.def.size3D : gi.def.size2D;
+                bool rotated =
+                    baseSz.x != baseSz.y &&
+                    gi.size.x == baseSz.y &&
+                    gi.size.y == baseSz.x &&
+                    gi.size.z == baseSz.z;
+
+                icon.SetRotated(rotated);
+            }
+
             SetItemRect(rt, p, gi.size);
         }
     }
 
     Color FindQualityColor(GridItem gi)
     {
-        var def = gi.def;
-        var tier = gi.stack.key.tier;
-        var arr = def.qualities;
+        var arr = gi.def ? gi.def.qualities : null;
         if (arr != null)
-            for (int i = 0; i < arr.Length; i++) if (arr[i].tier == tier) return arr[i].color;
+        {
+            var t = gi.stack.key.tier;
+            for (int i = 0; i < arr.Length; i++)
+                if (arr[i].tier == t) return arr[i].color;
+        }
         return Color.white;
     }
 
     void SetItemRect(RectTransform rt, CellRef pos, Vector3Int size)
     {
-        float w = _cellSize.x, h = _cellSize.y, sx = _spacing.x, sy = _spacing.y;
-        var x = pos.x * (w + sx);
-        var y = -pos.y * (h + sy);
-        rt.anchorMin = new Vector2(0, 1);
-        rt.anchorMax = new Vector2(0, 1);
+        if (!rt || _grid == null) return;
+        float w = _grid.cellSize.x, h = _grid.cellSize.y;
+        float sx = _grid.spacing.x, sy = _grid.spacing.y;
+
+        float x = pos.x * (w + sx);
+        float y = -pos.y * (h + sy);
+
+        rt.anchorMin = rt.anchorMax = new Vector2(0, 1);
         rt.pivot = new Vector2(0, 1);
         rt.anchoredPosition = new Vector2(x, y);
-        rt.sizeDelta = new Vector2(size.x * w + (size.x - 1) * sx, size.y * h + (size.y - 1) * sy);
+        rt.sizeDelta = new Vector2(
+            size.x * w + (size.x - 1) * sx,
+            size.y * h + (size.y - 1) * sy
+        );
     }
 
     public bool ScreenToCell(Vector2 screen, out int cx, out int cy)
     {
+        cx = cy = -1;
+        if (cellsRoot == null || _grid == null || !_isBound) return false;
+
         RectTransformUtility.ScreenPointToLocalPointInRectangle(cellsRoot, screen, null, out var local);
-        var size = (cellsRoot.rect.size);
-        if (local.x < 0 || local.y > 0 || local.x > size.x || -local.y > size.y) { cx = cy = -1; return false; }
+        Vector2 size = cellsRoot.rect.size;
+
+        if (local.x < 0 || local.y > 0 || local.x > size.x || -local.y > size.y) return false;
+
         float w = _grid.cellSize.x + _grid.spacing.x;
         float h = _grid.cellSize.y + _grid.spacing.y;
         cx = Mathf.FloorToInt(local.x / w);
         cy = Mathf.FloorToInt(-local.y / h);
+
         int mx = bound.occ.GetLength(0), my = bound.occ.GetLength(1);
         if (cx < 0 || cy < 0 || cx >= mx || cy >= my) { cx = cy = -1; return false; }
         return true;
     }
 
-    public void OnPointerDown(PointerEventData e)
+    public bool ScreenToCell(Vector2 screen, out int cx, out int cy, Vector3Int size)
     {
-        if (bound == null) return;
-        if (!ScreenToCell(e.position, out var cx, out var cy)) return;
-        if (!bound.TryFindAtCell(cx, cy, 0, out var idx)) return;
-        // Shift-сплит
-        bool split = (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift));
-        var gi = bound.items[idx];
-        var icon = gi.def.icon;
-        if (split && gi.stack.qty > 1)
-        {
-            int half = gi.stack.qty / 2;
-            gi.stack.qty -= half;              // остаётся в контейнере
-            bound.items[idx] = gi;
-            var giDrag = gi;
-            giDrag.stack.qty = half;
-            drag.BeginDragFromContainer(this, bound, idx, giDrag, icon, split: true);
-        }
-        else
-        {
-            drag.BeginDragFromContainer(this, bound, idx, gi, icon, split: false);
-            bound.RemoveAt(idx); // временно убрали для свободного размещения
-            RedrawItems();
-        }
+        if (!ScreenToCell(screen, out cx, out cy)) return false;
+        int mx = bound.occ.GetLength(0), my = bound.occ.GetLength(1);
+        cx = Mathf.Clamp(cx, 0, Mathf.Max(0, mx - size.x));
+        cy = Mathf.Clamp(cy, 0, Mathf.Max(0, my - size.y));
+        return true;
     }
 
-    public void OnDrag(PointerEventData e) { /* пусто: DragGhost сам следует */ }
+    public void OnPointerDown(PointerEventData e)
+    {
+        if (!_isBound) return;
+        if (!ScreenToCell(e.position, out var cx, out var cy)) return;
+        if (!bound.TryFindAtCell(cx, cy, 0, out var idx)) return;
+
+        var gi = bound.items[idx];
+        var icon = gi.def.icon;
+
+        drag.BeginDragFromContainer(this, bound, idx, gi, icon, false);
+        bound.RemoveAt(idx);
+        RedrawItems();
+    }
+
+    public void OnDrag(PointerEventData e) { }
 
     public void OnPointerUp(PointerEventData e)
     {
-        if (!drag.Active || drag.SourcePanel != this) return;
-        if (ScreenToCell(e.position, out var cx, out var cy))
-        {
-            drag.DropToContainerAt(bound, cx, cy, this);
-        }
-        else
-        {
-            drag.CancelReturnToSource(); // возврат
-        }
+        if (drag == null || !drag.Active) return;
+
+        var sz = drag.CurrentSize;
+        if (ScreenToCell(e.position, out var cx, out var cy, sz))
+        { drag.DropToContainerAt(bound, cx, cy, this); return; }
+
+        if (drag.TryDropToAnyInventory(e)) return;
+        if (drag.TryDropToHotbar(e.position)) return;
+        drag.TryDropToEquipment(e.position);
     }
 }

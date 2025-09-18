@@ -45,6 +45,8 @@ public class CameraController : MonoBehaviour
     public bool hardLockBehindOnAim = true;     // камера ЖЁСТКО за спиной
     public bool rotatePlayerYawInAim = true;    // камера крутит персонажа по Y
 
+    [SerializeField] bool _uiBlocked;
+
     float yaw, pitch;
     float offsetY;
     float currentDistance;
@@ -52,6 +54,8 @@ public class CameraController : MonoBehaviour
 
     Transform player;
     Camera cam;
+
+
 
     readonly HashSet<Renderer> hidden = new();
     readonly List<Renderer> tmpToKeep = new();
@@ -78,54 +82,48 @@ public class CameraController : MonoBehaviour
     {
         if (!player || !cameraTransform) return;
 
-        // следуем за игроком
+        // базовая позиция пивота камеры у игрока
         transform.position = player.position + new Vector3(0, offsetY, 0);
 
-        bool isAiming = aim && aim.action.IsPressed();
-
-        // вращение разрешаем всегда при аиме; вне аима — по настройке clickToMoveCamera
+        // запрет аима и вращения, если UI блокирует
+        bool isAiming = !_uiBlocked && aim != null && aim.action.IsPressed();
         bool allowRotate =
-            isAiming || !clickToMoveCamera ||
-            (clickToMoveCamera && lookHold && lookHold.action.IsPressed());
+            !_uiBlocked && (
+                isAiming || !clickToMoveCamera ||
+                (clickToMoveCamera && lookHold != null && lookHold.action.IsPressed())
+            );
 
         // ввод
-        Vector2 delta = allowRotate && look ? look.action.ReadValue<Vector2>() : Vector2.zero;
+        Vector2 delta = allowRotate && look != null ? look.action.ReadValue<Vector2>() : Vector2.zero;
         yaw += delta.x * mouseSensitivity;
         pitch -= delta.y * mouseSensitivity;
         pitch = Mathf.Clamp(pitch, cameraLimit.x, cameraLimit.y);
 
-        // если хард-аим — камера «пришита» к спине, yaw берём от персонажа и/или задаём его
+        // ориентация пивота
         if (isAiming && hardLockBehindOnAim)
         {
             if (rotatePlayerYawInAim && playerRoot)
-            {
-                // камера задаёт поворот персонажа
                 playerRoot.rotation = Quaternion.Euler(0f, yaw, 0f);
-            }
             else if (playerRoot)
-            {
-                // камера следует за текущим yaw персонажа
                 yaw = playerRoot.eulerAngles.y;
-            }
-            // поворот пивота: строго за спиной (yaw персонажа) + наш pitch
+
             transform.rotation = Quaternion.Euler(pitch, playerRoot ? playerRoot.eulerAngles.y : yaw, 0f);
         }
         else
         {
-            // обычная свободная орбита
             transform.rotation = Quaternion.Euler(pitch, yaw, 0f);
         }
 
-        // плавность входа/выхода из аима
+        // анимирование аима
         float kAim = 1f - Mathf.Exp(-aimLerp * Time.deltaTime);
         aimAlpha = Mathf.Lerp(aimAlpha, isAiming ? 1f : 0f, kAim);
 
+        // плечевой оффсет и базовая дистанция
         Vector2 off = Vector2.Lerp(shoulderOffset, shoulderOffsetAim, aimAlpha);
         Vector3 lateralUp = transform.right * off.x + transform.up * off.y;
-
         float targetDistBase = Mathf.Lerp(desiredDistance, aimDistance, aimAlpha);
 
-        // анти-врезание
+        // коллизии с окружением
         Vector3 anchor = transform.position + transform.up * headLookHeight;
         Vector3 pivot = transform.position + lateralUp;
         Vector3 backDir = -transform.forward;
@@ -134,19 +132,28 @@ public class CameraController : MonoBehaviour
         float goalDist = blocked ? blockedDist : targetDistBase;
         currentDistance = Mathf.Lerp(currentDistance, goalDist, 1f - Mathf.Exp(-distanceLerp * Time.deltaTime));
 
+        // итоговая камера
         Vector3 camPos = pivot + backDir * currentDistance;
         cameraTransform.position = camPos;
         cameraTransform.rotation = transform.rotation;
 
         if (cam) cam.fieldOfView = Mathf.Lerp(cam.fieldOfView, isAiming ? fovAim : fovNormal, kAim);
 
-        // скрытие
+        // скрытие мешающих рендереров
         if (hideObstructors)
         {
             bool shouldHide = blocked && currentDistance <= hideWhenDistanceBelow;
             if (shouldHide) HideBetweenCameraAndAnchor(anchor, camPos);
             else UnhideAll();
         }
+    }
+
+
+    public void SetUiBlock(bool blocked)
+    {
+        _uiBlocked = blocked;
+        if (blocked) { Cursor.lockState = CursorLockMode.None; Cursor.visible = true; }
+        else if (!clickToMoveCamera) { Cursor.lockState = CursorLockMode.Locked; Cursor.visible = false; }
     }
 
     float CastForBlock(Vector3 origin, Vector3 dir, float maxDist, out bool blocked)

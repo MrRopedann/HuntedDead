@@ -1,11 +1,11 @@
-using System;
+п»їusing System;
 using UnityEngine;
 
 [Serializable]
 public struct GridItem
 {
     public ItemStack stack;
-    public Vector3Int size;   // текущий footprint
+    public Vector3Int size;   // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ footprint
     public bool rotated;
-    public ItemDef def;       // ссылка для UI/иконки
+    public ItemDef def;       // пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ UI/пїЅпїЅпїЅпїЅпїЅпїЅ
 }

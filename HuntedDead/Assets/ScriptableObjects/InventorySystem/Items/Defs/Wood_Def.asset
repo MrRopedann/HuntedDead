@@ -15,10 +15,10 @@ MonoBehaviour:
   id: {fileID: 11400000, guid: 06b594416e4df5048a40b9c6dc630a38, type: 2}
   kind: 0
   is3D: 0
-  size2D: {x: 1, y: 1, z: 1}
+  size2D: {x: 2, y: 1, z: 1}
   size3D: {x: 1, y: 1, z: 1}
   stackable: 1
-  canRotate: 0
+  canRotate: 1
   equippable: 0
   validEquipSlots: []
   icon: {fileID: 21300000, guid: 42cd17b497daba147802975855b027dd, type: 3}

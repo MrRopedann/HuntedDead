@@ -7,24 +7,22 @@ public class InputRouter : MonoBehaviour
     public DragController drag;
     public HotbarInput hotbar;
     public PlayerInventory pinv;
+    public LootInteractor loot;
 
     public void OnToggleInventory(InputAction.CallbackContext ctx) { if (!ctx.performed) return; inv.ToggleInventory(); }
-    public void OnRotate(InputAction.CallbackContext ctx) { if (!ctx.performed) return; drag.Rotate(); }
-    public void OnVicinity(InputAction.CallbackContext ctx) { if (!ctx.performed) return; inv.ToggleVicinity(); }
-
-    public void OnOpenLoot(InputAction.CallbackContext ctx)
+    public void OnRotate(InputAction.CallbackContext ctx)
     {
         if (!ctx.performed) return;
-        var cam = Camera.main;
-        if (!cam) return;
-        var ray = cam.ScreenPointToRay(Mouse.current.position.ReadValue());
-        if (Physics.Raycast(ray, out var hit, 3f))
-        {
-            if (hit.collider.TryGetComponent<ILootSource>(out var src)) inv.OpenLoot(src);
-            else if (hit.collider.GetComponentInParent<LootSourceChest>() is { } chest) inv.OpenLoot(chest);
-        }
+        Debug.Log($"OnRotate PERFORMED, drag={(drag ? drag.name : "null")}");
+        drag.Rotate();
     }
+    public void OnVicinity(InputAction.CallbackContext ctx) { if (!ctx.performed) return; inv.ToggleVicinity(); }
 
+    public void OnOpenLoot(UnityEngine.InputSystem.InputAction.CallbackContext ctx)
+    {
+        if (ctx.started) loot.BeginHold();
+        if (ctx.canceled) loot.CancelHold();
+    }
     public void OnHotbarNext(InputAction.CallbackContext ctx) { if (!ctx.performed) return; hotbar.Next(); }
     public void OnHotbarPrev(InputAction.CallbackContext ctx) { if (!ctx.performed) return; hotbar.Prev(); }
     public void OnSlot1(InputAction.CallbackContext ctx) { if (!ctx.performed) return; hotbar.SelectIndex(0); }

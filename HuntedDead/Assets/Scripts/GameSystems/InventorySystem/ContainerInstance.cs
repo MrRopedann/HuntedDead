@@ -1,10 +1,10 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class ContainerInstance
 {
     public ContainerDef def;
     public bool[,,] occ;
-    public int[,,] indexAt;     // -1 = �����
+    public int[,,] indexAt;     // -1 = пусто
     public GridItem[] items;
     public CellRef[] positions;
     public int count;
@@ -17,7 +17,7 @@ public class ContainerInstance
         occ = new bool[x, y, z];
         indexAt = new int[x, y, z];
 
-        // ��������� indexAt ��������� -1
+        // Заполняем indexAt значением -1
         for (int ix = 0; ix < x; ix++)
             for (int iy = 0; iy < y; iy++)
                 for (int iz = 0; iz < z; iz++)
@@ -46,17 +46,39 @@ public class ContainerInstance
 
     public bool TryPlaceAt(ref GridItem item, int x, int y, int z, out int idx)
     {
-        if (!KindAllowed(item.def.kind)) { idx = -1; return false; }
-        if (!GridAlgo.Fits(occ, item.size, x, y, z)) { idx = -1; return false; }
-        idx = count++;
-        items[idx] = item;
-        positions[idx] = new CellRef { x = x, y = y, z = z };
-        Mark(idx, true);
+        idx = -1;
+        if (!KindAllowed(item.def.kind)) return false;
+        if (!GridAlgo.Fits(occ, item.size, x, y, z)) return false;
+
+        idx = AddInternal(item, new CellRef { x = x, y = y, z = z });
         return true;
+    }
+
+    int AddInternal(in GridItem item, in CellRef root)
+    {
+        items[count] = item;      // ВАЖНО: используем текущий item.size
+        positions[count] = root;
+        Mark(count, true);            // помечаем занятость по items[count].size
+        count++;
+        return count - 1;
     }
 
     public bool TryAutoPlace(ref GridItem item, out int idx, out CellRef pos)
     {
+        // Контейнер ещё не инициализирован → выхода без падения
+        if (def == null || occ == null || indexAt == null)
+        {
+            idx = -1; pos = default;
+            return false;
+        }
+
+        // Фильтр по типу предмета (если задан)
+        if (!KindAllowed(item.def.kind))
+        {
+            idx = -1; pos = default;
+            return false;
+        }
+
         int mx = occ.GetLength(0), my = occ.GetLength(1), mz = occ.GetLength(2);
         for (int z = 0; z < mz; z++)
             for (int y = 0; y < my; y++)
@@ -64,10 +86,16 @@ public class ContainerInstance
                     if (GridAlgo.Fits(occ, item.size, x, y, z))
                     {
                         if (TryPlaceAt(ref item, x, y, z, out idx))
-                        { pos = positions[idx]; return true; }
+                        {
+                            pos = positions[idx];
+                            return true;
+                        }
                     }
-        idx = -1; pos = default; return false;
+
+        idx = -1; pos = default;
+        return false;
     }
+
 
     public void RemoveAt(int idx)
     {
@@ -77,7 +105,7 @@ public class ContainerInstance
         {
             items[idx] = items[last];
             positions[idx] = positions[last];
-            // ������������� indexAt ��� �������������
+            // переназначить indexAt для перемещенного
             MarkIndex(idx, true);
         }
         count--;

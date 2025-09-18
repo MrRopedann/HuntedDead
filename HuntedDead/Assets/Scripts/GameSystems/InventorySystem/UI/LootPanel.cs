@@ -1,43 +1,34 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class LootPanel : MonoBehaviour
 {
-    public Transform listRoot;
-    public GameObject rowPrefab;
-    public InventoryPanel inventoryPanel; // ���� ������
-    ILootSource _src;
+    public InventoryPanel grid;
 
-    public void Open(ILootSource s) { _src = s; Redraw(); }
+    bool HasBound()
+    {
+        if (!grid) return false;
+        var b = grid.bound;
+        return b != null && b.def != null;
+    }
+
+    public void Bind(ContainerInstance c)
+    {
+        if (!grid || c == null || c.def == null) return;
+        if (!grid.gameObject.activeSelf) grid.gameObject.SetActive(true);
+        grid.Bind(c);
+        grid.RedrawItems();
+    }
+
+    public void Unbind()
+    {
+        // оставляем видимым пустой грид; без бинда не перерисовываем
+        if (grid && !grid.gameObject.activeSelf) grid.gameObject.SetActive(true);
+    }
 
     public void Redraw()
     {
-        foreach (Transform ch in listRoot) Destroy(ch.gameObject);
-        var c = _src.Open();
-        for (int i = 0; i < c.count; i++)
-        {
-            var gi = c.items[i];
-            var go = Instantiate(rowPrefab, listRoot);
-            var row = go.GetComponent<LootRowView>();
-            row.index = i;
-            row.icon.sprite = gi.def.icon;
-            row.nameTxt.text = gi.def.name;
-            row.qtyTxt.text = gi.stack.qty.ToString();
-            row.takeBtn.onClick.AddListener(() => TakeOne(row.index, 1));
-            row.takeAllBtn.onClick.AddListener(() => TakeOne(row.index, gi.stack.qty));
-        }
-    }
-
-    void TakeOne(int index, int qty)
-    {
-        var c = _src.Open();
-        if (index < 0 || index >= c.count) { Redraw(); return; }
-        var gi = c.items[index];
-        var put = gi; put.stack.qty = qty;
-        if (Placement.TryPlace(inventoryPanel.bound, ref put, out _, out _))
-        {
-            _src.TakeStackAt(index, qty);
-            inventoryPanel.RedrawItems();
-            Redraw();
-        }
+        if (!grid) return;
+        if (!HasBound()) return;   // ← защита от NRE
+        grid.RedrawItems();
     }
 }
