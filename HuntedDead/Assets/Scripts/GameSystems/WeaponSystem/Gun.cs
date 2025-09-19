@@ -20,7 +20,6 @@ public class Gun : MonoBehaviour, IWeaponTestable
     [Header("Debug")]
     [SerializeField] bool drawDebug = false;
 
-    // runtime
     int ammoInMag, reserve;
     float nextFireTime;
     bool isReloading, isAiming;
@@ -28,7 +27,6 @@ public class Gun : MonoBehaviour, IWeaponTestable
     ParticleSystem[] muzzlePs;
     GunConfig.FireModes fireMode;
 
-    // === IWeaponTestable ===
     public bool IsAutomatic => (fireMode & GunConfig.FireModes.Auto) != 0 && fireMode == GunConfig.FireModes.Auto;
     public int CurrentAmmo => ammoInMag;
     public int ReserveAmmo => reserve;
@@ -36,7 +34,6 @@ public class Gun : MonoBehaviour, IWeaponTestable
     public string FireModeName => fireMode.ToString().ToUpperInvariant();
     public void CycleFireMode() { fireMode = NextEnabledMode(fireMode); }
 
-    // ===== Lifecycle =====
     void Awake()
     {
         if (!config) { Debug.LogError("Gun: config is null", this); enabled = false; return; }
@@ -61,7 +58,6 @@ public class Gun : MonoBehaviour, IWeaponTestable
         }
     }
 
-    // ===== Public API =====
     public void StartAim() => isAiming = true;
     public void StopAim() => isAiming = false;
 
@@ -78,7 +74,6 @@ public class Gun : MonoBehaviour, IWeaponTestable
     {
         if (isReloading) return;
 
-        // Burst запускается один раз
         if (fireMode == GunConfig.FireModes.Burst)
         {
             if (burstRoutine == null && CanStartShot())
@@ -86,7 +81,6 @@ public class Gun : MonoBehaviour, IWeaponTestable
             return;
         }
 
-        // Semi/Auto
         if (CanStartShot())
         {
             DoSingleShot();
@@ -94,7 +88,7 @@ public class Gun : MonoBehaviour, IWeaponTestable
         }
     }
 
-    // ===== Internals =====
+
     bool CanStartShot()
     {
         if (Time.time < nextFireTime) return false;
@@ -126,7 +120,6 @@ public class Gun : MonoBehaviour, IWeaponTestable
     {
         ammoInMag--;
 
-        // Muzzle VFX
         if (config.reuseMuzzleVFX && muzzlePs != null && muzzlePs.Length > 0)
         {
             foreach (var ps in muzzlePs)
@@ -176,10 +169,8 @@ public class Gun : MonoBehaviour, IWeaponTestable
     {
         isReloading = true;
 
-        // вынуть
         yield return MoveMag(sockets.magHome, sockets.magOut, config.magOutTime, config.magOutSfx);
 
-        // клон магазина
         if (config.droppedMagPrefab && sockets.mag)
         {
             var t = sockets.dropSpawn ? sockets.dropSpawn : sockets.mag;
@@ -195,10 +186,8 @@ public class Gun : MonoBehaviour, IWeaponTestable
 
         if (config.reloadHoldTime > 0f) yield return new WaitForSeconds(config.reloadHoldTime);
 
-        // вставить
         yield return MoveMag(sockets.magOut, sockets.magHome, config.magInTime, config.magInSfx);
 
-        // пополнить
         int need = config.magazineSize - ammoInMag;
         int take = Mathf.Min(need, reserve);
         ammoInMag += take; reserve -= take;
@@ -232,7 +221,6 @@ public class Gun : MonoBehaviour, IWeaponTestable
         sockets.mag.localPosition = p1; sockets.mag.localRotation = r1;
     }
 
-    // ===== Helpers =====
     void SpawnTracer(Vector3 start, Vector3 end)
     {
         var go = Instantiate(config.trailVFX, start, Quaternion.LookRotation(end - start));
@@ -296,14 +284,12 @@ public class Gun : MonoBehaviour, IWeaponTestable
     [ContextMenu("Auto-Bind Sockets")]
     public void AutoBindSockets()
     {
-        // ищем по именам
         if (!sockets.muzzle) sockets.muzzle = FindDeep("Muzzle");
         if (!sockets.mag) sockets.mag = FindDeep("Mag");
         if (!sockets.magHome) sockets.magHome = FindDeep("MagHome");
         if (!sockets.magOut) sockets.magOut = FindDeep("MagOut");
         if (!sockets.dropSpawn) sockets.dropSpawn = FindDeep("DropSpawn");
 
-        // создаём недостающие
         if (sockets.mag && !sockets.magHome)
         {
             sockets.magHome = new GameObject("MagHome").transform;

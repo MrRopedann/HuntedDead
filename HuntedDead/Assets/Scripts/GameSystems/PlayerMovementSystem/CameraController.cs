@@ -11,10 +11,10 @@ public class CameraController : MonoBehaviour
 
     [Header("Дистанция и коллизии")]
     public float desiredDistance = 3.5f;
-    public float aimDistance = 1.8f;          // ближе в аиме
+    public float aimDistance = 1.8f;
     public float minDistance = 1.0f;
     public float collisionRadius = 0.25f;
-    public LayerMask occluderMask = ~0;       // НЕ включайте слой Player
+    public LayerMask occluderMask = ~0;
     public float distanceLerp = 12f;
     public float collisionInset = 0.05f;
 
@@ -33,24 +33,24 @@ public class CameraController : MonoBehaviour
     public float hideWhenDistanceBelow = 1.25f;
 
     [Header("Ссылки")]
-    public Transform playerRoot;      // корень персонажа
-    public Transform cameraTransform; // MainCamera
+    public Transform playerRoot;
+    public Transform cameraTransform;
 
     [Header("Input System")]
-    public InputActionReference look;       // Mouse Delta (Vector2)
-    public InputActionReference lookHold;   // ПКМ, если clickToMoveCamera
-    public InputActionReference aim;        // ПКМ для аима
+    public InputActionReference look;
+    public InputActionReference lookHold;
+    public InputActionReference aim;
 
     [Header("Аим-режим")]
-    public bool hardLockBehindOnAim = true;     // камера ЖЁСТКО за спиной
-    public bool rotatePlayerYawInAim = true;    // камера крутит персонажа по Y
+    public bool hardLockBehindOnAim = true;
+    public bool rotatePlayerYawInAim = true;
 
     [SerializeField] bool _uiBlocked;
 
     float yaw, pitch;
     float offsetY;
     float currentDistance;
-    float aimAlpha; // 0..1
+    float aimAlpha;
 
     Transform player;
     Camera cam;
@@ -82,10 +82,8 @@ public class CameraController : MonoBehaviour
     {
         if (!player || !cameraTransform) return;
 
-        // базовая позиция пивота камеры у игрока
         transform.position = player.position + new Vector3(0, offsetY, 0);
 
-        // запрет аима и вращения, если UI блокирует
         bool isAiming = !_uiBlocked && aim != null && aim.action.IsPressed();
         bool allowRotate =
             !_uiBlocked && (
@@ -93,13 +91,11 @@ public class CameraController : MonoBehaviour
                 (clickToMoveCamera && lookHold != null && lookHold.action.IsPressed())
             );
 
-        // ввод
         Vector2 delta = allowRotate && look != null ? look.action.ReadValue<Vector2>() : Vector2.zero;
         yaw += delta.x * mouseSensitivity;
         pitch -= delta.y * mouseSensitivity;
         pitch = Mathf.Clamp(pitch, cameraLimit.x, cameraLimit.y);
 
-        // ориентация пивота
         if (isAiming && hardLockBehindOnAim)
         {
             if (rotatePlayerYawInAim && playerRoot)
@@ -114,16 +110,13 @@ public class CameraController : MonoBehaviour
             transform.rotation = Quaternion.Euler(pitch, yaw, 0f);
         }
 
-        // анимирование аима
         float kAim = 1f - Mathf.Exp(-aimLerp * Time.deltaTime);
         aimAlpha = Mathf.Lerp(aimAlpha, isAiming ? 1f : 0f, kAim);
 
-        // плечевой оффсет и базовая дистанция
         Vector2 off = Vector2.Lerp(shoulderOffset, shoulderOffsetAim, aimAlpha);
         Vector3 lateralUp = transform.right * off.x + transform.up * off.y;
         float targetDistBase = Mathf.Lerp(desiredDistance, aimDistance, aimAlpha);
 
-        // коллизии с окружением
         Vector3 anchor = transform.position + transform.up * headLookHeight;
         Vector3 pivot = transform.position + lateralUp;
         Vector3 backDir = -transform.forward;
@@ -132,14 +125,12 @@ public class CameraController : MonoBehaviour
         float goalDist = blocked ? blockedDist : targetDistBase;
         currentDistance = Mathf.Lerp(currentDistance, goalDist, 1f - Mathf.Exp(-distanceLerp * Time.deltaTime));
 
-        // итоговая камера
         Vector3 camPos = pivot + backDir * currentDistance;
         cameraTransform.position = camPos;
         cameraTransform.rotation = transform.rotation;
 
         if (cam) cam.fieldOfView = Mathf.Lerp(cam.fieldOfView, isAiming ? fovAim : fovNormal, kAim);
 
-        // скрытие мешающих рендереров
         if (hideObstructors)
         {
             bool shouldHide = blocked && currentDistance <= hideWhenDistanceBelow;

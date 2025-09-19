@@ -19,7 +19,7 @@ public class InventoryPanel : MonoBehaviour, IPointerDownHandler, IPointerUpHand
     int _cellCount;
     GridLayoutGroup _grid;
     Vector2 _cellSize, _spacing;
-    bool _isBound; // ← ключевой флаг
+    bool _isBound;
 
     void Awake()
     {
@@ -29,7 +29,7 @@ public class InventoryPanel : MonoBehaviour, IPointerDownHandler, IPointerUpHand
 
     void OnEnable()
     {
-        if (!_isBound) return;                          // ← не трогаем без Bind
+        if (!_isBound) return;
         if (_grid == null && cellsRoot) _grid = cellsRoot.GetComponent<GridLayoutGroup>();
         if (_grid == null || itemsRoot == null || cellPrefab == null || itemPrefab == null) return;
 
@@ -45,7 +45,7 @@ public class InventoryPanel : MonoBehaviour, IPointerDownHandler, IPointerUpHand
     public void Bind(ContainerInstance c)
     {
         bound = c;
-        _isBound = (bound.def != null);                // ← отмечаем привязку
+        _isBound = (bound.def != null);
         if (!_isBound) return;
 
         if (_grid == null && cellsRoot) _grid = cellsRoot.GetComponent<GridLayoutGroup>();

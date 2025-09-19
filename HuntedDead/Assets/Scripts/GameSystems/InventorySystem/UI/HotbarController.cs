@@ -1,4 +1,3 @@
-// HotbarController.cs
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -25,7 +24,6 @@ public class HotbarController : MonoBehaviour
     {
         if (entries == null || entries.Length != slotIcons.Length)
             entries = new HotbarEntry[slotIcons.Length];
-        // по умолчанию иконки скрыты
         for (int i = 0; i < slotIcons.Length; i++) if (slotIcons[i]) slotIcons[i].enabled = false;
     }
 

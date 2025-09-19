@@ -5,7 +5,7 @@ using UnityEngine;
 public struct GridItem
 {
     public ItemStack stack;
-    public Vector3Int size;   // ������� footprint
+    public Vector3Int size;
     public bool rotated;
-    public ItemDef def;       // ������ ��� UI/������
+    public ItemDef def;
 }

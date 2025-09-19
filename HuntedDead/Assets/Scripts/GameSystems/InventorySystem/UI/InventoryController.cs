@@ -5,9 +5,9 @@ public class InventoryController : MonoBehaviour
     [Header("Refs")]
     public PlayerInventory playerInv;
     public PlayerStateRelay stateRelay;
-    public InventoryPanel panelInventory;   // справа
-    public EquipmentPanel panelEquipment;   // слева
-    public LootPanel panelLoot;        // центр (на том же объекте есть InventoryPanel)
+    public InventoryPanel panelInventory;
+    public EquipmentPanel panelEquipment;
+    public LootPanel panelLoot;
     public VicinityPanel panelVicinity;
 
     [Header("UI root / control lock")]
@@ -16,11 +16,11 @@ public class InventoryController : MonoBehaviour
     [SerializeField] ThirdPersonController playerCtrl;
 
     [Header("Опционально: пустой деф для центра при Tab")]
-    public ContainerDef lootEmptyDef;   // например 6×4
+    public ContainerDef lootEmptyDef;
 
     public bool IsOpen { get; private set; }
 
-    ContainerInstance _lootPlaceholder; // лениво создаём один раз
+    ContainerInstance _lootPlaceholder;
 
     void Start()
     {
@@ -29,7 +29,7 @@ public class InventoryController : MonoBehaviour
         if (playerInv && panelInventory)
             panelInventory.Bind(playerInv.Pockets);
 
-        EnsureLootPlaceholderBound();   // безопасно, если ничего не назначено — просто выйдет
+        EnsureLootPlaceholderBound();
 
         HideAllAndUnblock();
     }
@@ -39,7 +39,6 @@ public class InventoryController : MonoBehaviour
         if (panelInventory && !panelInventory.db)
             panelInventory.db = FindObjectOfType<DbRegistry>();
 
-        // гарантируем ссылку LootPanel → свой InventoryPanel
         if (panelLoot && !panelLoot.grid)
         {
             var ownGrid = panelLoot.GetComponent<InventoryPanel>();
@@ -51,17 +50,16 @@ public class InventoryController : MonoBehaviour
     {
         if (!panelLoot) return;
 
-        // найдём грид центра
         var grid = panelLoot.grid ? panelLoot.grid : panelLoot.GetComponent<InventoryPanel>();
         if (!grid) return;
 
-        // если уже что-то привязано — выходим
+
         if (grid.bound != null && grid.bound.def != null) return;
 
-        // если нет дефолтного ContainerDef — просто оставим пустой грид
+
         if (!lootEmptyDef) return;
 
-        // ленивое создание и биндинг пустышки
+
         if (_lootPlaceholder == null || _lootPlaceholder.def == null)
         {
             _lootPlaceholder = new ContainerInstance();
@@ -70,7 +68,7 @@ public class InventoryController : MonoBehaviour
         grid.Bind(_lootPlaceholder);
     }
 
-    // === PUBLIC API ===
+
     public void ToggleInventory()
     {
         if (stateRelay && !ActionGate.CanMoveInUI(stateRelay.Current)) return;
@@ -121,7 +119,6 @@ public class InventoryController : MonoBehaviour
     public void CloseAll() => HideAllAndUnblock();
     public void OnEnterCombat() => HideAllAndUnblock();
 
-    // === INTERNAL ===
     void ShowAllAndBlock()
     {
         IsOpen = true;
@@ -136,7 +133,6 @@ public class InventoryController : MonoBehaviour
 
         if (panelInventory) panelInventory.RedrawItems();
 
-        // центр перерисовываем ТОЛЬКО если уже был Bind
         if (panelLoot && panelLoot.grid && panelLoot.grid.bound != null && panelLoot.grid.bound.def != null)
             panelLoot.Redraw();
 

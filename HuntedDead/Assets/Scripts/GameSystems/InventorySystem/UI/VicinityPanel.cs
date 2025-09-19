@@ -1,17 +1,16 @@
 using UnityEngine;
 
-/// Панель «Окрестности» = обычный InventoryPanel c временным контейнером.
 public class VicinityPanel : MonoBehaviour
 {
-    public InventoryPanel grid;        // InventoryPanel на этом же объекте
-    public VicinityScanner scanner;    // сканер мира
-    public DbRegistry db;              // база ItemDef
+    public InventoryPanel grid;
+    public VicinityScanner scanner;
+    public DbRegistry db;
 
     [Header("Размер грида для отображения")]
-    public Vector3Int gridSize = new Vector3Int(6, 4, 1); // подгоняй под UI
+    public Vector3Int gridSize = new Vector3Int(6, 4, 1);
 
-    ContainerDef _defRuntime;          // временный деф
-    ContainerInstance _view;           // контейнер для отображения
+    ContainerDef _defRuntime;
+    ContainerInstance _view
 
     void Awake()
     {
@@ -28,17 +27,16 @@ public class VicinityPanel : MonoBehaviour
         if (grid) grid.Bind(_view);
     }
 
-    /// Вызови при открытии панели и по клавише V
     public void Refresh()
     {
         if (_defRuntime == null) return;
 
-        // заново инициализируем пустой контейнер-представление
+
         _view = new ContainerInstance();
         _view.Init(_defRuntime);
 
-        // собираем агрегат из сканера и раскладываем в грид
-        var agg = scanner.ScanAggregated(); // Dictionary<VariantKey,int>
+
+        var agg = scanner.ScanAggregated();
         foreach (var kv in agg)
         {
             var key = kv.Key;
@@ -55,7 +53,7 @@ public class VicinityPanel : MonoBehaviour
                 stack = new ItemStack { key = key, qty = qty }
             };
 
-            // просто попытка автоплейса для визуализации
+
             Placement.TryPlace(_view, ref gi, out _, out _);
         }
 

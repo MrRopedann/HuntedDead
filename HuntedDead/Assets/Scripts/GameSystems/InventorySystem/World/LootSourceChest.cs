@@ -9,7 +9,6 @@ public class LootSourceChest : MonoBehaviour, ILootSource
     {
         _inst = new ContainerInstance();
         _inst.Init(chestDef);
-        // пример тестового наполнения в Start по желанию
     }
 
     public ContainerInstance Open() => _inst;

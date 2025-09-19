@@ -16,12 +16,12 @@ public class LootInteractor : MonoBehaviour
 
     void Update()
     {
-        // поиск цели под прицелом
+
         LootSourceChest hit = null;
         if (cam && Physics.Raycast(cam.transform.position, cam.transform.forward, out var h, range, ~0, QueryTriggerInteraction.Collide))
             hit = h.collider.GetComponentInParent<LootSourceChest>();
 
-        // обновить подсказку
+
         bool can = ActionGate.CanOpenLoot(stateRelay.Current);
         if (hit && can)
         {
@@ -35,7 +35,7 @@ public class LootInteractor : MonoBehaviour
             ui?.Hide();
         }
 
-        // анимаци€ удержани€
+
         if (holding)
         {
             t += Time.deltaTime;
@@ -48,7 +48,6 @@ public class LootInteractor : MonoBehaviour
         }
     }
 
-    // ¬ызывай из InputRouter
     public void BeginHold()
     {
         if (focus && ActionGate.CanOpenLoot(stateRelay.Current)) { holding = true; t = 0f; }

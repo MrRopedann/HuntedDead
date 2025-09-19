@@ -6,7 +6,7 @@ public interface IDamageable
     void TakeDamage(float amount, Vector3 hitPoint, Vector3 hitNormal);
 }
 
-[System.Serializable] public class FloatEvent : UnityEvent<float> { }   // 0..1 здоровь€
+[System.Serializable] public class FloatEvent : UnityEvent<float> { }
 [System.Serializable] public class VoidEvent : UnityEvent { }
 
 public class Damageable : MonoBehaviour, IDamageable
@@ -16,15 +16,15 @@ public class Damageable : MonoBehaviour, IDamageable
     [SerializeField] bool destroyOnDeath = true;
 
     [Header("Effects")]
-    [SerializeField] GameObject hitVFX;            // спавн в точке попадани€
-    [SerializeField] GameObject deathVFX;          // спавн в центре объекта
-    [SerializeField] AudioSource audioSource;      // можно не заполн€ть Ч возьмЄтс€ с объекта
+    [SerializeField] GameObject hitVFX;
+    [SerializeField] GameObject deathVFX;
+    [SerializeField] AudioSource audioSource;
     [SerializeField] AudioClip hitSfx;
     [SerializeField] AudioClip deathSfx;
-    [SerializeField] float impactImpulse = 2f;     // толчок по Rigidbody
+    [SerializeField] float impactImpulse = 2f;
 
     [Header("Events")]
-    [SerializeField] FloatEvent onHealth01Changed; // передаЄт health/maxHealth
+    [SerializeField] FloatEvent onHealth01Changed;
     [SerializeField] VoidEvent onDeath;
 
     float health;
@@ -77,7 +77,6 @@ public class Damageable : MonoBehaviour, IDamageable
         else enabled = false;
     }
 
-    // опционально: доступ к значени€м
     public float CurrentHealth => health;
     public float MaxHealth => maxHealth;
 }

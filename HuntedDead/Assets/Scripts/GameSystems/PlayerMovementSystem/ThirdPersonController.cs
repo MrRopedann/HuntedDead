@@ -6,9 +6,9 @@ public interface ICrouchProvider { bool IsCrouching { get; } }
 public interface IMovementNoiseProvider
 {
     bool IsMoving { get; }
-    bool IsRunning { get; }   // бег (не спринт)
+    bool IsRunning { get; }
     bool IsSprinting { get; }
-    bool JustJumped { get; }   // короткий флаг после прыжка
+    bool JustJumped { get; }
 }
 
 public class ThirdPersonController : MonoBehaviour, ICrouchProvider, IMovementNoiseProvider
@@ -43,7 +43,6 @@ public class ThirdPersonController : MonoBehaviour, ICrouchProvider, IMovementNo
     [Tooltip("Сколько секунд держать JustJumped")]
     public float jumpedFlagTime = 0.25f;
 
-    // runtime
     bool isCrouching;
     public bool IsCrouching => isCrouching;
 
@@ -51,13 +50,11 @@ public class ThirdPersonController : MonoBehaviour, ICrouchProvider, IMovementNo
     float inX, inZ;
     bool inJump, inSprint;
 
-    // crouch input
     bool crouchHeld;
     bool wantStandUp;
 
-    // noise/state runtime
-    float currPlanarSpeed;     // м/с (обновляется в FixedUpdate)
-    float jumpedTimer;         // таймер JustJumped
+    float currPlanarSpeed;
+    float jumpedTimer;
 
     Animator animator;
     CharacterController cc;
@@ -76,7 +73,6 @@ public class ThirdPersonController : MonoBehaviour, ICrouchProvider, IMovementNo
     public InputActionReference crouch;
     public InputActionReference walk;
 
-    // Animator hashes
     static readonly int P_Speed = Animator.StringToHash("Speed");
     static readonly int P_Grounded = Animator.StringToHash("Grounded");
     static readonly int P_Crouch = Animator.StringToHash("Crouch");
@@ -88,16 +84,13 @@ public class ThirdPersonController : MonoBehaviour, ICrouchProvider, IMovementNo
     public bool cameraDrivesYawInAim = true;
     public bool isAiming = false;
 
-    // капсула
     float targetHeight;
     Vector3 defaultCenter;
 
-    // ==== IMovementNoiseProvider ====
     public bool IsSprinting => inSprint && !isCrouching;
     public bool IsRunning => !IsSprinting && !isCrouching && currPlanarSpeed >= runSpeed * runFrac;
     public bool IsMoving => currPlanarSpeed >= Mathf.Max(0.05f, walkSpeed * moveFrac);
     public bool JustJumped => jumpedTimer > 0f;
-    // =================================
 
     void OnEnable()
     {
@@ -131,21 +124,18 @@ public class ThirdPersonController : MonoBehaviour, ICrouchProvider, IMovementNo
 
     void Update()
     {
-        // INPUT
         Vector2 mv = move ? move.action.ReadValue<Vector2>() : Vector2.zero;
         inX = mv.x; inZ = mv.y;
         inJump = jump && jump.action.IsPressed();
         crouchHeld = crouch && crouch.action.IsPressed();
         inSprint = sprint && sprint.action.IsPressed() && !isCrouching;
 
-        // Grounded буфер
         if (cc.isGrounded) groundedTimer = groundedBuffer;
         else groundedTimer -= Time.deltaTime;
         bool groundedBuffered = groundedTimer > 0f;
 
         bool hasMoveInput = mv.sqrMagnitude > 0.0001f;
 
-        // присед: удержание + отложенное вставание
         if (crouchHeld && cc.isGrounded) { isCrouching = true; wantStandUp = false; }
         if (!crouchHeld && isCrouching)
         {
@@ -154,21 +144,18 @@ public class ThirdPersonController : MonoBehaviour, ICrouchProvider, IMovementNo
         }
         if (wantStandUp && CanStandUp()) { isCrouching = false; wantStandUp = false; }
 
-        // воздух
         if (groundedBuffered) { airTime = 0f; leaveGroundY = transform.position.y; }
         else { if (wasGrounded) leaveGroundY = transform.position.y; airTime += Time.deltaTime; }
 
-        // Jump
         if (inJump && groundedBuffered && !isCrouching)
         {
             animator?.SetTrigger(P_Jump);
             velY = jumpForce;
             groundedTimer = 0f;
-            jumpedTimer = jumpedFlagTime; // включаем флаг шума прыжка
+            jumpedTimer = jumpedFlagTime;
         }
         if (jumpedTimer > 0f) jumpedTimer -= Time.deltaTime;
 
-        // целевая скорость для анимации
         float desiredMS = 0f;
         if (groundedBuffered && hasMoveInput)
         {
@@ -179,12 +166,10 @@ public class ThirdPersonController : MonoBehaviour, ICrouchProvider, IMovementNo
         }
         float speed01 = Mathf.InverseLerp(0f, sprintSpeed, desiredMS);
 
-        // падение
         float fallDistance = Mathf.Max(0f, leaveGroundY - transform.position.y);
         bool shouldFall = !groundedBuffered &&
                           ((velY < -fallVelThreshold && airTime >= minAirTime) || (fallDistance >= minFallDistance));
 
-        // Animator
         if (animator)
         {
             animator.SetBool(P_Grounded, groundedBuffered);
@@ -196,7 +181,6 @@ public class ThirdPersonController : MonoBehaviour, ICrouchProvider, IMovementNo
         }
         wasGrounded = groundedBuffered;
 
-        // капсула
         float wanted = isCrouching ? crouchHeight : standHeight;
         if (!Mathf.Approximately(targetHeight, wanted)) targetHeight = wanted;
         SmoothCapsule();
@@ -206,7 +190,6 @@ public class ThirdPersonController : MonoBehaviour, ICrouchProvider, IMovementNo
 
     void FixedUpdate()
     {
-        // итоговая скорость
         float speed;
         if (inSprint && !isCrouching && !isAiming) speed = sprintSpeed;
         else if (isWalking && !inSprint) speed = walkSpeed;
@@ -214,22 +197,19 @@ public class ThirdPersonController : MonoBehaviour, ICrouchProvider, IMovementNo
 
         if (isCrouching) speed *= Mathf.Clamp01(crouchMultiplier);
 
-        // текущая горизонтальная скорость для noise-флагов
         float inputMag = Mathf.Clamp01(new Vector2(inX, inZ).magnitude);
         currPlanarSpeed = speed * inputMag;
 
-        // вертикаль
         velY -= gravity * Time.deltaTime;
         if (cc.isGrounded && velY < 0f) velY = 0f;
         float dy = velY * Time.deltaTime;
 
-        // движение относительно камеры
         Vector3 f = Camera.main.transform.forward; f.y = 0f; f.Normalize();
         Vector3 r = Camera.main.transform.right; r.y = 0f; r.Normalize();
 
         Vector3 planar = f * (inZ * speed * Time.deltaTime) + r * (inX * speed * Time.deltaTime);
 
-        // ротация
+
         if (!(isAiming && cameraDrivesYawInAim))
         {
             if (inputMag > 0f)
@@ -239,11 +219,10 @@ public class ThirdPersonController : MonoBehaviour, ICrouchProvider, IMovementNo
             }
         }
 
-        // перемещение
         cc.Move(planar + Vector3.up * dy);
     }
 
-    // капсула: плавная смена высоты и центра
+ 
     void SmoothCapsule()
     {
         if (!cc) return;
@@ -284,7 +263,6 @@ public class ThirdPersonController : MonoBehaviour, ICrouchProvider, IMovementNo
         if (Physics.Raycast(ccCenter, Vector3.up, hitCalc)) { if (velY > 0f) velY = 0f; }
     }
 
-    // Walk (Hold)
     void OnWalkPerformed(InputAction.CallbackContext _) { if (cc && cc.isGrounded) isWalking = true; }
     void OnWalkCanceled(InputAction.CallbackContext _) { isWalking = false; }
 }

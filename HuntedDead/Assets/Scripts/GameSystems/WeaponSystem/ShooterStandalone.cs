@@ -24,7 +24,7 @@ public class ShooterStandalone : MonoBehaviour
             if (!ammoLabel) ammoLabel = FindLabel(ammoLabelName);
             if (!modeLabel) modeLabel = FindLabel(modeLabelName);
         }
-        // начальные плейсхолдеры
+
         if (ammoLabel) ammoLabel.text = "Ч / Ч";
         if (modeLabel) modeLabel.text = "MODE: Ч";
     }
@@ -59,7 +59,7 @@ public class ShooterStandalone : MonoBehaviour
 
     void Update()
     {
-        // текущий инстанс оружи€
+
         var go = switcher ? switcher.Current : null;
         var nw = go ? go.GetComponentInChildren<IWeaponTestable>() : null;
 
@@ -68,7 +68,7 @@ public class ShooterStandalone : MonoBehaviour
             if (w != null) w.StopAim();
             w = nw;
             aiming = false;
-            // мгновенно обновим HUD при смене
+
             if (w == null)
             {
                 if (ammoLabel) ammoLabel.text = "Ч / Ч";

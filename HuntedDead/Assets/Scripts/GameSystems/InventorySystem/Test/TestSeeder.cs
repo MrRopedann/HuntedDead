@@ -1,7 +1,7 @@
 // TestSeeder.cs
 using UnityEngine;
 
-[DefaultExecutionOrder(2000)]               // запускаем ПОСЛЕ PlayerInventory/LootSourceChest
+[DefaultExecutionOrder(2000)]
 public class TestSeeder : MonoBehaviour
 {
     public PlayerInventory inv;
@@ -15,7 +15,6 @@ public class TestSeeder : MonoBehaviour
         Seed(inv.Pockets, "water_bottle", 3);
         Seed(inv.Pockets, "medkit", 1);
 
-        // Форс-перерисовка открываемой вкладки
         var panel = FindObjectOfType<InventoryPanel>(includeInactive: true);
         if (panel && panel.bound != null) panel.RedrawItems();
     }

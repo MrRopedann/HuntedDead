@@ -4,7 +4,7 @@ public class ContainerInstance
 {
     public ContainerDef def;
     public bool[,,] occ;
-    public int[,,] indexAt;     // -1 = пусто
+    public int[,,] indexAt;
     public GridItem[] items;
     public CellRef[] positions;
     public int count;
@@ -17,7 +17,6 @@ public class ContainerInstance
         occ = new bool[x, y, z];
         indexAt = new int[x, y, z];
 
-        // Заполняем indexAt значением -1
         for (int ix = 0; ix < x; ix++)
             for (int iy = 0; iy < y; iy++)
                 for (int iz = 0; iz < z; iz++)
@@ -56,23 +55,23 @@ public class ContainerInstance
 
     int AddInternal(in GridItem item, in CellRef root)
     {
-        items[count] = item;      // ВАЖНО: используем текущий item.size
+        items[count] = item;
         positions[count] = root;
-        Mark(count, true);            // помечаем занятость по items[count].size
+        Mark(count, true);
         count++;
         return count - 1;
     }
 
     public bool TryAutoPlace(ref GridItem item, out int idx, out CellRef pos)
     {
-        // Контейнер ещё не инициализирован → выхода без падения
+
         if (def == null || occ == null || indexAt == null)
         {
             idx = -1; pos = default;
             return false;
         }
 
-        // Фильтр по типу предмета (если задан)
+
         if (!KindAllowed(item.def.kind))
         {
             idx = -1; pos = default;
@@ -105,7 +104,7 @@ public class ContainerInstance
         {
             items[idx] = items[last];
             positions[idx] = positions[last];
-            // переназначить indexAt для перемещенного
+
             MarkIndex(idx, true);
         }
         count--;

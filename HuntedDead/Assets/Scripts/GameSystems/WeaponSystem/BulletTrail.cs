@@ -4,7 +4,7 @@ using UnityEngine;
 [RequireComponent(typeof(Transform))]
 public class BulletTrail : MonoBehaviour
 {
-    TrailRenderer tr;                         // если есть в префабе
+    TrailRenderer tr;
     Vector3 target;
     float speed;
     float lifeAfter;

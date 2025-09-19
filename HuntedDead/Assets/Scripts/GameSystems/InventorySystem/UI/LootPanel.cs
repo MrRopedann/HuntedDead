@@ -21,14 +21,14 @@ public class LootPanel : MonoBehaviour
 
     public void Unbind()
     {
-        // оставляем видимым пустой грид; без бинда не перерисовываем
+
         if (grid && !grid.gameObject.activeSelf) grid.gameObject.SetActive(true);
     }
 
     public void Redraw()
     {
         if (!grid) return;
-        if (!HasBound()) return;   // ← защита от NRE
+        if (!HasBound()) return;
         grid.RedrawItems();
     }
 }

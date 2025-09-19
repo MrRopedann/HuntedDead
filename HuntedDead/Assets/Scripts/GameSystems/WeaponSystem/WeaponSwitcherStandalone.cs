@@ -39,12 +39,12 @@ public class WeaponSwitcherStandalone : MonoBehaviour
 
     [Header("Keyboard Rotate")]
     [SerializeField] bool rotateWithArrows = true;
-    [SerializeField] float yawSpeed = 120f;    // ←/→
-    [SerializeField] float pitchSpeed = 90f;   // ↑/↓
+    [SerializeField] float yawSpeed = 120f;
+    [SerializeField] float pitchSpeed = 90f;
     [SerializeField] float minPitch = -80f;
     [SerializeField] float maxPitch = 80f;
-    float yawOffset;    // по Y
-    float pitchOffset;  // по X
+    float yawOffset;
+    float pitchOffset;
 
 #if UNITY_EDITOR
     [Header("Editor Safety")]
@@ -129,13 +129,13 @@ public class WeaponSwitcherStandalone : MonoBehaviour
             if (Input.GetKey(KeyCode.LeftArrow)) yawDelta -= yawSpeed * dt;
 
             float pitchDelta = 0f;
-            if (Input.GetKey(KeyCode.UpArrow)) pitchDelta -= pitchSpeed * dt; // вверх — поднять ствол
+            if (Input.GetKey(KeyCode.UpArrow)) pitchDelta -= pitchSpeed * dt;
             if (Input.GetKey(KeyCode.DownArrow)) pitchDelta += pitchSpeed * dt;
 
             if (yawDelta != 0f || pitchDelta != 0f)
             {
                 yawOffset += yawDelta;
-                // нормализуем yaw в [0..360) чтобы не разрастался
+                
                 if (yawOffset > 360f) yawOffset -= 360f;
                 else if (yawOffset < -360f) yawOffset += 360f;
 
@@ -188,7 +188,6 @@ public class WeaponSwitcherStandalone : MonoBehaviour
         if (!currentInstance) return;
         var t = currentInstance.transform;
         t.localPosition = localPos + new Vector3(0f, 0f, zoomZ);
-        // базовый поворот + оффсеты от стрелок
         t.localEulerAngles = localEuler + new Vector3(pitchOffset, yawOffset, 0f);
         t.localScale = Vector3.one;
     }

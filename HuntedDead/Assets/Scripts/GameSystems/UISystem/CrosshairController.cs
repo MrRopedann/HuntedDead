@@ -6,26 +6,26 @@ using UnityEngine.InputSystem;
 public class CrosshairController : MonoBehaviour
 {
     [Header("Sprites")]
-    public Sprite[] crosshairs;         // набор спрайтов
-    [Range(0, 100)] public int index;   // текущий
+    public Sprite[] crosshairs;        
+    [Range(0, 100)] public int index;
 
     [Header("Appearance")]
     public Color color = Color.white;
-    public float sizeNormal = 32f;      // px
-    public float sizeAim = 24f;         // px
-    public float fadeIn = 16f;          // скорость по€влени€
-    public float fadeOut = 12f;         // скорость исчезновени€
+    public float sizeNormal = 32f;
+    public float sizeAim = 24f;
+    public float fadeIn = 16f;
+    public float fadeOut = 12f;
     public bool showOnlyWhenAiming = true;
 
     [Header("Input")]
-    public InputActionReference aim;     // та же ѕ ћ, что и в камере/контроллере
+    public InputActionReference aim;
 
     [Header("Optional spread (px add)")]
-    public float spreadPixels = 0f;      // можно мен€ть с оружи€
+    public float spreadPixels = 0f;
 
     Image img;
     RectTransform rt;
-    float alpha; // 0..1
+    float alpha;
 
     void OnEnable() { aim?.action.Enable(); }
     void OnDisable() { aim?.action.Disable(); }
@@ -49,7 +49,7 @@ public class CrosshairController : MonoBehaviour
         alpha = Mathf.MoveTowards(alpha, targetAlpha, k);
         SetAlpha(alpha);
 
-        // размер
+
         float baseSize = isAiming ? sizeAim : sizeNormal;
         SetSize(baseSize + spreadPixels);
     }

@@ -6,7 +6,7 @@ public class ChestSeeder : MonoBehaviour
     public LootSourceChest chest;
     public DbRegistry db;
 
-    [System.Serializable] public struct Entry { public string id; public int qty; } // id = ItemId.id
+    [System.Serializable] public struct Entry { public string id; public int qty; }
     public Entry[] items = {
         new Entry{ id="wood", qty=10 },
         new Entry{ id="water_bottle", qty=3 }
@@ -17,7 +17,7 @@ public class ChestSeeder : MonoBehaviour
         if (!chest) chest = GetComponent<LootSourceChest>();
         if (!chest || !db) { Debug.LogError("ChestSeeder: нет ссылок chest/db", this); return; }
 
-        var c = chest.Open(); // ContainerInstance внутри сундука уже инициализирован в Awake LootSourceChest
+        var c = chest.Open();
         for (int i = 0; i < items.Length; i++)
         {
             var e = items[i];

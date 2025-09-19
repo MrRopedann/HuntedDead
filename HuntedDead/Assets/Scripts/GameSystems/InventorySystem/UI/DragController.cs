@@ -23,7 +23,7 @@ public class DragController : MonoBehaviour
     Vector2 _cellSize;
     Vector2 _spacing;
 
-    // запоминаем исходную клетку, чтобы клик по месту не делал merge
+
     CellRef _srcCell;
     bool _hasSrcCell;
 
@@ -36,7 +36,7 @@ public class DragController : MonoBehaviour
         _dragItem = item;
         _active = true;
 
-        // запоминаем исходную клетку до RemoveAt
+
         _hasSrcCell = false;
         if (srcIndex >= 0 && srcIndex < src.count)
         {
@@ -44,7 +44,7 @@ public class DragController : MonoBehaviour
             _hasSrcCell = true;
         }
 
-        // размеры клетки из панели
+
         _cellSize = new Vector2(64, 64);
         _spacing = Vector2.zero;
         GridLayoutGroup grid = null;
@@ -52,7 +52,7 @@ public class DragController : MonoBehaviour
             grid = srcPanel.cellsRoot.GetComponent<GridLayoutGroup>();
         if (grid) { _cellSize = grid.cellSize; _spacing = grid.spacing; }
 
-        // пин призрака к Canvas источника
+
         var srcCanvas = srcPanel ? srcPanel.GetComponentInParent<Canvas>() : null;
         if (ghost && srcCanvas) ghost.AttachTo(srcCanvas);
 
@@ -72,9 +72,9 @@ public class DragController : MonoBehaviour
     {
         if (!_active || dst == null) return;
 
-        var tmp = _dragItem; // уже с актуальным размером
+        var tmp = _dragItem;
 
-        // 1) дроп обратно в ту же клетку источника — без мерджа
+ 
         bool samePlace = dst.Equals(_srcContainer) && _hasSrcCell && cx == _srcCell.x && cy == _srcCell.y;
         if (samePlace)
         {
@@ -84,7 +84,7 @@ public class DragController : MonoBehaviour
             return;
         }
 
-        // 2) сначала попытаться застакать
+
         Placement.MergeIntoExisting(dst, ref tmp);
         if (tmp.stack.qty <= 0)
         {
@@ -93,10 +93,10 @@ public class DragController : MonoBehaviour
             return;
         }
 
-        // 3) попытка положить в указанную клетку с текущей ориентацией
+
         bool placed = dst.TryPlaceAt(ref tmp, cx, cy, 0, out _);
 
-        // 4) если не вышло — автоплейс с учётом стекования
+
         if (!placed) placed = Placement.TryPlace(dst, ref tmp, out _, out _);
 
         if (placed)
@@ -157,11 +157,11 @@ public class DragController : MonoBehaviour
         if (!equipPanel || !equipPanel.TryGetSlotUnderScreen(screen, out var slot))
         { CancelReturnToSource(); return; }
 
-        // CanEquip(ItemDef def, string slot)
+
         if (!playerInv || !playerInv.Equipment.CanEquip(_dragItem.def, slot))
         { CancelReturnToSource(); return; }
 
-        // TryEquip(string slot, GridItem item)
+
         playerInv.Equipment.TryEquip(slot, _dragItem);
 
         ghost?.Hide();
@@ -175,7 +175,7 @@ public class DragController : MonoBehaviour
 
         var tmp = _dragItem;
 
-        // вернуть именно в исходную клетку, если знаем её
+
         bool placedBack = false;
         if (_hasSrcCell)
             placedBack = _srcContainer.TryPlaceAt(ref tmp, _srcCell.x, _srcCell.y, 0, out _);

@@ -4,13 +4,13 @@ using UnityEngine.InputSystem;
 public class WeaponSlot : MonoBehaviour
 {
     [Header("Bind")]
-    public Transform rightHandSocket;            // узел на правой руке
-    public GameObject[] pistolPrefabs;           // префабы с узлом "Attach_R" внутри
+    public Transform rightHandSocket;
+    public GameObject[] pistolPrefabs;
 
     [Header("Input (HotBar)")]
-    public InputActionReference nextSlot;        // Button (например E)
-    public InputActionReference prevSlot;        // Button (например Q)
-    public InputActionReference[] selectKeys;    // Buttons 1..N (цифры)
+    public InputActionReference nextSlot;
+    public InputActionReference prevSlot;
+    public InputActionReference[] selectKeys;
 
     [Header("Switching")]
     public float switchCooldown = 0.20f;
@@ -57,7 +57,6 @@ public class WeaponSlot : MonoBehaviour
         if (pistolPrefabs != null && pistolPrefabs.Length > 0) Equip(0);
     }
 
-    // --- callbacks ---
     void OnNext(InputAction.CallbackContext _) => TryCycle(+1);
     void OnPrev(InputAction.CallbackContext _) => TryCycle(-1);
 
@@ -75,7 +74,6 @@ public class WeaponSlot : MonoBehaviour
         nextSwitchTime = Time.time + switchCooldown;
     }
 
-    // --- logic ---
     public void Cycle(int dir)
     {
         if (pistolPrefabs == null || pistolPrefabs.Length == 0) return;
@@ -89,10 +87,9 @@ public class WeaponSlot : MonoBehaviour
         index = Mathf.Clamp(index, 0, pistolPrefabs.Length - 1);
         if (index == CurrentIndex && Mounted) return;
 
-        // удалить старый
+
         if (Mounted) { Destroy(Mounted.gameObject); Mounted = null; }
 
-        // создать новый
         var prefab = pistolPrefabs[index];
         if (!prefab) { Debug.LogError("WeaponSlot: пустой префаб"); return; }
 

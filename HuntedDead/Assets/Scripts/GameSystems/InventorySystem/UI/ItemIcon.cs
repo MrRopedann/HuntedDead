@@ -4,7 +4,7 @@ using TMPro;
 
 public class ItemIcon : MonoBehaviour
 {
-    public Image iconImage;               // укажи именно слой иконки
+    public Image iconImage;
     public TextMeshProUGUI countText;
 
     public void Bind(Sprite s, int qty, Color qcol)
@@ -16,14 +16,13 @@ public class ItemIcon : MonoBehaviour
         iconImage.enabled = s != null;
         iconImage.preserveAspect = false;
 
-        // занять весь слот, чтобы поворот не вылезал за рамку
         var rt = iconImage.rectTransform;
         rt.anchorMin = Vector2.zero;
         rt.anchorMax = Vector2.one;
         rt.offsetMin = Vector2.zero;
         rt.offsetMax = Vector2.zero;
         rt.pivot = new Vector2(0.5f, 0.5f);
-        rt.localEulerAngles = Vector3.zero;   // сброс поворота по умолчанию
+        rt.localEulerAngles = Vector3.zero;
 
         if (countText) countText.text = qty > 1 ? qty.ToString() : "";
     }

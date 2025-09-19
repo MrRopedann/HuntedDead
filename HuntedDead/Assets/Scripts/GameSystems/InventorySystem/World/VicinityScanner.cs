@@ -34,7 +34,7 @@ public class VicinityScanner : MonoBehaviour
             {
                 if (!wi.Key.Equals(key)) continue;
                 int take = Mathf.Min(wantQty - picked, wi.Qty);
-                // попытка положить take единиц (как один GridItem со стаком)
+
                 var def = FindObjectOfType<DbRegistry>().ItemByGuid(key.itemGuid);
                 var gi = new GridItem
                 {

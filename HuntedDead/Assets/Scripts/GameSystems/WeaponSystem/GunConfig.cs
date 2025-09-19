@@ -7,7 +7,7 @@ public class GunConfig : ScriptableObject
 
     [Header("Stats")]
     public float damage = 20f;
-    public float rpm = 600f;                 // базовый темп для SEMI/AUTO
+    public float rpm = 600f;
     public float range = 200f;
     public float spreadHipDeg = 0.6f;
     public float spreadAimDeg = 0.15f;
@@ -27,9 +27,9 @@ public class GunConfig : ScriptableObject
     public AudioClip magOutSfx, magInSfx;
 
     [Header("VFX")]
-    public GameObject muzzleVFXPrefab;       // FX_Gunshot_01
+    public GameObject muzzleVFXPrefab;
     public bool reuseMuzzleVFX = false;
-    public GameObject trailVFX;              // Bullet_Trail_FX
+    public GameObject trailVFX;
     public GameObject impactVFX;
 
     [Header("Tracer")]
