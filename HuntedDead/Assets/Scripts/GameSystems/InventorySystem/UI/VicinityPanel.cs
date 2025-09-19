@@ -10,7 +10,7 @@ public class VicinityPanel : MonoBehaviour
     public Vector3Int gridSize = new Vector3Int(6, 4, 1);
 
     ContainerDef _defRuntime;
-    ContainerInstance _view
+    ContainerInstance _view;
 
     void Awake()
     {

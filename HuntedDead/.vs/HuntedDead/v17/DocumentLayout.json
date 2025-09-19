@@ -3,227 +3,227 @@
   "WorkspaceRootPath": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\ui\\vicinitypanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\ui\\vicinitypanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\users\\brt\\desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\huntedsurvival\\hunteddead\\assets\\scripts\\gamesystems\\inventorysystem\\input\\inputrouter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\input\\inputrouter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\users\\brt\\desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\huntedsurvival\\hunteddead\\assets\\scripts\\gamesystems\\inventorysystem\\items\\variantkey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\items\\variantkey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\items\\variantkey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\users\\brt\\desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\huntedsurvival\\hunteddead\\assets\\scripts\\gamesystems\\inventorysystem\\items\\itemquality.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\items\\itemquality.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\items\\itemquality.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\users\\brt\\desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\huntedsurvival\\hunteddead\\assets\\scripts\\gamesystems\\inventorysystem\\items\\itemid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\items\\itemid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\items\\itemid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\users\\brt\\desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\huntedsurvival\\hunteddead\\assets\\scripts\\gamesystems\\inventorysystem\\items\\itemdef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\items\\itemdef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\items\\itemdef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\users\\brt\\desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\huntedsurvival\\hunteddead\\assets\\scripts\\gamesystems\\inventorysystem\\save\\savesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\save\\savesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\save\\savesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\users\\brt\\desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\huntedsurvival\\hunteddead\\assets\\scripts\\gamesystems\\inventorysystem\\save\\savemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\save\\savemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\save\\savemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\users\\brt\\desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\huntedsurvival\\hunteddead\\assets\\scripts\\gamesystems\\inventorysystem\\save\\savedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\save\\savedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\save\\savedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\users\\brt\\desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\huntedsurvival\\hunteddead\\assets\\scripts\\gamesystems\\inventorysystem\\state\\playerstaterelay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\state\\playerstaterelay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\state\\playerstaterelay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\users\\brt\\desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\huntedsurvival\\hunteddead\\assets\\scripts\\gamesystems\\inventorysystem\\state\\playerstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\state\\playerstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\state\\playerstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\users\\brt\\desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\huntedsurvival\\hunteddead\\assets\\scripts\\gamesystems\\inventorysystem\\state\\combattimer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\state\\combattimer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\state\\combattimer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\users\\brt\\desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\huntedsurvival\\hunteddead\\assets\\scripts\\gamesystems\\inventorysystem\\state\\actiongate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\state\\actiongate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\state\\actiongate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\users\\brt\\desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\huntedsurvival\\hunteddead\\assets\\scripts\\gamesystems\\inventorysystem\\test\\testseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\test\\testseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\test\\testseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\users\\brt\\desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\huntedsurvival\\hunteddead\\assets\\scripts\\gamesystems\\inventorysystem\\test\\chestseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\test\\chestseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\test\\chestseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\users\\brt\\desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\huntedsurvival\\hunteddead\\assets\\scripts\\gamesystems\\inventorysystem\\ui\\vicinitypanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\ui\\vicinitypanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\users\\brt\\desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\huntedsurvival\\hunteddead\\assets\\scripts\\gamesystems\\inventorysystem\\ui\\uipool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\ui\\uipool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\ui\\uipool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\users\\brt\\desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\huntedsurvival\\hunteddead\\assets\\scripts\\gamesystems\\inventorysystem\\ui\\lootpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\ui\\lootpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\ui\\lootpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\users\\brt\\desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\huntedsurvival\\hunteddead\\assets\\scripts\\gamesystems\\inventorysystem\\ui\\lootinteractor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\ui\\lootinteractor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\ui\\lootinteractor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\users\\brt\\desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\huntedsurvival\\hunteddead\\assets\\scripts\\gamesystems\\inventorysystem\\ui\\itemicon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\ui\\itemicon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\ui\\itemicon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\users\\brt\\desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\huntedsurvival\\hunteddead\\assets\\scripts\\gamesystems\\inventorysystem\\ui\\inventorypanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\ui\\inventorypanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\ui\\inventorypanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\users\\brt\\desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\huntedsurvival\\hunteddead\\assets\\scripts\\gamesystems\\inventorysystem\\ui\\inventorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\ui\\inventorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\ui\\inventorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\users\\brt\\desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\huntedsurvival\\hunteddead\\assets\\scripts\\gamesystems\\inventorysystem\\ui\\interactui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\ui\\interactui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\ui\\interactui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\users\\brt\\desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\huntedsurvival\\hunteddead\\assets\\scripts\\gamesystems\\inventorysystem\\ui\\hotbarinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\ui\\hotbarinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\ui\\hotbarinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\users\\brt\\desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\huntedsurvival\\hunteddead\\assets\\scripts\\gamesystems\\inventorysystem\\ui\\hotbardef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\ui\\hotbardef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\ui\\hotbardef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\users\\brt\\desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\huntedsurvival\\hunteddead\\assets\\scripts\\gamesystems\\inventorysystem\\ui\\hotbarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\ui\\hotbarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\ui\\hotbarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\users\\brt\\desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\huntedsurvival\\hunteddead\\assets\\scripts\\gamesystems\\inventorysystem\\ui\\gridcellview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\ui\\gridcellview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\ui\\gridcellview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\users\\brt\\desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\huntedsurvival\\hunteddead\\assets\\scripts\\gamesystems\\inventorysystem\\ui\\equipmentpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\ui\\equipmentpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\ui\\equipmentpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\users\\brt\\desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\huntedsurvival\\hunteddead\\assets\\scripts\\gamesystems\\inventorysystem\\ui\\dragghost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\ui\\dragghost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\ui\\dragghost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\users\\brt\\desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\huntedsurvival\\hunteddead\\assets\\scripts\\gamesystems\\inventorysystem\\ui\\dragcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\ui\\dragcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\ui\\dragcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\users\\brt\\desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\huntedsurvival\\hunteddead\\assets\\scripts\\gamesystems\\inventorysystem\\world\\ilootsource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\world\\ilootsource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\world\\ilootsource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\users\\brt\\desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\huntedsurvival\\hunteddead\\assets\\scripts\\gamesystems\\inventorysystem\\world\\worlditem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\world\\worlditem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\world\\worlditem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\users\\brt\\desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\huntedsurvival\\hunteddead\\assets\\scripts\\gamesystems\\inventorysystem\\world\\vicinityscanner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\world\\vicinityscanner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\world\\vicinityscanner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\users\\brt\\desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\huntedsurvival\\hunteddead\\assets\\scripts\\gamesystems\\inventorysystem\\world\\lootsourcechest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\world\\lootsourcechest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\world\\lootsourcechest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\users\\brt\\desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\huntedsurvival\\hunteddead\\assets\\scripts\\gamesystems\\inventorysystem\\cellref.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\cellref.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\cellref.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\users\\brt\\desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\huntedsurvival\\hunteddead\\assets\\scripts\\gamesystems\\inventorysystem\\containerdef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\containerdef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\containerdef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\users\\brt\\desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\huntedsurvival\\hunteddead\\assets\\scripts\\gamesystems\\inventorysystem\\containerinstance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\containerinstance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\containerinstance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\users\\brt\\desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\huntedsurvival\\hunteddead\\assets\\scripts\\gamesystems\\inventorysystem\\equipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\equipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\equipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\users\\brt\\desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\huntedsurvival\\hunteddead\\assets\\scripts\\gamesystems\\inventorysystem\\gridalgo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\gridalgo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\gridalgo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\users\\brt\\desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\huntedsurvival\\hunteddead\\assets\\scripts\\gamesystems\\inventorysystem\\griditem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\griditem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\griditem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\users\\brt\\desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\huntedsurvival\\hunteddead\\assets\\scripts\\gamesystems\\inventorysystem\\itemstack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\itemstack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\itemstack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\users\\brt\\desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\huntedsurvival\\hunteddead\\assets\\scripts\\gamesystems\\inventorysystem\\placement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\placement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\placement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\users\\brt\\desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\huntedsurvival\\hunteddead\\assets\\scripts\\gamesystems\\inventorysystem\\playerinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\inventorysystem\\playerinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\inventorysystem\\playerinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\users\\brt\\desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\huntedsurvival\\hunteddead\\assets\\scripts\\gamesystems\\weaponsystem\\weaponswitcherstandalone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\weaponsystem\\weaponswitcherstandalone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\weaponsystem\\weaponswitcherstandalone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\users\\brt\\desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\huntedsurvival\\hunteddead\\assets\\scripts\\gamesystems\\weaponsystem\\weaponslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\weaponsystem\\weaponslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\weaponsystem\\weaponslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\users\\brt\\desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\huntedsurvival\\hunteddead\\assets\\scripts\\gamesystems\\weaponsystem\\shooterstandalone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\weaponsystem\\shooterstandalone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\weaponsystem\\shooterstandalone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\users\\brt\\desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\huntedsurvival\\hunteddead\\assets\\scripts\\gamesystems\\weaponsystem\\iweapontestable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\weaponsystem\\iweapontestable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\weaponsystem\\iweapontestable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\users\\brt\\desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\huntedsurvival\\hunteddead\\assets\\scripts\\gamesystems\\weaponsystem\\idamageable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\weaponsystem\\idamageable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\weaponsystem\\idamageable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\users\\brt\\desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\huntedsurvival\\hunteddead\\assets\\scripts\\gamesystems\\weaponsystem\\gunconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\weaponsystem\\gunconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\weaponsystem\\gunconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\users\\brt\\desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\huntedsurvival\\hunteddead\\assets\\scripts\\gamesystems\\weaponsystem\\gun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\weaponsystem\\gun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\weaponsystem\\gun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\users\\brt\\desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\huntedsurvival\\hunteddead\\assets\\scripts\\gamesystems\\weaponsystem\\bullettrail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\weaponsystem\\bullettrail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\weaponsystem\\bullettrail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\users\\brt\\desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\huntedsurvival\\hunteddead\\assets\\scripts\\gamesystems\\uisystem\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\uisystem\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\uisystem\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\users\\brt\\desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\huntedsurvival\\hunteddead\\assets\\scripts\\gamesystems\\uisystem\\crosshaircontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\uisystem\\crosshaircontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\uisystem\\crosshaircontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\users\\brt\\desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\huntedsurvival\\hunteddead\\assets\\scripts\\gamesystems\\playermovementsystem\\thirdpersoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\playermovementsystem\\thirdpersoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\playermovementsystem\\thirdpersoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\users\\brt\\desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\huntedsurvival\\hunteddead\\assets\\scripts\\gamesystems\\playermovementsystem\\cameracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\playermovementsystem\\cameracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\playermovementsystem\\cameracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\users\\brt\\desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\huntedsurvival\\hunteddead\\assets\\scripts\\gamesystems\\enemysystem\\zombieai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\enemysystem\\zombieai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\enemysystem\\zombieai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\users\\brt\\desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\huntedsurvival\\hunteddead\\assets\\scripts\\core\\inventorysystem\\dbregistry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\core\\inventorysystem\\dbregistry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\core\\inventorysystem\\dbregistry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -234,11 +234,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 14,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "InputRouter.cs",
               "DocumentMoniker": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\Input\\InputRouter.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\InventorySystem\\Input\\InputRouter.cs",
@@ -251,7 +251,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "VariantKey.cs",
               "DocumentMoniker": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\Items\\VariantKey.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\InventorySystem\\Items\\VariantKey.cs",
@@ -259,12 +259,11 @@
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\Items\\VariantKey.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T09:39:47.307Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T09:39:47.307Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ItemQuality.cs",
               "DocumentMoniker": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\Items\\ItemQuality.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\InventorySystem\\Items\\ItemQuality.cs",
@@ -272,12 +271,11 @@
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\Items\\ItemQuality.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T09:39:45.986Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T09:39:45.986Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "ItemId.cs",
               "DocumentMoniker": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\Items\\ItemId.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\InventorySystem\\Items\\ItemId.cs",
@@ -285,12 +283,11 @@
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\Items\\ItemId.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T09:39:44.767Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T09:39:44.767Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "ItemDef.cs",
               "DocumentMoniker": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\Items\\ItemDef.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\InventorySystem\\Items\\ItemDef.cs",
@@ -298,12 +295,11 @@
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\Items\\ItemDef.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T09:39:41.829Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T09:39:41.829Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "SaveSystem.cs",
               "DocumentMoniker": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\Save\\SaveSystem.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\InventorySystem\\Save\\SaveSystem.cs",
@@ -311,12 +307,11 @@
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\Save\\SaveSystem.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T09:39:28.413Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T09:39:28.413Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "SaveManager.cs",
               "DocumentMoniker": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\Save\\SaveManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\InventorySystem\\Save\\SaveManager.cs",
@@ -324,12 +319,11 @@
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\Save\\SaveManager.cs",
               "ViewState": "AgIAAD4AAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T09:38:53.206Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T09:38:53.206Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "SaveDto.cs",
               "DocumentMoniker": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\Save\\SaveDto.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\InventorySystem\\Save\\SaveDto.cs",
@@ -337,12 +331,11 @@
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\Save\\SaveDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T09:38:51.602Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T09:38:51.602Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "PlayerStateRelay.cs",
               "DocumentMoniker": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\State\\PlayerStateRelay.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\InventorySystem\\State\\PlayerStateRelay.cs",
@@ -350,12 +343,11 @@
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\State\\PlayerStateRelay.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T09:38:49.233Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T09:38:49.233Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "PlayerState.cs",
               "DocumentMoniker": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\State\\PlayerState.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\InventorySystem\\State\\PlayerState.cs",
@@ -363,12 +355,11 @@
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\State\\PlayerState.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T09:38:46.733Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T09:38:46.733Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "CombatTimer.cs",
               "DocumentMoniker": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\State\\CombatTimer.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\InventorySystem\\State\\CombatTimer.cs",
@@ -376,12 +367,11 @@
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\State\\CombatTimer.cs",
               "ViewState": "AgIAACcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T09:38:43.671Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T09:38:43.671Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "ActionGate.cs",
               "DocumentMoniker": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\State\\ActionGate.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\InventorySystem\\State\\ActionGate.cs",
@@ -389,12 +379,11 @@
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\State\\ActionGate.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T09:38:42.481Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T09:38:42.481Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "TestSeeder.cs",
               "DocumentMoniker": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\Test\\TestSeeder.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\InventorySystem\\Test\\TestSeeder.cs",
@@ -402,12 +391,11 @@
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\Test\\TestSeeder.cs",
               "ViewState": "AgIAACMAAAAAAAAAAAAgwBAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T09:38:32.252Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T09:38:32.252Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "ChestSeeder.cs",
               "DocumentMoniker": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\Test\\ChestSeeder.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\InventorySystem\\Test\\ChestSeeder.cs",
@@ -415,18 +403,17 @@
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\Test\\ChestSeeder.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAYwBMAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T09:38:24.516Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T09:38:24.516Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 0,
               "Title": "VicinityPanel.cs",
               "DocumentMoniker": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\VicinityPanel.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\VicinityPanel.cs",
               "ToolTip": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\VicinityPanel.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\VicinityPanel.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAYwDcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAApwAwAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-19T09:37:49.528Z",
               "EditorCaption": ""
@@ -441,8 +428,7 @@
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\UiPool.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T09:37:47.301Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T09:37:47.301Z"
             },
             {
               "$type": "Document",
@@ -454,8 +440,7 @@
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\LootPanel.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAYwB4AAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T09:37:41.705Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T09:37:41.705Z"
             },
             {
               "$type": "Document",
@@ -467,8 +452,7 @@
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\LootInteractor.cs",
               "ViewState": "AgIAAC4AAAAAAAAAAAAQwDEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T09:37:27.131Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T09:37:27.131Z"
             },
             {
               "$type": "Document",
@@ -480,8 +464,7 @@
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\ItemIcon.cs",
               "ViewState": "AgIAABwAAAAAAAAAAAAQwBgAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T09:37:16.228Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T09:37:16.228Z"
             },
             {
               "$type": "Document",
@@ -493,8 +476,7 @@
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\InventoryPanel.cs",
               "ViewState": "AgIAAMIAAAAAAAAAAAAmwC8AAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T09:37:00.181Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T09:37:00.181Z"
             },
             {
               "$type": "Document",
@@ -506,8 +488,7 @@
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\InventoryController.cs",
               "ViewState": "AgIAAJkAAAAAAAAAAAAiwIYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T09:36:21.447Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T09:36:21.447Z"
             },
             {
               "$type": "Document",
@@ -519,8 +500,7 @@
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\InteractUI.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T09:36:19.417Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T09:36:19.417Z"
             },
             {
               "$type": "Document",
@@ -532,8 +512,7 @@
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\HotbarInput.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T09:36:16.87Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T09:36:16.87Z"
             },
             {
               "$type": "Document",
@@ -545,8 +524,7 @@
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\HotbarDef.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T09:36:15.675Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T09:36:15.675Z"
             },
             {
               "$type": "Document",
@@ -558,8 +536,7 @@
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\HotbarController.cs",
               "ViewState": "AgIAADQAAAAAAAAAAAAwwBkAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T09:36:05.557Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T09:36:05.557Z"
             },
             {
               "$type": "Document",
@@ -571,8 +548,7 @@
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\GridCellView.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T09:36:04.08Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T09:36:04.08Z"
             },
             {
               "$type": "Document",
@@ -584,8 +560,7 @@
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\EquipmentPanel.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAAzwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T09:36:02.121Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T09:36:02.121Z"
             },
             {
               "$type": "Document",
@@ -597,8 +572,7 @@
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\DragGhost.cs",
               "ViewState": "AgIAAD8AAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T09:35:57.348Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T09:35:57.348Z"
             },
             {
               "$type": "Document",
@@ -610,8 +584,7 @@
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\UI\\DragController.cs",
               "ViewState": "AgIAALAAAAAAAAAAAAAUwLEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T09:35:22.669Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T09:35:22.669Z"
             },
             {
               "$type": "Document",
@@ -623,8 +596,7 @@
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\World\\WorldItem.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T09:35:18.674Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T09:35:18.674Z"
             },
             {
               "$type": "Document",
@@ -636,8 +608,7 @@
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\World\\VicinityScanner.cs",
               "ViewState": "AgIAACoAAAAAAAAAAAAYwCQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T09:35:11.97Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T09:35:11.97Z"
             },
             {
               "$type": "Document",
@@ -649,8 +620,7 @@
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\World\\LootSourceChest.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAQwAoAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T09:35:05.776Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T09:35:05.776Z"
             },
             {
               "$type": "Document",
@@ -662,8 +632,7 @@
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\World\\ILootSource.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T09:35:04.672Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T09:35:04.672Z"
             },
             {
               "$type": "Document",
@@ -675,8 +644,7 @@
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\CellRef.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T09:35:01.673Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T09:35:01.673Z"
             },
             {
               "$type": "Document",
@@ -688,8 +656,7 @@
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\ContainerDef.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T09:34:58.19Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T09:34:58.19Z"
             },
             {
               "$type": "Document",
@@ -701,8 +668,7 @@
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\ContainerInstance.cs",
               "ViewState": "AgIAAHYAAAAAAAAAAADwv2oAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T09:34:37.112Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T09:34:37.112Z"
             },
             {
               "$type": "Document",
@@ -714,8 +680,7 @@
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\Equipment.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T09:34:33.443Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T09:34:33.443Z"
             },
             {
               "$type": "Document",
@@ -727,8 +692,7 @@
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\GridAlgo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T09:34:31.108Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T09:34:31.108Z"
             },
             {
               "$type": "Document",
@@ -740,8 +704,7 @@
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\GridItem.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T09:34:24.32Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T09:34:24.32Z"
             },
             {
               "$type": "Document",
@@ -753,8 +716,7 @@
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\ItemStack.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T09:34:22.399Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T09:34:22.399Z"
             },
             {
               "$type": "Document",
@@ -766,8 +728,7 @@
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\Placement.cs",
               "ViewState": "AgIAAB4AAAAAAAAAAAAYwCoAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T09:33:54.274Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T09:33:54.274Z"
             },
             {
               "$type": "Document",
@@ -779,8 +740,7 @@
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\InventorySystem\\PlayerInventory.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T09:33:46.697Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T09:33:46.697Z"
             },
             {
               "$type": "Document",
@@ -792,8 +752,7 @@
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\WeaponSystem\\WeaponSwitcherStandalone.cs",
               "ViewState": "AgIAAM4AAAAAAAAAAAAUwL0AAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T09:33:10.218Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T09:33:10.218Z"
             },
             {
               "$type": "Document",
@@ -805,8 +764,7 @@
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\WeaponSystem\\WeaponSlot.cs",
               "ViewState": "AgIAAGoAAAAAAAAAAAAcwFsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T09:32:43.64Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T09:32:43.64Z"
             },
             {
               "$type": "Document",
@@ -818,8 +776,7 @@
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\WeaponSystem\\ShooterStandalone.cs",
               "ViewState": "AgIAAFEAAAAAAAAAAAAowEYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T09:32:27.057Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T09:32:27.057Z"
             },
             {
               "$type": "Document",
@@ -831,8 +788,7 @@
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\WeaponSystem\\IWeaponTestable.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAowA0AAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T09:32:12.093Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T09:32:12.093Z"
             },
             {
               "$type": "Document",
@@ -844,8 +800,7 @@
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\WeaponSystem\\IDamageable.cs",
               "ViewState": "AgIAAEAAAAAAAAAAAAAwwE4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T09:31:48.12Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T09:31:48.12Z"
             },
             {
               "$type": "Document",
@@ -857,8 +812,7 @@
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\WeaponSystem\\GunConfig.cs",
               "ViewState": "AgIAACAAAAAAAAAAAAAAwB8AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T09:31:35.355Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T09:31:35.355Z"
             },
             {
               "$type": "Document",
@@ -870,8 +824,7 @@
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\WeaponSystem\\Gun.cs",
               "ViewState": "AgIAADABAAAAAAAAAADwvyMBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T09:30:40.252Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T09:30:40.252Z"
             },
             {
               "$type": "Document",
@@ -883,8 +836,7 @@
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\WeaponSystem\\BulletTrail.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAAYwAYAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T09:30:32.92Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T09:30:32.92Z"
             },
             {
               "$type": "Document",
@@ -896,8 +848,7 @@
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\UISystem\\MenuController.cs",
               "ViewState": "AgIAABcAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T09:30:28.277Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T09:30:28.277Z"
             },
             {
               "$type": "Document",
@@ -909,8 +860,7 @@
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\UISystem\\CrosshairController.cs",
               "ViewState": "AgIAAEEAAAAAAAAAAAAswDMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T09:29:51.726Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T09:29:51.726Z"
             },
             {
               "$type": "Document",
@@ -922,8 +872,7 @@
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\PlayerMovementSystem\\ThirdPersonController.cs",
               "ViewState": "AgIAAAQBAAAAAAAAAAAgwAgBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T09:27:51.874Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T09:27:51.874Z"
             },
             {
               "$type": "Document",
@@ -935,8 +884,7 @@
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\PlayerMovementSystem\\CameraController.cs",
               "ViewState": "AgIAAMEAAAAAAAAAAAAwwIQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T09:26:48.564Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T09:26:48.564Z"
             },
             {
               "$type": "Document",
@@ -948,8 +896,7 @@
               "RelativeToolTip": "Assets\\Scripts\\GameSystems\\EnemySystem\\ZombieAI.cs",
               "ViewState": "AgIAAOcBAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T09:26:24.913Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T09:26:24.913Z"
             },
             {
               "$type": "Document",
@@ -961,8 +908,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Core\\InventorySystem\\DbRegistry.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T09:26:17.161Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T09:26:17.161Z"
             }
           ]
         }
