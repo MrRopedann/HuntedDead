@@ -13,7 +13,9 @@ public interface IMovementNoiseProvider
 
 public class ThirdPersonController : MonoBehaviour, ICrouchProvider, IMovementNoiseProvider
 {
-    [Header("Move Speeds")]
+    public CharacterStats stats;
+
+    [Header("Base Move Speeds (fallback if stats == null)")]
     public float walkSpeed = 1.5f;
     public float runSpeed = 4f;
     public float sprintSpeed = 5f;
@@ -36,11 +38,8 @@ public class ThirdPersonController : MonoBehaviour, ICrouchProvider, IMovementNo
     public LayerMask headBlockMask = ~0;
 
     [Header("Noise flags thresholds")]
-    [Tooltip("Доля от walkSpeed для IsMoving")]
     public float moveFrac = 0.15f;
-    [Tooltip("Доля от runSpeed для IsRunning")]
     public float runFrac = 0.75f;
-    [Tooltip("Сколько секунд держать JustJumped")]
     public float jumpedFlagTime = 0.25f;
 
     bool isCrouching;
@@ -88,8 +87,8 @@ public class ThirdPersonController : MonoBehaviour, ICrouchProvider, IMovementNo
     Vector3 defaultCenter;
 
     public bool IsSprinting => inSprint && !isCrouching;
-    public bool IsRunning => !IsSprinting && !isCrouching && currPlanarSpeed >= runSpeed * runFrac;
-    public bool IsMoving => currPlanarSpeed >= Mathf.Max(0.05f, walkSpeed * moveFrac);
+    public bool IsRunning => !IsSprinting && !isCrouching && currPlanarSpeed >= GetRunSpeed() * runFrac;
+    public bool IsMoving => currPlanarSpeed >= Mathf.Max(0.05f, GetWalkSpeed() * moveFrac);
     public bool JustJumped => jumpedTimer > 0f;
 
     void OnEnable()
@@ -98,15 +97,26 @@ public class ThirdPersonController : MonoBehaviour, ICrouchProvider, IMovementNo
         jump?.action.Enable();
         sprint?.action.Enable();
         crouch?.action.Enable();
-        if (walk != null) { walk.action.Enable(); walk.action.performed += OnWalkPerformed; walk.action.canceled += OnWalkCanceled; }
+        if (walk != null)
+        {
+            walk.action.Enable();
+            walk.action.performed += OnWalkPerformed;
+            walk.action.canceled += OnWalkCanceled;
+        }
     }
+
     void OnDisable()
     {
         move?.action.Disable();
         jump?.action.Disable();
         sprint?.action.Disable();
         crouch?.action.Disable();
-        if (walk != null) { walk.action.performed -= OnWalkPerformed; walk.action.canceled -= OnWalkCanceled; walk.action.Disable(); }
+        if (walk != null)
+        {
+            walk.action.performed -= OnWalkPerformed;
+            walk.action.canceled -= OnWalkCanceled;
+            walk.action.Disable();
+        }
     }
 
     void Start()
@@ -156,15 +166,22 @@ public class ThirdPersonController : MonoBehaviour, ICrouchProvider, IMovementNo
         }
         if (jumpedTimer > 0f) jumpedTimer -= Time.deltaTime;
 
+        // === FIXED PART ===
         float desiredMS = 0f;
         if (groundedBuffered && hasMoveInput)
         {
-            if (isCrouching) desiredMS = (isWalking ? walkSpeed : runSpeed) * Mathf.Clamp01(crouchMultiplier);
-            else if (inSprint) desiredMS = sprintSpeed;
-            else if (isWalking) desiredMS = walkSpeed;
-            else desiredMS = runSpeed;
+            if (isCrouching)
+                desiredMS = (isWalking ? GetWalkSpeed() : GetRunSpeed()) * Mathf.Clamp01(crouchMultiplier);
+            else if (inSprint)
+                desiredMS = GetSprintSpeed();
+            else if (isWalking)
+                desiredMS = GetWalkSpeed();
+            else
+                desiredMS = GetRunSpeed();
         }
-        float speed01 = Mathf.InverseLerp(0f, sprintSpeed, desiredMS);
+
+        float speed01 = Mathf.InverseLerp(0f, GetSprintSpeed(), desiredMS);
+        // ==================
 
         float fallDistance = Mathf.Max(0f, leaveGroundY - transform.position.y);
         bool shouldFall = !groundedBuffered &&
@@ -191,11 +208,15 @@ public class ThirdPersonController : MonoBehaviour, ICrouchProvider, IMovementNo
     void FixedUpdate()
     {
         float speed;
-        if (inSprint && !isCrouching && !isAiming) speed = sprintSpeed;
-        else if (isWalking && !inSprint) speed = walkSpeed;
-        else speed = isAiming ? Mathf.Min(runSpeed, sprintSpeed) * 0.85f : runSpeed;
+        if (inSprint && !isCrouching && !isAiming)
+            speed = GetSprintSpeed();
+        else if (isWalking && !inSprint)
+            speed = GetWalkSpeed();
+        else
+            speed = isAiming ? Mathf.Min(GetRunSpeed(), GetSprintSpeed()) * 0.85f : GetRunSpeed();
 
-        if (isCrouching) speed *= Mathf.Clamp01(crouchMultiplier);
+        if (isCrouching)
+            speed = isAiming ? Mathf.Min(GetWalkSpeed(), GetSprintSpeed()) * 0.85f : GetWalkSpeed();
 
         float inputMag = Mathf.Clamp01(new Vector2(inX, inZ).magnitude);
         currPlanarSpeed = speed * inputMag;
@@ -209,7 +230,6 @@ public class ThirdPersonController : MonoBehaviour, ICrouchProvider, IMovementNo
 
         Vector3 planar = f * (inZ * speed * Time.deltaTime) + r * (inX * speed * Time.deltaTime);
 
-
         if (!(isAiming && cameraDrivesYawInAim))
         {
             if (inputMag > 0f)
@@ -222,7 +242,6 @@ public class ThirdPersonController : MonoBehaviour, ICrouchProvider, IMovementNo
         cc.Move(planar + Vector3.up * dy);
     }
 
- 
     void SmoothCapsule()
     {
         if (!cc) return;
@@ -260,9 +279,16 @@ public class ThirdPersonController : MonoBehaviour, ICrouchProvider, IMovementNo
         float headHitDistance = 1.1f;
         Vector3 ccCenter = transform.TransformPoint(cc.center);
         float hitCalc = cc.height / 2f * headHitDistance;
-        if (Physics.Raycast(ccCenter, Vector3.up, hitCalc)) { if (velY > 0f) velY = 0f; }
+        if (Physics.Raycast(ccCenter, Vector3.up, hitCalc))
+        {
+            if (velY > 0f) velY = 0f;
+        }
     }
 
     void OnWalkPerformed(InputAction.CallbackContext _) { if (cc && cc.isGrounded) isWalking = true; }
     void OnWalkCanceled(InputAction.CallbackContext _) { isWalking = false; }
+
+    float GetWalkSpeed() => stats ? stats.walkSpeed.Value : walkSpeed;
+    float GetRunSpeed() => stats ? stats.runSpeed.Value : runSpeed;
+    float GetSprintSpeed() => stats ? stats.sprintSpeed.Value : sprintSpeed;
 }
