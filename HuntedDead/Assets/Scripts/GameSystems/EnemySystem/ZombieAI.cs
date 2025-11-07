@@ -395,7 +395,7 @@ public class ZombieAI : MonoBehaviour
 
         Vector3 vXZ = deltaXZ / t;
         float vy = (delta.y + 0.5f * g * t * t) / t + extraUpVelocity;
-        rb.velocity = vXZ + Vector3.up * vy;
+        rb.linearVelocity = vXZ + Vector3.up * vy;
 
         if (deltaXZ.sqrMagnitude > 1e-4f)
             transform.rotation = Quaternion.LookRotation(deltaXZ.normalized, Vector3.up);
@@ -403,7 +403,7 @@ public class ZombieAI : MonoBehaviour
         float elapsed = 0f;
         while (elapsed < t * 1.25f) { elapsed += Time.deltaTime; yield return null; }
 
-        rb.isKinematic = true; rb.velocity = Vector3.zero;
+        rb.isKinematic = true; rb.linearVelocity = Vector3.zero;
         agent.CompleteOffMeshLink();
         agent.Warp(SampleOnNavMesh(transform.position));
         agent.updatePosition = true; agent.updateRotation = true; agent.isStopped = false;

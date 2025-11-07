@@ -13,12 +13,10 @@ public interface IMovementNoiseProvider
 
 public class ThirdPersonController : MonoBehaviour, ICrouchProvider, IMovementNoiseProvider
 {
+    [Header("Character Stats (must be assigned)")]
     public CharacterStats stats;
 
-    [Header("Base Move Speeds (fallback if stats == null)")]
-    public float walkSpeed = 1.5f;
-    public float runSpeed = 4f;
-    public float sprintSpeed = 5f;
+    [Header("Crouch multiplier")]
     public float crouchMultiplier = 0.5f;
 
     [Header("Jump/Gravity")]
@@ -121,6 +119,13 @@ public class ThirdPersonController : MonoBehaviour, ICrouchProvider, IMovementNo
 
     void Start()
     {
+        if (!stats)
+        {
+            Debug.LogError("CharacterStats not assigned to ThirdPersonController!");
+            enabled = false;
+            return;
+        }
+
         cc = GetComponent<CharacterController>();
         animator = GetComponent<Animator>();
 
@@ -166,12 +171,12 @@ public class ThirdPersonController : MonoBehaviour, ICrouchProvider, IMovementNo
         }
         if (jumpedTimer > 0f) jumpedTimer -= Time.deltaTime;
 
-        // === FIXED PART ===
+        // === Speed calculation ===
         float desiredMS = 0f;
         if (groundedBuffered && hasMoveInput)
         {
             if (isCrouching)
-                desiredMS = (isWalking ? GetWalkSpeed() : GetRunSpeed()) * Mathf.Clamp01(crouchMultiplier);
+                desiredMS = (isWalking ? GetWalkSpeed() : GetRunSpeed()) * crouchMultiplier;
             else if (inSprint)
                 desiredMS = GetSprintSpeed();
             else if (isWalking)
@@ -180,8 +185,9 @@ public class ThirdPersonController : MonoBehaviour, ICrouchProvider, IMovementNo
                 desiredMS = GetRunSpeed();
         }
 
-        float speed01 = Mathf.InverseLerp(0f, GetSprintSpeed(), desiredMS);
-        // ==================
+        float maxSpeed = GetSprintSpeed();
+        float normalizedSpeed = Mathf.Clamp01(currPlanarSpeed / maxSpeed);
+        animator?.SetFloat(P_Speed, normalizedSpeed, 0.1f, Time.deltaTime);
 
         float fallDistance = Mathf.Max(0f, leaveGroundY - transform.position.y);
         bool shouldFall = !groundedBuffered &&
@@ -192,7 +198,7 @@ public class ThirdPersonController : MonoBehaviour, ICrouchProvider, IMovementNo
             animator.SetBool(P_Grounded, groundedBuffered);
             animator.SetBool(P_Crouch, isCrouching);
             animator.SetBool(P_IsFalling, shouldFall);
-            animator.SetFloat(P_Speed, speed01, 0.1f, Time.deltaTime);
+            animator.SetFloat(P_Speed, normalizedSpeed, 0.1f, Time.deltaTime);
             animator.SetFloat(P_VelY, velY);
             if (!wasGrounded && groundedBuffered && velY <= 0f) animator.SetTrigger(P_Land);
         }
@@ -288,7 +294,7 @@ public class ThirdPersonController : MonoBehaviour, ICrouchProvider, IMovementNo
     void OnWalkPerformed(InputAction.CallbackContext _) { if (cc && cc.isGrounded) isWalking = true; }
     void OnWalkCanceled(InputAction.CallbackContext _) { isWalking = false; }
 
-    float GetWalkSpeed() => stats ? stats.walkSpeed.Value : walkSpeed;
-    float GetRunSpeed() => stats ? stats.runSpeed.Value : runSpeed;
-    float GetSprintSpeed() => stats ? stats.sprintSpeed.Value : sprintSpeed;
+    float GetWalkSpeed() => stats.walkSpeed.Value;
+    float GetRunSpeed() => stats.runSpeed.Value;
+    float GetSprintSpeed() => stats.sprintSpeed.Value;
 }

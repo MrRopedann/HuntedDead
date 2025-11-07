@@ -15,9 +15,9 @@ MonoBehaviour:
   itemName: "\u0411\u0443\u0441\u0442 \u0421\u043A\u043E\u0440\u043E\u0441\u0442\u0438"
   icon: {fileID: 21300000, guid: e76ad114d03b05c4090ec02c803c33c4, type: 3}
   rarity: 0
-  bonusWalkSpeed: 5
-  bonusSprintSpeed: 5
-  bonusRunSpeed: 5
+  bonusWalkSpeed: 1
+  bonusSprintSpeed: 2
+  bonusRunSpeed: 3
   bonusDamage: 0
   bonusDefense: 0
   bonusHealth: 0
