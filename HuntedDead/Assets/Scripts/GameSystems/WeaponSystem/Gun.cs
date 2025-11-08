@@ -15,7 +15,7 @@ public class Gun : MonoBehaviour, IWeaponTestable
         public Transform dropSpawn;
         public AudioSource audio;
     }
-    [SerializeField] Sockets sockets = new Sockets();
+    [SerializeField] public Sockets sockets = new Sockets(); // теперь public, чтобы ShooterStandalone мог ссылаться
 
     [Header("Debug")]
     [SerializeField] bool drawDebug = false;
@@ -37,7 +37,8 @@ public class Gun : MonoBehaviour, IWeaponTestable
     void Awake()
     {
         if (!config) { Debug.LogError("Gun: config is null", this); enabled = false; return; }
-        AutoBindSockets(); EnsureAudio();
+        AutoBindSockets();
+        EnsureAudio();
         ammoInMag = Mathf.Max(0, config.magazineSize);
         reserve = Mathf.Max(0, config.startReserve);
         fireMode = FirstEnabledMode();
@@ -70,24 +71,35 @@ public class Gun : MonoBehaviour, IWeaponTestable
         StartCoroutine(CoReloadMag());
     }
 
-    public void Fire()
+    // Новый метод Fire с направлением
+    // Добавляем метод для стрельбы по конкретному направлению
+    // Новый метод Fire с направлением
+    public void Fire(Vector3 direction)
     {
         if (isReloading) return;
+        if (!CanStartShot()) return;
 
         if (fireMode == GunConfig.FireModes.Burst)
         {
-            if (burstRoutine == null && CanStartShot())
-                burstRoutine = StartCoroutine(CoBurst());
+            if (burstRoutine == null)
+                burstRoutine = StartCoroutine(CoBurst(direction));
             return;
         }
 
-        if (CanStartShot())
-        {
-            DoSingleShot();
-            nextFireTime = Time.time + 60f / Mathf.Max(1f, config.rpm);
-        }
+        // Для одиночного выстрела
+        DoSingleShot(direction);
+        nextFireTime = Time.time + 60f / Mathf.Max(1f, config.rpm);
     }
 
+
+
+    // Явная реализация интерфейса для совместимости
+    void IWeaponTestable.Fire()
+    {
+        // Просто стреляем "вперед" от мушки, если вызван без направления
+        Vector3 dir = sockets.muzzle ? sockets.muzzle.forward : transform.forward;
+        Fire(dir);
+    }
 
     bool CanStartShot()
     {
@@ -100,7 +112,7 @@ public class Gun : MonoBehaviour, IWeaponTestable
         return true;
     }
 
-    IEnumerator CoBurst()
+    IEnumerator CoBurst(Vector3 direction)
     {
         int shots = Mathf.Min(config.burstCount, ammoInMag);
         float dt = 60f / Mathf.Max(1f, config.burstRpm);
@@ -108,7 +120,7 @@ public class Gun : MonoBehaviour, IWeaponTestable
         for (int i = 0; i < shots; i++)
         {
             if (isReloading || ammoInMag <= 0) break;
-            DoSingleShot();
+            DoSingleShot(direction);
             if (i < shots - 1) yield return new WaitForSeconds(dt);
         }
 
@@ -116,7 +128,7 @@ public class Gun : MonoBehaviour, IWeaponTestable
         burstRoutine = null;
     }
 
-    void DoSingleShot()
+    void DoSingleShot(Vector3 direction)
     {
         ammoInMag--;
 
@@ -141,10 +153,11 @@ public class Gun : MonoBehaviour, IWeaponTestable
         float spread = isAiming ? config.spreadAimDeg : config.spreadHipDeg;
         int shots = Mathf.Max(1, config.pellets);
 
+        Vector3 origin = sockets.muzzle ? sockets.muzzle.position : transform.position;
+
         for (int i = 0; i < shots; i++)
         {
-            Vector3 origin = sockets.muzzle ? sockets.muzzle.position : transform.position;
-            Vector3 dir = ApplySpread((sockets.muzzle ? sockets.muzzle.forward : transform.forward), spread);
+            Vector3 dir = ApplySpread(direction, spread);
             Vector3 hitPoint = origin + dir * config.range;
 
             if (Physics.Raycast(origin, dir, out var hit, config.range, config.hitMask, QueryTriggerInteraction.Ignore))
@@ -165,6 +178,7 @@ public class Gun : MonoBehaviour, IWeaponTestable
         }
     }
 
+    #region Helpers (без изменений)
     IEnumerator CoReloadMag()
     {
         isReloading = true;
@@ -312,4 +326,6 @@ public class Gun : MonoBehaviour, IWeaponTestable
         foreach (var t in tfs) if (t.name == name) return t;
         return null;
     }
+
+    #endregion
 }

@@ -4,7 +4,9 @@ using UnityEngine.InputSystem;
 
 public class ShooterStandalone : MonoBehaviour
 {
+    [Header("Оружие")]
     [SerializeField] WeaponSwitcherStandalone switcher;
+    [SerializeField] GameObject fixedWeapon;
 
     [Header("HUD")]
     [SerializeField] TMP_Text ammoLabel;
@@ -12,6 +14,10 @@ public class ShooterStandalone : MonoBehaviour
     [SerializeField] bool autoBindLabels = true;
     [SerializeField] string ammoLabelName = "AmmoLabel";
     [SerializeField] string modeLabelName = "ModeLabel";
+
+    [Header("Crosshair")]
+    [SerializeField] RectTransform crosshairRect;
+    [SerializeField] Camera playerCamera;
 
     InputAction fire, reload, aim, toggleMode;
     IWeaponTestable w;
@@ -45,10 +51,11 @@ public class ShooterStandalone : MonoBehaviour
 
     void OnEnable()
     {
-        fire = new InputAction(name: "Fire", type: InputActionType.Button, binding: "<Mouse>/leftButton");
-        reload = new InputAction(name: "Reload", type: InputActionType.Button, binding: "<Keyboard>/r");
-        aim = new InputAction(name: "Aim", type: InputActionType.Button, binding: "<Mouse>/rightButton");
-        toggleMode = new InputAction(name: "ToggleMode", type: InputActionType.Button, binding: "<Keyboard>/b");
+        fire = new InputAction("Fire", InputActionType.Button, "<Mouse>/leftButton");
+        reload = new InputAction("Reload", InputActionType.Button, "<Keyboard>/r");
+        aim = new InputAction("Aim", InputActionType.Button, "<Mouse>/rightButton");
+        toggleMode = new InputAction("ToggleMode", InputActionType.Button, "<Keyboard>/b");
+
         fire.Enable(); reload.Enable(); aim.Enable(); toggleMode.Enable();
     }
 
@@ -59,13 +66,13 @@ public class ShooterStandalone : MonoBehaviour
 
     void Update()
     {
-
-        var go = switcher ? switcher.Current : null;
+        // выбор оружия
+        GameObject go = switcher?.Current ?? fixedWeapon;
         var nw = go ? go.GetComponentInChildren<IWeaponTestable>() : null;
 
         if (!ReferenceEquals(nw, w))
         {
-            if (w != null) w.StopAim();
+            w?.StopAim();
             w = nw;
             aiming = false;
 
@@ -80,22 +87,64 @@ public class ShooterStandalone : MonoBehaviour
                 if (modeLabel) modeLabel.text = $"MODE: {w.FireModeName}";
             }
         }
+
         if (w == null) return;
 
+        // смена режима
         if (toggleMode.triggered)
         {
             w.CycleFireMode();
             if (modeLabel) modeLabel.text = $"MODE: {w.FireModeName}";
         }
 
+        // прицеливание
         bool aimPressed = aim.IsPressed();
-        if (aimPressed != aiming) { aiming = aimPressed; if (aiming) w.StartAim(); else w.StopAim(); }
+        if (aimPressed != aiming)
+        {
+            aiming = aimPressed;
+            if (aiming) w.StartAim();
+            else w.StopAim();
+        }
 
-        if (reload.triggered) w.Reload();
+        // перезарядка
+        if (reload.triggered)
+            w.Reload();
 
-        if (w.IsAutomatic) { if (fire.IsPressed()) w.Fire(); }
-        else { if (fire.triggered) w.Fire(); }
+        // стрельба
+        if (w.IsAutomatic)
+        {
+            if (fire.IsPressed()) FireWeapon();
+        }
+        else
+        {
+            if (fire.triggered) FireWeapon();
+        }
 
+        // обновление UI
         if (ammoLabel) ammoLabel.text = $"{w.CurrentAmmo} / {w.ReserveAmmo}";
     }
+
+    void FireWeapon()
+    {
+        if (w is Gun g)
+        {
+            g.Fire(GetAimDirection());
+        }
+        else
+        {
+            w.Fire(); // Для других типов оружия
+        }
+    }
+
+    public Vector3 GetAimDirection()
+    {
+        if (!crosshairRect || !playerCamera) return transform.forward;
+
+        // Позиция прицела на экране
+        Vector3 screenPos = crosshairRect.position;
+        Ray ray = playerCamera.ScreenPointToRay(screenPos);
+
+        return ray.direction; // Стреляем по направлению луча
+    }
+
 }

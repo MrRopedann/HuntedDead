@@ -1,50 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\",
+  "WorkspaceRootPath": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\users\\brt\\desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\huntedsurvival\\hunteddead\\assets\\scripts\\gamesystems\\charatersystem\\flyingitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\charatersystem\\flyingitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0438\u0433\u0440\u044B\\hunteddead\\assets\\scripts\\gamesystems\\weaponsystem\\gun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\weaponsystem\\gun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\users\\brt\\desktop\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\huntedsurvival\\hunteddead\\assets\\scripts\\gamesystems\\charatersystem\\chest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\charatersystem\\chest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0438\u0433\u0440\u044B\\hunteddead\\assets\\scripts\\gamesystems\\uisystem\\crosshaircontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\uisystem\\crosshaircontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\charatersystem\\playerchestinteractioninput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\charatersystem\\playerchestinteractioninput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0438\u0433\u0440\u044B\\hunteddead\\assets\\scripts\\gamesystems\\weaponsystem\\shooterstandalone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\weaponsystem\\shooterstandalone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\charatersystem\\chestuiproximity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\charatersystem\\chestuiproximity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0438\u0433\u0440\u044B\\hunteddead\\assets\\scripts\\gamesystems\\weaponsystem\\idamageable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\weaponsystem\\idamageable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\charatersystem\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\charatersystem\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0438\u0433\u0440\u044B\\hunteddead\\assets\\scripts\\gamesystems\\weaponsystem\\bullettrail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\weaponsystem\\bullettrail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\charatersystem\\itempickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\charatersystem\\itempickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0438\u0433\u0440\u044B\\hunteddead\\assets\\scripts\\gamesystems\\weaponsystem\\gunconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\weaponsystem\\gunconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\charatersystem\\itemobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\charatersystem\\itemobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0438\u0433\u0440\u044B\\hunteddead\\assets\\scripts\\gamesystems\\weaponsystem\\weaponslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\weaponsystem\\weaponslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\charatersystem\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\charatersystem\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\playermovementsystem\\thirdpersoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\playermovementsystem\\thirdpersoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\charatersystem\\characterstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\charatersystem\\characterstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\assets\\scripts\\gamesystems\\playermovementsystem\\cameracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\playermovementsystem\\cameracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|c:\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0438\u0433\u0440\u044B\\hunteddead\\assets\\scripts\\gamesystems\\weaponsystem\\weaponswitcherstandalone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{540DE29D-AE1C-5A11-735D-C6308E71611A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesystems\\weaponsystem\\weaponswitcherstandalone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,141 +42,111 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FlyingItem.cs",
-              "DocumentMoniker": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\CharaterSystem\\FlyingItem.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\CharaterSystem\\FlyingItem.cs",
-              "ToolTip": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\CharaterSystem\\FlyingItem.cs",
-              "RelativeToolTip": "Assets\\Scripts\\GameSystems\\CharaterSystem\\FlyingItem.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAA1wDEAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "CrosshairController.cs",
+              "DocumentMoniker": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\Assets\\Scripts\\GameSystems\\UISystem\\CrosshairController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\UISystem\\CrosshairController.cs",
+              "ToolTip": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\Assets\\Scripts\\GameSystems\\UISystem\\CrosshairController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GameSystems\\UISystem\\CrosshairController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAIwCIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T08:29:28.817Z",
+              "WhenOpened": "2025-11-08T12:36:49.183Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "WeaponSwitcherStandalone.cs",
+              "DocumentMoniker": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\Assets\\Scripts\\GameSystems\\WeaponSystem\\WeaponSwitcherStandalone.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\WeaponSystem\\WeaponSwitcherStandalone.cs",
+              "ToolTip": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\Assets\\Scripts\\GameSystems\\WeaponSystem\\WeaponSwitcherStandalone.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GameSystems\\WeaponSystem\\WeaponSwitcherStandalone.cs",
+              "ViewState": "AgIAAMQAAAAAAAAAAAAcwOQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T12:25:54.925Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "WeaponSlot.cs",
+              "DocumentMoniker": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\Assets\\Scripts\\GameSystems\\WeaponSystem\\WeaponSlot.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\WeaponSystem\\WeaponSlot.cs",
+              "ToolTip": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\Assets\\Scripts\\GameSystems\\WeaponSystem\\WeaponSlot.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GameSystems\\WeaponSystem\\WeaponSlot.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAuwHgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T12:25:54.626Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "PlayerChestInteractionInput.cs",
-              "DocumentMoniker": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\CharaterSystem\\PlayerChestInteractionInput.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\CharaterSystem\\PlayerChestInteractionInput.cs",
-              "ToolTip": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\CharaterSystem\\PlayerChestInteractionInput.cs",
-              "RelativeToolTip": "Assets\\Scripts\\GameSystems\\CharaterSystem\\PlayerChestInteractionInput.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAADwvyoAAAAAAAAAAAAAAA==",
+              "Title": "ShooterStandalone.cs",
+              "DocumentMoniker": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\Assets\\Scripts\\GameSystems\\WeaponSystem\\ShooterStandalone.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\WeaponSystem\\ShooterStandalone.cs",
+              "ToolTip": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\Assets\\Scripts\\GameSystems\\WeaponSystem\\ShooterStandalone.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GameSystems\\WeaponSystem\\ShooterStandalone.cs",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAmwJYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T08:14:09.498Z"
+              "WhenOpened": "2025-11-08T12:25:54.316Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ChestUIProximity.cs",
-              "DocumentMoniker": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\CharaterSystem\\ChestUIProximity.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\CharaterSystem\\ChestUIProximity.cs",
-              "ToolTip": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\CharaterSystem\\ChestUIProximity.cs",
-              "RelativeToolTip": "Assets\\Scripts\\GameSystems\\CharaterSystem\\ChestUIProximity.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAADwv0AAAAAAAAAAAAAAAA==",
+              "Title": "IDamageable.cs",
+              "DocumentMoniker": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\Assets\\Scripts\\GameSystems\\WeaponSystem\\IDamageable.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\WeaponSystem\\IDamageable.cs",
+              "ToolTip": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\Assets\\Scripts\\GameSystems\\WeaponSystem\\IDamageable.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GameSystems\\WeaponSystem\\IDamageable.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAcwFIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T07:45:48.767Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Chest.cs",
-              "DocumentMoniker": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\CharaterSystem\\Chest.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\CharaterSystem\\Chest.cs",
-              "ToolTip": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\CharaterSystem\\Chest.cs",
-              "RelativeToolTip": "Assets\\Scripts\\GameSystems\\CharaterSystem\\Chest.cs",
-              "ViewState": "AgIAAGAAAAAAAAAAAAAwwHQAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T07:44:48.057Z",
+              "WhenOpened": "2025-11-08T12:25:53.728Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "ItemPickup.cs",
-              "DocumentMoniker": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\CharaterSystem\\ItemPickup.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\CharaterSystem\\ItemPickup.cs",
-              "ToolTip": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\CharaterSystem\\ItemPickup.cs",
-              "RelativeToolTip": "Assets\\Scripts\\GameSystems\\CharaterSystem\\ItemPickup.cs",
-              "ViewState": "AgIAAFsAAAAAAAAAAAAowHAAAAAAAAAAAAAAAA==",
+              "Title": "GunConfig.cs",
+              "DocumentMoniker": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\Assets\\Scripts\\GameSystems\\WeaponSystem\\GunConfig.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\WeaponSystem\\GunConfig.cs",
+              "ToolTip": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\Assets\\Scripts\\GameSystems\\WeaponSystem\\GunConfig.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GameSystems\\WeaponSystem\\GunConfig.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAuwDAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-06T10:35:58.258Z"
+              "WhenOpened": "2025-11-08T12:25:53.449Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ItemObject.cs",
-              "DocumentMoniker": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\CharaterSystem\\ItemObject.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\CharaterSystem\\ItemObject.cs",
-              "ToolTip": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\CharaterSystem\\ItemObject.cs",
-              "RelativeToolTip": "Assets\\Scripts\\GameSystems\\CharaterSystem\\ItemObject.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Gun.cs",
+              "DocumentMoniker": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\Assets\\Scripts\\GameSystems\\WeaponSystem\\Gun.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\WeaponSystem\\Gun.cs",
+              "ToolTip": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\Assets\\Scripts\\GameSystems\\WeaponSystem\\Gun.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GameSystems\\WeaponSystem\\Gun.cs",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAswIAAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-06T10:35:28.069Z"
+              "WhenOpened": "2025-11-08T12:25:53.166Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Inventory.cs",
-              "DocumentMoniker": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\CharaterSystem\\Inventory.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\CharaterSystem\\Inventory.cs",
-              "ToolTip": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\CharaterSystem\\Inventory.cs",
-              "RelativeToolTip": "Assets\\Scripts\\GameSystems\\CharaterSystem\\Inventory.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAwwCcAAAAFAAAAAAAAAA==",
+              "Title": "BulletTrail.cs",
+              "DocumentMoniker": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\Assets\\Scripts\\GameSystems\\WeaponSystem\\BulletTrail.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\WeaponSystem\\BulletTrail.cs",
+              "ToolTip": "C:\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0418\u0433\u0440\u044B\\HuntedDead\\Assets\\Scripts\\GameSystems\\WeaponSystem\\BulletTrail.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GameSystems\\WeaponSystem\\BulletTrail.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAmwDEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-06T10:24:30.13Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Item.cs",
-              "DocumentMoniker": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\CharaterSystem\\Item.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\CharaterSystem\\Item.cs",
-              "ToolTip": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\CharaterSystem\\Item.cs",
-              "RelativeToolTip": "Assets\\Scripts\\GameSystems\\CharaterSystem\\Item.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAowD4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-06T10:23:54.95Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "CharacterStats.cs",
-              "DocumentMoniker": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\CharaterSystem\\CharacterStats.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\CharaterSystem\\CharacterStats.cs",
-              "ToolTip": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\CharaterSystem\\CharacterStats.cs",
-              "RelativeToolTip": "Assets\\Scripts\\GameSystems\\CharaterSystem\\CharacterStats.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-06T10:23:05.899Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ThirdPersonController.cs",
-              "DocumentMoniker": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\PlayerMovementSystem\\ThirdPersonController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\PlayerMovementSystem\\ThirdPersonController.cs",
-              "ToolTip": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\PlayerMovementSystem\\ThirdPersonController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\GameSystems\\PlayerMovementSystem\\ThirdPersonController.cs",
-              "ViewState": "AgIAABYBAAAAAAAAAAAswCwBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-06T10:16:23.532Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "CameraController.cs",
-              "DocumentMoniker": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\PlayerMovementSystem\\CameraController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\GameSystems\\PlayerMovementSystem\\CameraController.cs",
-              "ToolTip": "C:\\Users\\BRT\\Desktop\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\HuntedSurvival\\HuntedDead\\Assets\\Scripts\\GameSystems\\PlayerMovementSystem\\CameraController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\GameSystems\\PlayerMovementSystem\\CameraController.cs",
-              "ViewState": "AgIAAL0AAAAAAAAAAAAQwM4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-06T10:16:20.041Z"
+              "WhenOpened": "2025-11-08T12:25:52.661Z",
+              "EditorCaption": ""
             }
           ]
         }

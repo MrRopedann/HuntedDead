@@ -1,9 +1,11 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+[RequireComponent(typeof(Collider))]
 public class PlayerChestInteractionTrigger : MonoBehaviour
 {
-    private Chest nearbyChest;
+    private Interactable nearbyInteractable;
+    private Inventory playerInventory;
     public InputActionReference openLootAction;
 
     void OnEnable()
@@ -18,25 +20,30 @@ public class PlayerChestInteractionTrigger : MonoBehaviour
             openLootAction.action.Disable();
     }
 
+    void Start()
+    {
+        playerInventory = GetComponent<Inventory>();
+    }
+
     void Update()
     {
-        if (nearbyChest != null && openLootAction != null && openLootAction.action.WasPressedThisFrame())
+        if (nearbyInteractable != null && openLootAction != null && openLootAction.action.WasPressedThisFrame())
         {
-            nearbyChest.OpenChest();
+            nearbyInteractable.Interact(playerInventory);
         }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        Chest chest = other.GetComponent<Chest>();
-        if (chest != null)
-            nearbyChest = chest;
+        var interactable = other.GetComponent<Interactable>();
+        if (interactable != null && !interactable.isUsed)
+            nearbyInteractable = interactable;
     }
 
     private void OnTriggerExit(Collider other)
     {
-        Chest chest = other.GetComponent<Chest>();
-        if (chest != null && chest == nearbyChest)
-            nearbyChest = null;
+        var interactable = other.GetComponent<Interactable>();
+        if (interactable != null && interactable == nearbyInteractable)
+            nearbyInteractable = null;
     }
 }
