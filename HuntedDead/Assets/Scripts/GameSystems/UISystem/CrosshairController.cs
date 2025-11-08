@@ -1,8 +1,7 @@
 using UnityEngine;
-using UnityEngine.UI;
 
-[RequireComponent(typeof(Image))]
-public class CrosshairController : MonoBehaviour
+[RequireComponent(typeof(SpriteRenderer))]
+public class CrosshairController3D : MonoBehaviour
 {
     [Header("Sprites")]
     public Sprite[] crosshairs;
@@ -10,25 +9,24 @@ public class CrosshairController : MonoBehaviour
 
     [Header("Appearance")]
     public Color color = Color.white;
-    public float size = 32f;
+    public float size = 0.1f; // размер в мире
 
-    Image img;
-    RectTransform rt;
+    private SpriteRenderer sr;
 
-    void Awake()
+    private void Awake()
     {
-        img = GetComponent<Image>();
-        rt = GetComponent<RectTransform>();
+        sr = GetComponent<SpriteRenderer>();
+
         ApplySprite();
-        img.color = color;
+        sr.color = color;
         SetSize(size);
     }
 
-    void ApplySprite()
+    private void ApplySprite()
     {
         if (crosshairs != null && crosshairs.Length > 0)
-            img.sprite = crosshairs[Mathf.Clamp(index, 0, crosshairs.Length - 1)];
+            sr.sprite = crosshairs[Mathf.Clamp(index, 0, crosshairs.Length - 1)];
     }
 
-    void SetSize(float s) => rt.sizeDelta = new Vector2(s, s);
+    private void SetSize(float s) => transform.localScale = new Vector3(s, s, 1f);
 }

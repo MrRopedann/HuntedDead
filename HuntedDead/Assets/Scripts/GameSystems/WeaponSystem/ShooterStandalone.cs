@@ -5,51 +5,54 @@ using UnityEngine.InputSystem;
 public class ShooterStandalone : MonoBehaviour
 {
     [Header("ќружие")]
-    [SerializeField] WeaponSwitcherStandalone switcher;
-    [SerializeField] GameObject fixedWeapon;
+    [SerializeField] private WeaponSwitcherStandalone switcher;
+    [SerializeField] private GameObject fixedWeapon;
 
     [Header("HUD")]
-    [SerializeField] TMP_Text ammoLabel;
-    [SerializeField] TMP_Text modeLabel;
-    [SerializeField] bool autoBindLabels = true;
-    [SerializeField] string ammoLabelName = "AmmoLabel";
-    [SerializeField] string modeLabelName = "ModeLabel";
+    [SerializeField] private TMP_Text ammoLabel;
+    [SerializeField] private TMP_Text modeLabel;
+    [SerializeField] private bool autoBindLabels = true;
+    [SerializeField] private string ammoLabelName = "AmmoLabel";
+    [SerializeField] private string modeLabelName = "ModeLabel";
 
-    [Header("Crosshair")]
-    [SerializeField] RectTransform crosshairRect;
-    [SerializeField] Camera playerCamera;
+    [Header("Crosshair 3D")]
+    [SerializeField] private Crosshair3D crosshair3D; // ссылка на 3D прицел
 
-    InputAction fire, reload, aim, toggleMode;
-    IWeaponTestable w;
-    bool aiming;
+    [Header("Player Camera")]
+    [SerializeField] private Camera playerCamera;
 
-    void Awake()
+    private InputAction fire, reload, aim, toggleMode;
+    private IWeaponTestable currentWeapon;
+    private bool aiming;
+
+    private void Awake()
     {
         if (autoBindLabels)
         {
-            if (!ammoLabel) ammoLabel = FindLabel(ammoLabelName);
-            if (!modeLabel) modeLabel = FindLabel(modeLabelName);
+            ammoLabel ??= FindLabel(ammoLabelName);
+            modeLabel ??= FindLabel(modeLabelName);
         }
 
         if (ammoLabel) ammoLabel.text = "Ч / Ч";
         if (modeLabel) modeLabel.text = "MODE: Ч";
+
+        if (crosshair3D) crosshair3D.gameObject.SetActive(false);
     }
 
-    TMP_Text FindLabel(string targetName)
+    private TMP_Text FindLabel(string targetName)
     {
         var canvas = GetComponentInParent<Canvas>();
-        if (canvas)
+        if (canvas != null)
         {
             foreach (var l in canvas.GetComponentsInChildren<TMP_Text>(true))
-                if (l.name == targetName) return l;
-            foreach (var l in canvas.GetComponentsInChildren<TMP_Text>(true))
-                if (l.name.Contains(targetName)) return l;
+                if (l.name == targetName || l.name.Contains(targetName)) return l;
         }
+
         var go = GameObject.Find(targetName);
         return go ? go.GetComponent<TMP_Text>() : null;
     }
 
-    void OnEnable()
+    private void OnEnable()
     {
         fire = new InputAction("Fire", InputActionType.Button, "<Mouse>/leftButton");
         reload = new InputAction("Reload", InputActionType.Button, "<Keyboard>/r");
@@ -59,92 +62,92 @@ public class ShooterStandalone : MonoBehaviour
         fire.Enable(); reload.Enable(); aim.Enable(); toggleMode.Enable();
     }
 
-    void OnDisable()
+    private void OnDisable()
     {
         fire?.Disable(); reload?.Disable(); aim?.Disable(); toggleMode?.Disable();
     }
 
-    void Update()
+    private void Update()
     {
-        // выбор оружи€
+        // ¬ыбор оружи€
         GameObject go = switcher?.Current ?? fixedWeapon;
         var nw = go ? go.GetComponentInChildren<IWeaponTestable>() : null;
 
-        if (!ReferenceEquals(nw, w))
+        if (!ReferenceEquals(nw, currentWeapon))
         {
-            w?.StopAim();
-            w = nw;
+            currentWeapon?.StopAim();
+            currentWeapon = nw;
             aiming = false;
-
-            if (w == null)
-            {
-                if (ammoLabel) ammoLabel.text = "Ч / Ч";
-                if (modeLabel) modeLabel.text = "MODE: Ч";
-            }
-            else
-            {
-                if (ammoLabel) ammoLabel.text = $"{w.CurrentAmmo} / {w.ReserveAmmo}";
-                if (modeLabel) modeLabel.text = $"MODE: {w.FireModeName}";
-            }
+            UpdateCrosshair();
+            UpdateHUD();
         }
 
-        if (w == null) return;
+        if (currentWeapon == null) return;
 
-        // смена режима
+        // —мена режима стрельбы
         if (toggleMode.triggered)
         {
-            w.CycleFireMode();
-            if (modeLabel) modeLabel.text = $"MODE: {w.FireModeName}";
+            currentWeapon.CycleFireMode();
+            UpdateHUD();
         }
 
-        // прицеливание
+        // ѕрицеливание
         bool aimPressed = aim.IsPressed();
         if (aimPressed != aiming)
         {
             aiming = aimPressed;
-            if (aiming) w.StartAim();
-            else w.StopAim();
+            if (aiming) currentWeapon.StartAim();
+            else currentWeapon.StopAim();
+
+            if (crosshair3D) crosshair3D.SetAiming(aiming);
         }
 
-        // перезар€дка
-        if (reload.triggered)
-            w.Reload();
+        // ѕерезар€дка
+        if (reload.triggered) currentWeapon.Reload();
 
-        // стрельба
-        if (w.IsAutomatic)
+        // —трельба только при прицеливании
+        if (aiming)
         {
-            if (fire.IsPressed()) FireWeapon();
+            if (currentWeapon.IsAutomatic && fire.IsPressed()) FireWeapon();
+            else if (!currentWeapon.IsAutomatic && fire.triggered) FireWeapon();
+        }
+
+        // ќбновление HUD
+        UpdateHUD();
+    }
+
+    private void FireWeapon()
+    {
+        if (currentWeapon is Gun gun)
+        {
+            Vector3 aimPoint = GetAimPoint();
+            Vector3 origin = gun.sockets.muzzle ? gun.sockets.muzzle.position : gun.transform.position;
+            Vector3 dir = (aimPoint - origin).normalized;
+            gun.Fire(dir);
         }
         else
         {
-            if (fire.triggered) FireWeapon();
+            currentWeapon.Fire();
         }
-
-        // обновление UI
-        if (ammoLabel) ammoLabel.text = $"{w.CurrentAmmo} / {w.ReserveAmmo}";
     }
 
-    void FireWeapon()
+    // ѕолучаем точку в мире, куда указывает прицел
+    private Vector3 GetAimPoint()
     {
-        if (w is Gun g)
-        {
-            g.Fire(GetAimDirection());
-        }
-        else
-        {
-            w.Fire(); // ƒл€ других типов оружи€
-        }
+        Ray ray = new Ray(playerCamera.transform.position, playerCamera.transform.forward);
+        if (Physics.Raycast(ray, out RaycastHit hit, 1000f))
+            return hit.point;
+        return ray.origin + ray.direction * 100f; // точка на 100 метров, если ничего не попали
     }
 
-    public Vector3 GetAimDirection()
+    private void UpdateCrosshair()
     {
-        if (!crosshairRect || !playerCamera) return transform.forward;
-
-        // ѕозици€ прицела на экране
-        Vector3 screenPos = crosshairRect.position;
-        Ray ray = playerCamera.ScreenPointToRay(screenPos);
-
-        return ray.direction; // —трел€ем по направлению луча
+        if (crosshair3D) crosshair3D.SetAiming(aiming);
     }
 
+    private void UpdateHUD()
+    {
+        if (ammoLabel) ammoLabel.text = currentWeapon != null ? $"{currentWeapon.CurrentAmmo} / {currentWeapon.ReserveAmmo}" : "Ч / Ч";
+        if (modeLabel) modeLabel.text = currentWeapon != null ? $"MODE: {currentWeapon.FireModeName}" : "MODE: Ч";
+    }
 }

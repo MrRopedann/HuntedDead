@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Gun : MonoBehaviour, IWeaponTestable
 {
-    [SerializeField] GunConfig config;
+    [SerializeField] private GunConfig config;
 
     [System.Serializable]
     public class Sockets
@@ -15,28 +15,36 @@ public class Gun : MonoBehaviour, IWeaponTestable
         public Transform dropSpawn;
         public AudioSource audio;
     }
-    [SerializeField] public Sockets sockets = new Sockets(); // теперь public, чтобы ShooterStandalone мог ссылаться
+
+    [SerializeField] public Sockets sockets = new Sockets();
 
     [Header("Debug")]
-    [SerializeField] bool drawDebug = false;
+    [SerializeField] private bool drawDebug = false;
 
-    int ammoInMag, reserve;
-    float nextFireTime;
-    bool isReloading, isAiming;
-    Coroutine burstRoutine;
-    ParticleSystem[] muzzlePs;
-    GunConfig.FireModes fireMode;
+    private int ammoInMag, reserve;
+    private float nextFireTime;
+    private bool isReloading, isAiming;
+    private Coroutine burstRoutine;
+    private ParticleSystem[] muzzlePs;
+    private GunConfig.FireModes fireMode;
 
     public bool IsAutomatic => (fireMode & GunConfig.FireModes.Auto) != 0 && fireMode == GunConfig.FireModes.Auto;
     public int CurrentAmmo => ammoInMag;
     public int ReserveAmmo => reserve;
     public string DisplayName => config ? config.displayName : name;
     public string FireModeName => fireMode.ToString().ToUpperInvariant();
-    public void CycleFireMode() { fireMode = NextEnabledMode(fireMode); }
 
-    void Awake()
+    public void CycleFireMode() => fireMode = NextEnabledMode(fireMode);
+
+    private void Awake()
     {
-        if (!config) { Debug.LogError("Gun: config is null", this); enabled = false; return; }
+        if (!config)
+        {
+            Debug.LogError("Gun: config is null", this);
+            enabled = false;
+            return;
+        }
+
         AutoBindSockets();
         EnsureAudio();
         ammoInMag = Mathf.Max(0, config.magazineSize);
@@ -44,7 +52,7 @@ public class Gun : MonoBehaviour, IWeaponTestable
         fireMode = FirstEnabledMode();
     }
 
-    void Start()
+    private void Start()
     {
         if (config.reuseMuzzleVFX && config.muzzleVFXPrefab && sockets.muzzle)
         {
@@ -52,7 +60,7 @@ public class Gun : MonoBehaviour, IWeaponTestable
             muzzlePs = fx.GetComponentsInChildren<ParticleSystem>(true);
             foreach (var ps in muzzlePs)
             {
-                var m = ps.main; m.loop = false; m.playOnAwake = false;
+                var main = ps.main; main.loop = false; main.playOnAwake = false;
                 var em = ps.emission; em.rateOverTime = 0f;
                 if (em.burstCount == 0) em.SetBurst(0, new ParticleSystem.Burst(0f, 1));
             }
@@ -64,20 +72,14 @@ public class Gun : MonoBehaviour, IWeaponTestable
 
     public void Reload()
     {
-        if (isReloading) return;
-        if (ammoInMag >= config.magazineSize) return;
-        if (reserve <= 0) return;
+        if (isReloading || ammoInMag >= config.magazineSize || reserve <= 0) return;
         if (burstRoutine != null) { StopCoroutine(burstRoutine); burstRoutine = null; }
         StartCoroutine(CoReloadMag());
     }
 
-    // Новый метод Fire с направлением
-    // Добавляем метод для стрельбы по конкретному направлению
-    // Новый метод Fire с направлением
     public void Fire(Vector3 direction)
     {
-        if (isReloading) return;
-        if (!CanStartShot()) return;
+        if (isReloading || !CanStartShot()) return;
 
         if (fireMode == GunConfig.FireModes.Burst)
         {
@@ -86,22 +88,17 @@ public class Gun : MonoBehaviour, IWeaponTestable
             return;
         }
 
-        // Для одиночного выстрела
         DoSingleShot(direction);
         nextFireTime = Time.time + 60f / Mathf.Max(1f, config.rpm);
     }
 
-
-
-    // Явная реализация интерфейса для совместимости
     void IWeaponTestable.Fire()
     {
-        // Просто стреляем "вперед" от мушки, если вызван без направления
         Vector3 dir = sockets.muzzle ? sockets.muzzle.forward : transform.forward;
         Fire(dir);
     }
 
-    bool CanStartShot()
+    private bool CanStartShot()
     {
         if (Time.time < nextFireTime) return false;
         if (ammoInMag <= 0)
@@ -112,7 +109,7 @@ public class Gun : MonoBehaviour, IWeaponTestable
         return true;
     }
 
-    IEnumerator CoBurst(Vector3 direction)
+    private IEnumerator CoBurst(Vector3 direction)
     {
         int shots = Mathf.Min(config.burstCount, ammoInMag);
         float dt = 60f / Mathf.Max(1f, config.burstRpm);
@@ -128,10 +125,13 @@ public class Gun : MonoBehaviour, IWeaponTestable
         burstRoutine = null;
     }
 
-    void DoSingleShot(Vector3 direction)
+    void DoSingleShot(Vector3 aimDirection)
     {
+        if (ammoInMag <= 0) return;
+
         ammoInMag--;
 
+        // Muzzle VFX
         if (config.reuseMuzzleVFX && muzzlePs != null && muzzlePs.Length > 0)
         {
             foreach (var ps in muzzlePs)
@@ -148,24 +148,38 @@ public class Gun : MonoBehaviour, IWeaponTestable
             Destroy(fx, ComputeTTL(all));
         }
 
+        // Shot SFX
         if (config.shotSfx && sockets.audio) sockets.audio.PlayOneShot(config.shotSfx);
 
+        // Спред
         float spread = isAiming ? config.spreadAimDeg : config.spreadHipDeg;
-        int shots = Mathf.Max(1, config.pellets);
+        int pellets = Mathf.Max(1, config.pellets);
 
         Vector3 origin = sockets.muzzle ? sockets.muzzle.position : transform.position;
 
-        for (int i = 0; i < shots; i++)
+        // Точка, куда должен попасть центр прицела на дальности оружия
+        Vector3 targetPoint = origin + aimDirection * config.range;
+
+        for (int i = 0; i < pellets; i++)
         {
-            Vector3 dir = ApplySpread(direction, spread);
+            // Направление от muzzle к точке прицела
+            Vector3 correctedDir = (targetPoint - origin).normalized;
+
+            // Применяем спред
+            Vector3 dir = ApplySpread(correctedDir, spread);
+
+            Ray ray = new Ray(origin, dir);
             Vector3 hitPoint = origin + dir * config.range;
 
-            if (Physics.Raycast(origin, dir, out var hit, config.range, config.hitMask, QueryTriggerInteraction.Ignore))
+            if (Physics.Raycast(ray, out RaycastHit hit, config.range, config.hitMask, QueryTriggerInteraction.Ignore))
             {
                 hitPoint = hit.point;
+
+                // Наносим урон
                 var dmg = hit.collider.GetComponentInParent<IDamageable>();
                 if (dmg != null) dmg.TakeDamage(config.damage, hit.point, hit.normal);
 
+                // Impact VFX
                 if (config.impactVFX)
                 {
                     var fx = Instantiate(config.impactVFX, hit.point, Quaternion.LookRotation(hit.normal));
@@ -173,13 +187,20 @@ public class Gun : MonoBehaviour, IWeaponTestable
                 }
             }
 
+            // Трассер
             if (config.trailVFX) SpawnTracer(origin, hitPoint);
+
+            // Debug
             if (drawDebug) Debug.DrawLine(origin, hitPoint, Color.red, 0.2f);
         }
+
+        nextFireTime = Time.time + 60f / Mathf.Max(1f, config.rpm);
     }
 
-    #region Helpers (без изменений)
-    IEnumerator CoReloadMag()
+
+    #region Helpers
+
+    private IEnumerator CoReloadMag()
     {
         isReloading = true;
 
@@ -189,8 +210,7 @@ public class Gun : MonoBehaviour, IWeaponTestable
         {
             var t = sockets.dropSpawn ? sockets.dropSpawn : sockets.mag;
             var dm = Instantiate(config.droppedMagPrefab, t.position, t.rotation);
-            var rb = dm.GetComponent<Rigidbody>();
-            if (rb)
+            if (dm.TryGetComponent<Rigidbody>(out var rb))
             {
                 rb.AddForce(transform.right * 0.6f + transform.up * 0.8f, ForceMode.Impulse);
                 rb.AddTorque(Random.insideUnitSphere * 1.2f, ForceMode.Impulse);
@@ -204,12 +224,13 @@ public class Gun : MonoBehaviour, IWeaponTestable
 
         int need = config.magazineSize - ammoInMag;
         int take = Mathf.Min(need, reserve);
-        ammoInMag += take; reserve -= take;
+        ammoInMag += take;
+        reserve -= take;
 
         isReloading = false;
     }
 
-    IEnumerator MoveMag(Transform from, Transform to, float time, AudioClip sfx)
+    private IEnumerator MoveMag(Transform from, Transform to, float time, AudioClip sfx)
     {
         if (!sockets.mag || !from || !to || time <= 0f)
         {
@@ -222,8 +243,8 @@ public class Gun : MonoBehaviour, IWeaponTestable
 
         Vector3 p0 = from.localPosition, p1 = to.localPosition;
         Quaternion r0 = from.localRotation, r1 = to.localRotation;
-
         float t = 0f;
+
         while (t < 1f)
         {
             t += Time.deltaTime / time;
@@ -232,17 +253,19 @@ public class Gun : MonoBehaviour, IWeaponTestable
             sockets.mag.localRotation = Quaternion.SlerpUnclamped(r0, r1, k);
             yield return null;
         }
-        sockets.mag.localPosition = p1; sockets.mag.localRotation = r1;
+
+        sockets.mag.localPosition = p1;
+        sockets.mag.localRotation = r1;
     }
 
-    void SpawnTracer(Vector3 start, Vector3 end)
+    private void SpawnTracer(Vector3 start, Vector3 end)
     {
         var go = Instantiate(config.trailVFX, start, Quaternion.LookRotation(end - start));
-        var bt = go.GetComponent<BulletTrail>(); if (!bt) bt = go.AddComponent<BulletTrail>();
+        var bt = go.GetComponent<BulletTrail>() ?? go.AddComponent<BulletTrail>();
         bt.Init(start, end, config.tracerSpeed, config.tracerLifeAfter);
     }
 
-    Vector3 ApplySpread(Vector3 fwd, float spreadDeg)
+    private Vector3 ApplySpread(Vector3 fwd, float spreadDeg)
     {
         if (spreadDeg <= 0f) return fwd;
         float ang = Random.Range(0f, spreadDeg);
@@ -251,29 +274,27 @@ public class Gun : MonoBehaviour, IWeaponTestable
         return q * fwd;
     }
 
-    float ComputeTTL(ParticleSystem[] systems)
+    private float ComputeTTL(ParticleSystem[] systems)
     {
         float max = 0.2f;
         foreach (var ps in systems)
         {
             var m = ps.main;
             float dur = m.duration;
-            float life = m.startLifetime.mode == ParticleSystemCurveMode.TwoConstants
-                ? m.startLifetime.constantMax
-                : m.startLifetime.constant;
+            float life = m.startLifetime.mode == ParticleSystemCurveMode.TwoConstants ? m.startLifetime.constantMax : m.startLifetime.constant;
             max = Mathf.Max(max, dur + life);
         }
         return Mathf.Clamp(max, 0.05f, 5f);
     }
 
-    GunConfig.FireModes FirstEnabledMode()
+    private GunConfig.FireModes FirstEnabledMode()
     {
         if ((config.enabledModes & GunConfig.FireModes.Semi) != 0) return GunConfig.FireModes.Semi;
         if ((config.enabledModes & GunConfig.FireModes.Burst) != 0) return GunConfig.FireModes.Burst;
         return GunConfig.FireModes.Auto;
     }
 
-    GunConfig.FireModes NextEnabledMode(GunConfig.FireModes cur)
+    private GunConfig.FireModes NextEnabledMode(GunConfig.FireModes cur)
     {
         for (int i = 0; i < 3; i++)
         {
@@ -284,25 +305,26 @@ public class Gun : MonoBehaviour, IWeaponTestable
         return cur;
     }
 
-    void EnsureAudio()
+    private void EnsureAudio()
     {
         if (!sockets.audio)
         {
-            sockets.audio = gameObject.GetComponent<AudioSource>();
-            if (!sockets.audio) sockets.audio = gameObject.AddComponent<AudioSource>();
-            sockets.audio.playOnAwake = false; sockets.audio.loop = false;
-            sockets.audio.spatialBlend = 0f; sockets.audio.volume = 0.8f;
+            sockets.audio = GetComponent<AudioSource>() ?? gameObject.AddComponent<AudioSource>();
+            sockets.audio.playOnAwake = false;
+            sockets.audio.loop = false;
+            sockets.audio.spatialBlend = 0f;
+            sockets.audio.volume = 0.8f;
         }
     }
 
     [ContextMenu("Auto-Bind Sockets")]
     public void AutoBindSockets()
     {
-        if (!sockets.muzzle) sockets.muzzle = FindDeep("Muzzle");
-        if (!sockets.mag) sockets.mag = FindDeep("Mag");
-        if (!sockets.magHome) sockets.magHome = FindDeep("MagHome");
-        if (!sockets.magOut) sockets.magOut = FindDeep("MagOut");
-        if (!sockets.dropSpawn) sockets.dropSpawn = FindDeep("DropSpawn");
+        sockets.muzzle ??= FindDeep("Muzzle");
+        sockets.mag ??= FindDeep("Mag");
+        sockets.magHome ??= FindDeep("MagHome");
+        sockets.magOut ??= FindDeep("MagOut");
+        sockets.dropSpawn ??= FindDeep("DropSpawn");
 
         if (sockets.mag && !sockets.magHome)
         {
@@ -311,6 +333,7 @@ public class Gun : MonoBehaviour, IWeaponTestable
             sockets.magHome.localPosition = sockets.mag.localPosition;
             sockets.magHome.localRotation = sockets.mag.localRotation;
         }
+
         if (sockets.mag && !sockets.magOut)
         {
             sockets.magOut = new GameObject("MagOut").transform;
@@ -320,10 +343,10 @@ public class Gun : MonoBehaviour, IWeaponTestable
         }
     }
 
-    Transform FindDeep(string name)
+    private Transform FindDeep(string name)
     {
-        var tfs = GetComponentsInChildren<Transform>(true);
-        foreach (var t in tfs) if (t.name == name) return t;
+        foreach (var t in GetComponentsInChildren<Transform>(true))
+            if (t.name == name) return t;
         return null;
     }
 
